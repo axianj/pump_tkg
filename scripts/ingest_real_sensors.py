@@ -317,16 +317,12 @@ def _extract_channel(filename: str) -> str:
 def _extract_severity(fault_dir: str) -> int:
     """从故障目录名末尾提取严重度: 'bearing bpfi 3'→3, 'soft foot 2'→2"""
     parts = fault_dir.strip().split()
-    last = parts[-1]
-    try:
-        return int(last)
-    except ValueError:
-        # 检查倒数第二位
-        if len(parts) >= 2:
-            try:
-                return int(parts[-1])
-            except ValueError:
-                pass
+    # 尝试每个后缀
+    for part in reversed(parts):
+        try:
+            return int(part)
+        except ValueError:
+            continue
     return 1
 
 
