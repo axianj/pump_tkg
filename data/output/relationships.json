@@ -719,5 +719,89 @@
     "relation": "表现为",
     "description": "叶轮磨损/不平衡导致1X增大",
     "weight": 0.9
+  },
+  {
+    "source": "M_SIM_001",
+    "target": "fault_Loose_foot_pump",
+    "relation": "表现为",
+    "description": "该测量记录显示 Loose_foot_pump 特征",
+    "weight": 1.0
+  },
+  {
+    "source": "M_SIM_002",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "该测量记录显示 Angular_misalignment 特征",
+    "weight": 1.0
+  },
+  {
+    "source": "M_SIM_003",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "该测量记录显示 Bearing_BPFO 特征",
+    "weight": 1.0
+  },
+  {
+    "source": "M_SIM_004",
+    "target": "fault_Bent_shaft",
+    "relation": "表现为",
+    "description": "该测量记录显示 Bent_shaft 特征",
+    "weight": 1.0
+  },
+  {
+    "source": "M_SIM_005",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "该测量记录显示 Coupling_damage 特征",
+    "weight": 1.0
+  },
+  {
+    "source": "M_SIM_006",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "该测量记录显示 Combined_misalignment 特征",
+    "weight": 1.0
+  },
+  {
+    "source": "M_SIM_007",
+    "target": "fault_Bearing_BSF",
+    "relation": "表现为",
+    "description": "该测量记录显示 Bearing_BSF 特征",
+    "weight": 1.0
+  },
+  {
+    "source": "M_SIM_008",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "该测量记录显示 Impeller_fault 特征",
+    "weight": 1.0
+  },
+  {
+    "source": "M_SIM_009",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "该测量记录显示 Combined_misalignment 特征",
+    "weight": 1.0
+  },
+  {
+    "source": "M_SIM_010",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "该测量记录显示 Combined_misalignment 特征",
+    "weight": 1.0
+  },
+  {
+    "source": "M_SIM_009",
+    "target": "M_SIM_006",
+    "relation": "后续测量",
+    "description": "时序链路: M_SIM_009 → M_SIM_006",
+    "weight": 0.5
+  },
+  {
+    "source": "M_SIM_006",
+    "target": "M_SIM_010",
+    "relation": "后续测量",
+    "description": "时序链路: M_SIM_006 → M_SIM_010",
+    "weight": 0.5
   }
 ]
