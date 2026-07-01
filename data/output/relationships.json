@@ -719,5 +719,6522 @@
     "relation": "表现为",
     "description": "叶轮磨损/不平衡导致1X增大",
     "weight": 0.9
+  },
+  {
+    "source": "M_b0e93ac2f502",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_63b536e42f51",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_56df8676a936",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_07cbda731e35",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ce6b01af786f",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_249e00bed8e0",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_a0f9b0abf420",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9a2752229427",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3c7048b93a39",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5fa9f0b8445f",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0ca574ae705b",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0cdb0307ec98",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_b7bb4ac1d4d8",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_928f1974b313",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_875c6daebb23",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_94e26886dd49",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_b020c1c892ba",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5127e57fb8f9",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3afee854b8d1",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_cea737746740",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0ca574ae705b",
+    "target": "M_249e00bed8e0",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_249e00bed8e0",
+    "target": "M_b0e93ac2f502",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_0cdb0307ec98",
+    "target": "M_63b536e42f51",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_63b536e42f51",
+    "target": "M_a0f9b0abf420",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_56df8676a936",
+    "target": "M_9a2752229427",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_9a2752229427",
+    "target": "M_b7bb4ac1d4d8",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_07cbda731e35",
+    "target": "M_3c7048b93a39",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3c7048b93a39",
+    "target": "M_928f1974b313",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_5fa9f0b8445f",
+    "target": "M_875c6daebb23",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_875c6daebb23",
+    "target": "M_ce6b01af786f",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_706fec268805",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c660c5aa9648",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_12261dd9f35a",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9b55fbbcdb03",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9fe41569f387",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5dfb009a4ff2",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0e495fef3a7a",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_00d151acfdd0",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_624c799b69b8",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6ecf0e3e7089",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_98bbfad11cc0",
+    "target": "fault_Bearing_BSF",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BSF 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_629912fb91fc",
+    "target": "fault_Bearing_BSF",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BSF 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7c0e504e07c0",
+    "target": "fault_Bearing_BSF",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BSF 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1d05c9cf8e0e",
+    "target": "fault_Bearing_BSF",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BSF 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_a09c2437066f",
+    "target": "fault_Bearing_BSF",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BSF 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1f05b29ad7c7",
+    "target": "fault_Bearing_contaminated",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_contaminated 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c8f359ff88ef",
+    "target": "fault_Bearing_contaminated",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_contaminated 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0674154d410a",
+    "target": "fault_Bearing_contaminated",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_contaminated 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_a75b021b117a",
+    "target": "fault_Bearing_contaminated",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_contaminated 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5541d7ca3a10",
+    "target": "fault_Bearing_contaminated",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_contaminated 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_cf7284681ff0",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_4021ea3f5643",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f376f2af9de3",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_18e459b59ffc",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1bf90b1f78f6",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_28d1213c3cf9",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3cc4f7b96404",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_576cd5baab01",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_2db2621ade0f",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_74b46409ef3f",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5dfb009a4ff2",
+    "target": "M_706fec268805",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_706fec268805",
+    "target": "M_94e26886dd49",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_0e495fef3a7a",
+    "target": "M_b020c1c892ba",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_b020c1c892ba",
+    "target": "M_c660c5aa9648",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_00d151acfdd0",
+    "target": "M_12261dd9f35a",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_12261dd9f35a",
+    "target": "M_5127e57fb8f9",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3afee854b8d1",
+    "target": "M_624c799b69b8",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_624c799b69b8",
+    "target": "M_9b55fbbcdb03",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6ecf0e3e7089",
+    "target": "M_9fe41569f387",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_9fe41569f387",
+    "target": "M_cea737746740",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_28d1213c3cf9",
+    "target": "M_cf7284681ff0",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3cc4f7b96404",
+    "target": "M_4021ea3f5643",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_576cd5baab01",
+    "target": "M_f376f2af9de3",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_18e459b59ffc",
+    "target": "M_2db2621ade0f",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_1bf90b1f78f6",
+    "target": "M_74b46409ef3f",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_a4cf5827cecc",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5b82e83f16b0",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_56bebdd4f431",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ad767ed4265e",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_46b118eb25df",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9e47f77f7e24",
+    "target": "fault_Broken_rotor_bar",
+    "relation": "表现为",
+    "description": "测量记录显示 Broken_rotor_bar 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_18227d18b0c8",
+    "target": "fault_Broken_rotor_bar",
+    "relation": "表现为",
+    "description": "测量记录显示 Broken_rotor_bar 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_292b113f7037",
+    "target": "fault_Broken_rotor_bar",
+    "relation": "表现为",
+    "description": "测量记录显示 Broken_rotor_bar 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6af3c495a629",
+    "target": "fault_Broken_rotor_bar",
+    "relation": "表现为",
+    "description": "测量记录显示 Broken_rotor_bar 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_537e9d65afe6",
+    "target": "fault_Broken_rotor_bar",
+    "relation": "表现为",
+    "description": "测量记录显示 Broken_rotor_bar 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5a69c3125927",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_516224532166",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0d14e8ad43cc",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_215fc483b8ee",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_64b67ac2d338",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5de43ebe27b3",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_fc99d53d866f",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f1a2c16991f2",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_75ed3adc045c",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_b8926a86b70b",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_21238123a0ea",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_4efe6aec1fb8",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f8b2d809f1cb",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0140a192b98e",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_be7f91fb9776",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_a7e726b6c12a",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3722666322d7",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0e1902f7ce2b",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_10f8c35caf57",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5c7a1eb99285",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_b757d95f3fc3",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_b4b3c583ef2a",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_68e972b49e66",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_28933d4dbce1",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_8fa73d573720",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_300c5590364d",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1d15d32a7f5e",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_8d926c0c592e",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3739c0aceb9a",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_32269e3cb3e2",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_4163311aa776",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1c5d218a31df",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6cf12c825d00",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_31d6a4f896c5",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_2a6a341613e8",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度3, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_743cb7aecada",
+    "target": "fault_Loose_foot_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot_motor 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c8dd6d2f30c8",
+    "target": "fault_Loose_foot_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot_motor 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_72e8ef6c94b0",
+    "target": "fault_Loose_foot_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot_motor 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_70e0bbaf8a69",
+    "target": "fault_Loose_foot_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot_motor 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_941efa2a24be",
+    "target": "fault_Loose_foot_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot_motor 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_28d1213c3cf9",
+    "target": "M_a4cf5827cecc",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_a4cf5827cecc",
+    "target": "M_cf7284681ff0",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_4021ea3f5643",
+    "target": "M_5b82e83f16b0",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_56bebdd4f431",
+    "target": "M_576cd5baab01",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_2db2621ade0f",
+    "target": "M_ad767ed4265e",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_1bf90b1f78f6",
+    "target": "M_46b118eb25df",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_46b118eb25df",
+    "target": "M_74b46409ef3f",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_21238123a0ea",
+    "target": "M_5a69c3125927",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_5a69c3125927",
+    "target": "M_5de43ebe27b3",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_5de43ebe27b3",
+    "target": "M_a7e726b6c12a",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3722666322d7",
+    "target": "M_4efe6aec1fb8",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_4efe6aec1fb8",
+    "target": "M_516224532166",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_516224532166",
+    "target": "M_fc99d53d866f",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_0d14e8ad43cc",
+    "target": "M_0e1902f7ce2b",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_0e1902f7ce2b",
+    "target": "M_f1a2c16991f2",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_f1a2c16991f2",
+    "target": "M_f8b2d809f1cb",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_0140a192b98e",
+    "target": "M_10f8c35caf57",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_10f8c35caf57",
+    "target": "M_215fc483b8ee",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_215fc483b8ee",
+    "target": "M_75ed3adc045c",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_5c7a1eb99285",
+    "target": "M_64b67ac2d338",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_64b67ac2d338",
+    "target": "M_b8926a86b70b",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_b8926a86b70b",
+    "target": "M_be7f91fb9776",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_300c5590364d",
+    "target": "M_4163311aa776",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_4163311aa776",
+    "target": "M_b757d95f3fc3",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_1c5d218a31df",
+    "target": "M_1d15d32a7f5e",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_1d15d32a7f5e",
+    "target": "M_b4b3c583ef2a",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_68e972b49e66",
+    "target": "M_6cf12c825d00",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6cf12c825d00",
+    "target": "M_8d926c0c592e",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_28933d4dbce1",
+    "target": "M_31d6a4f896c5",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_31d6a4f896c5",
+    "target": "M_3739c0aceb9a",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_2a6a341613e8",
+    "target": "M_32269e3cb3e2",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_32269e3cb3e2",
+    "target": "M_8fa73d573720",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_49c17dc54079",
+    "target": "fault_Loose_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_267c3502f658",
+    "target": "fault_Loose_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6a3143b500fb",
+    "target": "fault_Loose_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f8186f1a09d5",
+    "target": "fault_Loose_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_62725bee4d50",
+    "target": "fault_Loose_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_4074abed505e",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_39a87202469e",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3106e86fe16e",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_fea0ce736e4e",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6c6362a46df6",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ac3c3e3e868b",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_4b0a8b605069",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_71c030c01a21",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_007577c0a0ef",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_610b734eb066",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e24bd8d02b16",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7ee3ddeef7ae",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7b6652f16bc2",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_080e68eaa866",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ed9b97e8f2a9",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7cc79581c302",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_db358c1b25a3",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_cb88276e8d96",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_8354e83ca393",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_bba92a9369d7",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度1, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3b0024d365c0",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_8fe97fcc9d1b",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_65eb10a8c36d",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_eb2e4ae5f7b8",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_929a0bb66b6a",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度2, 100%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_dfaf4e66d673",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_43edc8913a4a",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_051faf2f9aa8",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9716ccc0124c",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_47561a037d78",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6dcc1abc6d4f",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_48bc8bf67686",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0bf433d69b8a",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d7f96a5b8213",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_b7963b39e503",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9f3dd8823e51",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_cd98ac86c6d8",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_de4ec8b707bb",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_8a57c71c3979",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_047d445ac3ae",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_8a2fce259eeb",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c7479eb86b25",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_eee76416cba8",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_cc12987eb149",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e1756964320a",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ae34c653f839",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_75e9a654d7ac",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1a2296ca06a2",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e27e3926fcf1",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1c860cad5050",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_b440df85480d",
+    "target": "fault_Bearing_BSF",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BSF 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_02edf3ac11e9",
+    "target": "fault_Bearing_BSF",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BSF 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ce66e695b0a0",
+    "target": "fault_Bearing_BSF",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BSF 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_a6b82fcf80ea",
+    "target": "fault_Bearing_BSF",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BSF 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5d5a95c5bbd0",
+    "target": "fault_Bearing_BSF",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BSF 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6bfc7e307d1b",
+    "target": "fault_Bearing_contaminated",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_contaminated 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6d930e76378e",
+    "target": "fault_Bearing_contaminated",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_contaminated 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d7a70267338f",
+    "target": "fault_Bearing_contaminated",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_contaminated 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_dbaf7510d5d8",
+    "target": "fault_Bearing_contaminated",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_contaminated 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_237066fb5ccc",
+    "target": "fault_Bearing_contaminated",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_contaminated 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_da641741676d",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e8669376e089",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f0e5b93b852d",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ea4c2420ce8b",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_24a7e729fc53",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_369f52c7ff85",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d171f9a78682",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_341116cfa5e5",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_b227b109fd7c",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ef65b6490001",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c1fda55249c4",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_90d83c95b279",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_eced17461faf",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ff062bc6c598",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_8ce5257fd19d",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e83540c51f15",
+    "target": "fault_Broken_rotor_bar",
+    "relation": "表现为",
+    "description": "测量记录显示 Broken_rotor_bar 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9cc6b0c39d20",
+    "target": "fault_Broken_rotor_bar",
+    "relation": "表现为",
+    "description": "测量记录显示 Broken_rotor_bar 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_bb306becc4a7",
+    "target": "fault_Broken_rotor_bar",
+    "relation": "表现为",
+    "description": "测量记录显示 Broken_rotor_bar 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_642ba83801ac",
+    "target": "fault_Broken_rotor_bar",
+    "relation": "表现为",
+    "description": "测量记录显示 Broken_rotor_bar 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d6341e643226",
+    "target": "fault_Broken_rotor_bar",
+    "relation": "表现为",
+    "description": "测量记录显示 Broken_rotor_bar 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d7c3e7da1934",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_68d0e7ae6bb5",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_547e8d0792dc",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_25db36e09656",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_378bf6cabd30",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7daab6a39208",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6f5b3527cbf5",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ab2526b0ecab",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e6abb632dfea",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_63d8e8d61963",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ee69c0471bb0",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f50467648da0",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_50595791eb9d",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7ca837ddf9d7",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ce5d24a65adf",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_a273158dc560",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e622926d5c8b",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5f529e0f4422",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5c1299186653",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_4b5c7867817f",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3a216eb847af",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_459e98a7f21c",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_4720ae5828bb",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_cdd1bb797165",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_cde9b20d4987",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_a0bd86bb4dbe",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1385d3b5df95",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_8c9c27572ee6",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9353fe53ff31",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_38740de2630c",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5b6caaa262e4",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c66974cf9910",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_682d7aeb83fb",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_18fdab12c6a2",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_b89fbf007562",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度3, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0d929fed3ce8",
+    "target": "fault_Loose_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f88a8abda4fa",
+    "target": "fault_Loose_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_775b27bc6414",
+    "target": "fault_Loose_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d4e166c98f96",
+    "target": "fault_Loose_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_a020a16a1a6d",
+    "target": "fault_Loose_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e0c4f47ae5d8",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c54c6af0196d",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e362dd126330",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_af6d06d12252",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_98611321ce4c",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_fe2afa1bf7b1",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_68c89ecbb33b",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f66b481cd734",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ce7dea828c46",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c9545272dab8",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0911313a59e8",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_037c9ca2516d",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e90b687cea2e",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_88aeb9557333",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d4fd93d98644",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_99acae15800e",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ebf28788d84a",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c211154ebc9d",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d69b3d5629e1",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_eea160d3fa99",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度1, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_909b42b05c20",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7a9cb6c8c63c",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_91489108ce99",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_04081765fdc0",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_62b2e2d268f8",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度2, 50%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_159d845f71ef",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f555fd87eb8c",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_359c73955fbb",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_fdf9a625a718",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_16ae8539ff93",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_8ecfc983cec7",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_33acf2e65432",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1f261a060eab",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_39ee2a075ea4",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f5d63d9f8ebe",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e3c5e0af7401",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_43cc54dfa5b0",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7f17b989a5f3",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_25227e04fd90",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_39b8f0d7ad69",
+    "target": "fault_Bearing_BPFI",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFI 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_18c9376e79b6",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3e50ac3c59ed",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1bf4c367086f",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_17de99275b3a",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d62242f0187a",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c242c49a0b10",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ee3afc3e055f",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7e69eac99916",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e307465121e7",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f866e13fccfb",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_34bbf07db322",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_53a0ae9748b0",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_4d1361d02795",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_171f8e3afb30",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ef5613a7ea26",
+    "target": "fault_Bearing_BPFO",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BPFO 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_488dad00c911",
+    "target": "fault_Bearing_BSF",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BSF 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0d4ec1362260",
+    "target": "fault_Bearing_BSF",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BSF 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_22bd64b343d6",
+    "target": "fault_Bearing_BSF",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BSF 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_4e86a8c72197",
+    "target": "fault_Bearing_BSF",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BSF 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_16e6e84b511c",
+    "target": "fault_Bearing_BSF",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_BSF 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_83f6040fae38",
+    "target": "fault_Bearing_contaminated",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_contaminated 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_50e90b7eeeae",
+    "target": "fault_Bearing_contaminated",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_contaminated 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9e82fd63db8f",
+    "target": "fault_Bearing_contaminated",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_contaminated 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_feb72f858fb0",
+    "target": "fault_Bearing_contaminated",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_contaminated 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_014f58516e63",
+    "target": "fault_Bearing_contaminated",
+    "relation": "表现为",
+    "description": "测量记录显示 Bearing_contaminated 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_febf93cfbe93",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_b78091316305",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7698cb755169",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_465d525b7650",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_91a79486b1da",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_800ce201f0e8",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5f7bad0eea7f",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_088a1cddfe6d",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6d7ffc0332ed",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1465e91c811e",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5b32fe03b9c5",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_2163362ec4d0",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_74b1e79ccb51",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3a51746fda67",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_dbae94274aab",
+    "target": "fault_Pump_bearing",
+    "relation": "表现为",
+    "description": "测量记录显示 Pump_bearing 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_318b84816b6d",
+    "target": "fault_Broken_rotor_bar",
+    "relation": "表现为",
+    "description": "测量记录显示 Broken_rotor_bar 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_23d7c1ca4e46",
+    "target": "fault_Broken_rotor_bar",
+    "relation": "表现为",
+    "description": "测量记录显示 Broken_rotor_bar 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_bcff349c6316",
+    "target": "fault_Broken_rotor_bar",
+    "relation": "表现为",
+    "description": "测量记录显示 Broken_rotor_bar 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d084d72371b2",
+    "target": "fault_Broken_rotor_bar",
+    "relation": "表现为",
+    "description": "测量记录显示 Broken_rotor_bar 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0d61eff5fe4a",
+    "target": "fault_Broken_rotor_bar",
+    "relation": "表现为",
+    "description": "测量记录显示 Broken_rotor_bar 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_18088a783a0e",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7c930d487ccd",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_84596efb01c5",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3191ce89f7c9",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_45e0b17fa21f",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c536891e9626",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f4e3a1c36d65",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_2c2db824e4a5",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5932ab2d632c",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_bc5537459f5c",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_24862f21651e",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_76c272968eea",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_a5c45e59165d",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_b4b3df8ff7b7",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_caeff7af82d3",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_211634303568",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1a6232cebd2d",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_cb01ed7ce263",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f348358fc973",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_10835b9af6c1",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0faac5ea39e7",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d7c5182c4882",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_2eed1c9c8645",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3197cbd7b202",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_02e9780b2d92",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6517d06967da",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_641f72910b15",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_42dc6d3f4248",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6b2131275808",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_bcecf2913d6c",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f7daddbe815c",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6b8e054b9682",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_8d6513e9c20f",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_4b18f02fd0a8",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3ea5ecd60cf1",
+    "target": "fault_Impeller_fault",
+    "relation": "表现为",
+    "description": "测量记录显示 Impeller_fault 特征 (严重度3, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_05e062eee49e",
+    "target": "fault_Loose_foot_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot_motor 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7bfc2f070bc5",
+    "target": "fault_Loose_foot_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot_motor 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_bf4c618c75f7",
+    "target": "fault_Loose_foot_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot_motor 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ecfd31ea20b5",
+    "target": "fault_Loose_foot_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot_motor 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f8524b194829",
+    "target": "fault_Loose_foot_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot_motor 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_4da4ab9c9c2f",
+    "target": "fault_Loose_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6d54333ffe73",
+    "target": "fault_Loose_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_207fc52092f8",
+    "target": "fault_Loose_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_591a3d032185",
+    "target": "fault_Loose_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_8ee64df943a2",
+    "target": "fault_Loose_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Loose_foot 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_18f02061d3c3",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6ddb35ef36df",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_459b9504e04f",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1989456fec61",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_549beb0c54dc",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_a6c1e31b9baf",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_b50c27d61b88",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e5106846451f",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6613282cfa43",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_658b93a5e437",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6233cf30b7dd",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0a1759241566",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_8fec5132e046",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_07eb73272f3d",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_eb0dbc14fee1",
+    "target": "fault_Soft_foot",
+    "relation": "表现为",
+    "description": "测量记录显示 Soft_foot 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_a1cb720463fe",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_2c67a49246d9",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_8b332f29ceab",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7a294cb119c4",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_74f2dab9ba8a",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度1, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3e98cf822d44",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5124c1bb9cd0",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e78ddd676b62",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_791017c5dabf",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e3108a10c5ff",
+    "target": "fault_Stator_short",
+    "relation": "表现为",
+    "description": "测量记录显示 Stator_short 特征 (严重度2, 75%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_97ec46e9ccc8",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1097ad40a9a0",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c6f0cb31dee2",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3b92d1061846",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_62a8ad3c6282",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_526369ed2202",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_57361b997b7d",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_b5a7d4e0ebff",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ff1eb0bd6d52",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_a3ba9f7336a0",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_278045c4e6fa",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ec2409d40df6",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c8ebd1bb99b7",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1912f7f30b0d",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_434729f26a96",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d4ace8f1e1fb",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3c359eb5c170",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_8596cceaff68",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_30afb81adfc5",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c76fe2773fd9",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0f976faa067a",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度5, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_cabc0435e4fe",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度5, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_eeaa0069d892",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度5, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0477f808935e",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度5, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_2ce7dcf89792",
+    "target": "fault_Angular_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Angular_misalignment 特征 (严重度5, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_09db6f23f52c",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_dd04761ad9dd",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_29d50f5eb4ad",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_2c54553242e9",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f71566f500f2",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_01a191d4c8ca",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3493965a79be",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_34cf49c1f41f",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_91ffd95a15bd",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_2a48ba9a36eb",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_70b7615ed226",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d577ec90009d",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_45c45debb2de",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_025e592843b4",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e82cdc9792ad",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_dbcf87b7eff7",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_682c24a97125",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_cedb60ae498e",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0a4f7e3ec5d0",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_96c4a422be39",
+    "target": "fault_Combined_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Combined_misalignment 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9d23a8bfbf46",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_34b0dd7bd3b9",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f22022045372",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_4e30f7e07b56",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_447647c7fc23",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c9c500fad415",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e8fbade03254",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d2f431ea806e",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_01fb6f5f4f65",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_971e4865b183",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e530f5b002bc",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_8117c6157f9a",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c0120639272f",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_26d1e9c46cd0",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_66afff03de6a",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e2744f96aef3",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ed184c7efadc",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_20d672ff2034",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7b3c0bdf791a",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_bf2201c08717",
+    "target": "fault_Parallel_misalignment",
+    "relation": "表现为",
+    "description": "测量记录显示 Parallel_misalignment 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_cfb56cf7560d",
+    "target": "fault_Bent_shaft",
+    "relation": "表现为",
+    "description": "测量记录显示 Bent_shaft 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e0b1c5d35641",
+    "target": "fault_Bent_shaft",
+    "relation": "表现为",
+    "description": "测量记录显示 Bent_shaft 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f9cd8212c0b9",
+    "target": "fault_Bent_shaft",
+    "relation": "表现为",
+    "description": "测量记录显示 Bent_shaft 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_2a6ac6cd8205",
+    "target": "fault_Bent_shaft",
+    "relation": "表现为",
+    "description": "测量记录显示 Bent_shaft 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_2eed22413a0e",
+    "target": "fault_Bent_shaft",
+    "relation": "表现为",
+    "description": "测量记录显示 Bent_shaft 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_da7e09550605",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_b8d1f29d5acf",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_80725d8c1e61",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d0c709466825",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_a5c136a2d625",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7fdcb770cc4e",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_aabf3d81c68c",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7dec33105933",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9f9c9005e4ce",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e0dbeba6f569",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_2c8477ed3cc2",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c0f881e46741",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6fdd551d68e7",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_a17f2ddbe451",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_86ad23dc3338",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_b811c9df2aa6",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_a15517b12247",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1119b2869e51",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_4c5fd48d4358",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_94e9cee0687c",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ec5886d7cca3",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度5, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5b24eeea7c21",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度5, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5b48ce00a34f",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度5, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_88d2a788794d",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度5, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_de35d27c51b5",
+    "target": "fault_Cavitation_discharge",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_discharge 特征 (严重度5, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_68976713f45f",
+    "target": "fault_Cavitation_suction",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_suction 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_758492832cc8",
+    "target": "fault_Cavitation_suction",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_suction 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5dfe22708b3d",
+    "target": "fault_Cavitation_suction",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_suction 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_156435f87438",
+    "target": "fault_Cavitation_suction",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_suction 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0b3b38b0dca4",
+    "target": "fault_Cavitation_suction",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_suction 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_4703f3595194",
+    "target": "fault_Cavitation_suction",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_suction 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_646bea566483",
+    "target": "fault_Cavitation_suction",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_suction 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_04cf4ed5a49e",
+    "target": "fault_Cavitation_suction",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_suction 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_283d095c2ed8",
+    "target": "fault_Cavitation_suction",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_suction 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e7ec1413db26",
+    "target": "fault_Cavitation_suction",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_suction 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_a73595037c80",
+    "target": "fault_Cavitation_suction",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_suction 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6c3da77997a5",
+    "target": "fault_Cavitation_suction",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_suction 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ae1df21031cf",
+    "target": "fault_Cavitation_suction",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_suction 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_2d7b20872441",
+    "target": "fault_Cavitation_suction",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_suction 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7f443ec7f42f",
+    "target": "fault_Cavitation_suction",
+    "relation": "表现为",
+    "description": "测量记录显示 Cavitation_suction 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_db60141066a8",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5d7898863eb8",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1bceb6842411",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_fd88e1beedba",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_94d28911cc53",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6653b2ba2ab9",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e7f37e6875da",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_8cafabc775bb",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3893a04c9c31",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5c39006ab913",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_4619e9019e9b",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_906d92bee025",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f2a8f574ae93",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_554333702f19",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6f4a8f68b2e3",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_946a0402e484",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7ac243c7fd88",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_82c8791d30cf",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_089d31a8d3fd",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6fbb216e5c21",
+    "target": "fault_Coupling_damage",
+    "relation": "表现为",
+    "description": "测量记录显示 Coupling_damage 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e789ccbd354a",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_a9a0a01cf4f4",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3e14a39bdad8",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_1d1c7fcedd10",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_b59920ee4b93",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d411ad6f9329",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d83577fa67c9",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d60e38ee6c0d",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_fecbdf97c023",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0459ab92db68",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e897bf22ffeb",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_5c57642c6853",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d6c31bf14e07",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_02056988f963",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_639477970148",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_aaf258c41ebd",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6ca7245b55bf",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_89dba85cf99c",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6c2e17d7ea20",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d46202579fe0",
+    "target": "fault_Healthy",
+    "relation": "表现为",
+    "description": "测量记录显示 Healthy 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_599ca0334a84",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7ffcdb4677ad",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_c7feeff3459f",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_4ffcc4673127",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_69c1853adc3b",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_35dc346a4430",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_085d2b144e8b",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_70c63cb317c5",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_51ce0f9efc50",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6eaf78131a15",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6028880a79a5",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ae49d20b99b7",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7fe3b8963b8c",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_3af1f821af62",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_28d007216275",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9ec74cf4251f",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7ccdb7dcf8f0",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_19be8b598d04",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f6a0caeae0c9",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_7941559031b1",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度4, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9b20fed57621",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度5, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_027b1b5053dd",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度5, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_bc57832f727a",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度5, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_2e694d8ef330",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度5, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_80b91b08ad31",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度5, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_21a0b1df5760",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度6, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d46d17d45cec",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度6, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_e8e817ed1b93",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度6, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_343d603a50b0",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度6, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_0add2629236a",
+    "target": "fault_Unbalance_motor",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_motor 特征 (严重度6, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_45bf1580e132",
+    "target": "fault_Unbalance_pump",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_pump 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_ce039e4b3f63",
+    "target": "fault_Unbalance_pump",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_pump 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9194222c9516",
+    "target": "fault_Unbalance_pump",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_pump 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_35b0560a1a98",
+    "target": "fault_Unbalance_pump",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_pump 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9a5566137e6c",
+    "target": "fault_Unbalance_pump",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_pump 特征 (严重度1, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_8799ba3d8959",
+    "target": "fault_Unbalance_pump",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_pump 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9e1d0e9a0bcb",
+    "target": "fault_Unbalance_pump",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_pump 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_d15819fcc96d",
+    "target": "fault_Unbalance_pump",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_pump 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9e37e2849329",
+    "target": "fault_Unbalance_pump",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_pump 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_9fa1c81d6590",
+    "target": "fault_Unbalance_pump",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_pump 特征 (严重度2, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_03a370a1fcba",
+    "target": "fault_Unbalance_pump",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_pump 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_6bc0f16a4830",
+    "target": "fault_Unbalance_pump",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_pump 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_b83e1a4a8347",
+    "target": "fault_Unbalance_pump",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_pump 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_16cfab0c6204",
+    "target": "fault_Unbalance_pump",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_pump 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_f0af5fe68522",
+    "target": "fault_Unbalance_pump",
+    "relation": "表现为",
+    "description": "测量记录显示 Unbalance_pump 特征 (严重度3, 70%转速)",
+    "weight": 1.0
+  },
+  {
+    "source": "M_21238123a0ea",
+    "target": "M_4074abed505e",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_4074abed505e",
+    "target": "M_5a69c3125927",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3722666322d7",
+    "target": "M_39a87202469e",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_39a87202469e",
+    "target": "M_4efe6aec1fb8",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_0e1902f7ce2b",
+    "target": "M_3106e86fe16e",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3106e86fe16e",
+    "target": "M_f1a2c16991f2",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_75ed3adc045c",
+    "target": "M_fea0ce736e4e",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_64b67ac2d338",
+    "target": "M_6c6362a46df6",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6c6362a46df6",
+    "target": "M_b8926a86b70b",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_ac3c3e3e868b",
+    "target": "M_e24bd8d02b16",
+    "relation": "后续测量",
+    "description": "时序: Soft_foot@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_4b0a8b605069",
+    "target": "M_7ee3ddeef7ae",
+    "relation": "后续测量",
+    "description": "时序: Soft_foot@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_71c030c01a21",
+    "target": "M_7b6652f16bc2",
+    "relation": "后续测量",
+    "description": "时序: Soft_foot@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_007577c0a0ef",
+    "target": "M_080e68eaa866",
+    "relation": "后续测量",
+    "description": "时序: Soft_foot@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_610b734eb066",
+    "target": "M_ed9b97e8f2a9",
+    "relation": "后续测量",
+    "description": "时序: Soft_foot@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3b0024d365c0",
+    "target": "M_7cc79581c302",
+    "relation": "后续测量",
+    "description": "时序: Stator_short@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_8fe97fcc9d1b",
+    "target": "M_db358c1b25a3",
+    "relation": "后续测量",
+    "description": "时序: Stator_short@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_65eb10a8c36d",
+    "target": "M_cb88276e8d96",
+    "relation": "后续测量",
+    "description": "时序: Stator_short@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_8354e83ca393",
+    "target": "M_eb2e4ae5f7b8",
+    "relation": "后续测量",
+    "description": "时序: Stator_short@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_929a0bb66b6a",
+    "target": "M_bba92a9369d7",
+    "relation": "后续测量",
+    "description": "时序: Stator_short@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6dcc1abc6d4f",
+    "target": "M_dfaf4e66d673",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_43edc8913a4a",
+    "target": "M_48bc8bf67686",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_051faf2f9aa8",
+    "target": "M_0bf433d69b8a",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_9716ccc0124c",
+    "target": "M_d7f96a5b8213",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_47561a037d78",
+    "target": "M_b7963b39e503",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_8a2fce259eeb",
+    "target": "M_9f3dd8823e51",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_9f3dd8823e51",
+    "target": "M_ae34c653f839",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_75e9a654d7ac",
+    "target": "M_c7479eb86b25",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_c7479eb86b25",
+    "target": "M_cd98ac86c6d8",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_1a2296ca06a2",
+    "target": "M_de4ec8b707bb",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_de4ec8b707bb",
+    "target": "M_eee76416cba8",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_8a57c71c3979",
+    "target": "M_cc12987eb149",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_cc12987eb149",
+    "target": "M_e27e3926fcf1",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_047d445ac3ae",
+    "target": "M_1c860cad5050",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_1c860cad5050",
+    "target": "M_e1756964320a",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_369f52c7ff85",
+    "target": "M_c1fda55249c4",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_c1fda55249c4",
+    "target": "M_da641741676d",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_90d83c95b279",
+    "target": "M_d171f9a78682",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_d171f9a78682",
+    "target": "M_e8669376e089",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_341116cfa5e5",
+    "target": "M_eced17461faf",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_eced17461faf",
+    "target": "M_f0e5b93b852d",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_b227b109fd7c",
+    "target": "M_ea4c2420ce8b",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_ea4c2420ce8b",
+    "target": "M_ff062bc6c598",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_24a7e729fc53",
+    "target": "M_8ce5257fd19d",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_8ce5257fd19d",
+    "target": "M_ef65b6490001",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_7daab6a39208",
+    "target": "M_a273158dc560",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_a273158dc560",
+    "target": "M_d7c3e7da1934",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_d7c3e7da1934",
+    "target": "M_e0c4f47ae5d8",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_e0c4f47ae5d8",
+    "target": "M_ee69c0471bb0",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_68d0e7ae6bb5",
+    "target": "M_6f5b3527cbf5",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6f5b3527cbf5",
+    "target": "M_c54c6af0196d",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_c54c6af0196d",
+    "target": "M_e622926d5c8b",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_e622926d5c8b",
+    "target": "M_f50467648da0",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_50595791eb9d",
+    "target": "M_547e8d0792dc",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_547e8d0792dc",
+    "target": "M_5f529e0f4422",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_5f529e0f4422",
+    "target": "M_ab2526b0ecab",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_ab2526b0ecab",
+    "target": "M_e362dd126330",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_25db36e09656",
+    "target": "M_5c1299186653",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_5c1299186653",
+    "target": "M_7ca837ddf9d7",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_7ca837ddf9d7",
+    "target": "M_af6d06d12252",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_af6d06d12252",
+    "target": "M_e6abb632dfea",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_378bf6cabd30",
+    "target": "M_4b5c7867817f",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_4b5c7867817f",
+    "target": "M_63d8e8d61963",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_63d8e8d61963",
+    "target": "M_98611321ce4c",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_98611321ce4c",
+    "target": "M_ce5d24a65adf",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3a216eb847af",
+    "target": "M_5b6caaa262e4",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_5b6caaa262e4",
+    "target": "M_a0bd86bb4dbe",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_1385d3b5df95",
+    "target": "M_459e98a7f21c",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_459e98a7f21c",
+    "target": "M_c66974cf9910",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_4720ae5828bb",
+    "target": "M_682d7aeb83fb",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_682d7aeb83fb",
+    "target": "M_8c9c27572ee6",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_18fdab12c6a2",
+    "target": "M_9353fe53ff31",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_9353fe53ff31",
+    "target": "M_cdd1bb797165",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_38740de2630c",
+    "target": "M_b89fbf007562",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_b89fbf007562",
+    "target": "M_cde9b20d4987",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_0911313a59e8",
+    "target": "M_fe2afa1bf7b1",
+    "relation": "后续测量",
+    "description": "时序: Soft_foot@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_037c9ca2516d",
+    "target": "M_68c89ecbb33b",
+    "relation": "后续测量",
+    "description": "时序: Soft_foot@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_e90b687cea2e",
+    "target": "M_f66b481cd734",
+    "relation": "后续测量",
+    "description": "时序: Soft_foot@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_88aeb9557333",
+    "target": "M_ce7dea828c46",
+    "relation": "后续测量",
+    "description": "时序: Soft_foot@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_c9545272dab8",
+    "target": "M_d4fd93d98644",
+    "relation": "后续测量",
+    "description": "时序: Soft_foot@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_909b42b05c20",
+    "target": "M_99acae15800e",
+    "relation": "后续测量",
+    "description": "时序: Stator_short@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_7a9cb6c8c63c",
+    "target": "M_ebf28788d84a",
+    "relation": "后续测量",
+    "description": "时序: Stator_short@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_91489108ce99",
+    "target": "M_c211154ebc9d",
+    "relation": "后续测量",
+    "description": "时序: Stator_short@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_04081765fdc0",
+    "target": "M_d69b3d5629e1",
+    "relation": "后续测量",
+    "description": "时序: Stator_short@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_62b2e2d268f8",
+    "target": "M_eea160d3fa99",
+    "relation": "后续测量",
+    "description": "时序: Stator_short@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_159d845f71ef",
+    "target": "M_8ecfc983cec7",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_8ecfc983cec7",
+    "target": "M_e3c5e0af7401",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_33acf2e65432",
+    "target": "M_43cc54dfa5b0",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_43cc54dfa5b0",
+    "target": "M_f555fd87eb8c",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_1f261a060eab",
+    "target": "M_359c73955fbb",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_359c73955fbb",
+    "target": "M_7f17b989a5f3",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_25227e04fd90",
+    "target": "M_39ee2a075ea4",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_39ee2a075ea4",
+    "target": "M_fdf9a625a718",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_16ae8539ff93",
+    "target": "M_39b8f0d7ad69",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_39b8f0d7ad69",
+    "target": "M_f5d63d9f8ebe",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFI@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_18c9376e79b6",
+    "target": "M_34bbf07db322",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_34bbf07db322",
+    "target": "M_c242c49a0b10",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3e50ac3c59ed",
+    "target": "M_53a0ae9748b0",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_53a0ae9748b0",
+    "target": "M_ee3afc3e055f",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_1bf4c367086f",
+    "target": "M_4d1361d02795",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_4d1361d02795",
+    "target": "M_7e69eac99916",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_171f8e3afb30",
+    "target": "M_17de99275b3a",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_17de99275b3a",
+    "target": "M_e307465121e7",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_d62242f0187a",
+    "target": "M_ef5613a7ea26",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_ef5613a7ea26",
+    "target": "M_f866e13fccfb",
+    "relation": "后续测量",
+    "description": "时序: Bearing_BPFO@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_5b32fe03b9c5",
+    "target": "M_800ce201f0e8",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_800ce201f0e8",
+    "target": "M_febf93cfbe93",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_2163362ec4d0",
+    "target": "M_5f7bad0eea7f",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_5f7bad0eea7f",
+    "target": "M_b78091316305",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_088a1cddfe6d",
+    "target": "M_74b1e79ccb51",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_74b1e79ccb51",
+    "target": "M_7698cb755169",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3a51746fda67",
+    "target": "M_465d525b7650",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_465d525b7650",
+    "target": "M_6d7ffc0332ed",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_1465e91c811e",
+    "target": "M_91a79486b1da",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_91a79486b1da",
+    "target": "M_dbae94274aab",
+    "relation": "后续测量",
+    "description": "时序: Pump_bearing@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_18088a783a0e",
+    "target": "M_18f02061d3c3",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_18f02061d3c3",
+    "target": "M_211634303568",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_211634303568",
+    "target": "M_24862f21651e",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_24862f21651e",
+    "target": "M_c536891e9626",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_1a6232cebd2d",
+    "target": "M_6ddb35ef36df",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6ddb35ef36df",
+    "target": "M_76c272968eea",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_76c272968eea",
+    "target": "M_7c930d487ccd",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_7c930d487ccd",
+    "target": "M_f4e3a1c36d65",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_2c2db824e4a5",
+    "target": "M_459b9504e04f",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_459b9504e04f",
+    "target": "M_84596efb01c5",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_84596efb01c5",
+    "target": "M_a5c45e59165d",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_a5c45e59165d",
+    "target": "M_cb01ed7ce263",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_1989456fec61",
+    "target": "M_3191ce89f7c9",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3191ce89f7c9",
+    "target": "M_5932ab2d632c",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_5932ab2d632c",
+    "target": "M_b4b3df8ff7b7",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_b4b3df8ff7b7",
+    "target": "M_f348358fc973",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_10835b9af6c1",
+    "target": "M_45e0b17fa21f",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_45e0b17fa21f",
+    "target": "M_549beb0c54dc",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_549beb0c54dc",
+    "target": "M_bc5537459f5c",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_bc5537459f5c",
+    "target": "M_caeff7af82d3",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_0faac5ea39e7",
+    "target": "M_6517d06967da",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6517d06967da",
+    "target": "M_f7daddbe815c",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_641f72910b15",
+    "target": "M_6b8e054b9682",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6b8e054b9682",
+    "target": "M_d7c5182c4882",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_2eed1c9c8645",
+    "target": "M_42dc6d3f4248",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_42dc6d3f4248",
+    "target": "M_8d6513e9c20f",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3197cbd7b202",
+    "target": "M_4b18f02fd0a8",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_4b18f02fd0a8",
+    "target": "M_6b2131275808",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_02e9780b2d92",
+    "target": "M_3ea5ecd60cf1",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3ea5ecd60cf1",
+    "target": "M_bcecf2913d6c",
+    "relation": "后续测量",
+    "description": "时序: Impeller_fault@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6233cf30b7dd",
+    "target": "M_a6c1e31b9baf",
+    "relation": "后续测量",
+    "description": "时序: Soft_foot@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_0a1759241566",
+    "target": "M_b50c27d61b88",
+    "relation": "后续测量",
+    "description": "时序: Soft_foot@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_8fec5132e046",
+    "target": "M_e5106846451f",
+    "relation": "后续测量",
+    "description": "时序: Soft_foot@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_07eb73272f3d",
+    "target": "M_6613282cfa43",
+    "relation": "后续测量",
+    "description": "时序: Soft_foot@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_658b93a5e437",
+    "target": "M_eb0dbc14fee1",
+    "relation": "后续测量",
+    "description": "时序: Soft_foot@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3e98cf822d44",
+    "target": "M_a1cb720463fe",
+    "relation": "后续测量",
+    "description": "时序: Stator_short@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_2c67a49246d9",
+    "target": "M_5124c1bb9cd0",
+    "relation": "后续测量",
+    "description": "时序: Stator_short@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_8b332f29ceab",
+    "target": "M_e78ddd676b62",
+    "relation": "后续测量",
+    "description": "时序: Stator_short@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_791017c5dabf",
+    "target": "M_7a294cb119c4",
+    "relation": "后续测量",
+    "description": "时序: Stator_short@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_74f2dab9ba8a",
+    "target": "M_e3108a10c5ff",
+    "relation": "后续测量",
+    "description": "时序: Stator_short@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_0f976faa067a",
+    "target": "M_278045c4e6fa",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_278045c4e6fa",
+    "target": "M_526369ed2202",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_526369ed2202",
+    "target": "M_97ec46e9ccc8",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_97ec46e9ccc8",
+    "target": "M_d4ace8f1e1fb",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_1097ad40a9a0",
+    "target": "M_3c359eb5c170",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3c359eb5c170",
+    "target": "M_57361b997b7d",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_57361b997b7d",
+    "target": "M_cabc0435e4fe",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_cabc0435e4fe",
+    "target": "M_ec2409d40df6",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_8596cceaff68",
+    "target": "M_b5a7d4e0ebff",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_b5a7d4e0ebff",
+    "target": "M_c6f0cb31dee2",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_c6f0cb31dee2",
+    "target": "M_c8ebd1bb99b7",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_c8ebd1bb99b7",
+    "target": "M_eeaa0069d892",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_0477f808935e",
+    "target": "M_1912f7f30b0d",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_1912f7f30b0d",
+    "target": "M_30afb81adfc5",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_30afb81adfc5",
+    "target": "M_3b92d1061846",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3b92d1061846",
+    "target": "M_ff1eb0bd6d52",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_2ce7dcf89792",
+    "target": "M_434729f26a96",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_434729f26a96",
+    "target": "M_62a8ad3c6282",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_62a8ad3c6282",
+    "target": "M_a3ba9f7336a0",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_a3ba9f7336a0",
+    "target": "M_c76fe2773fd9",
+    "relation": "后续测量",
+    "description": "时序: Angular_misalignment@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_01a191d4c8ca",
+    "target": "M_09db6f23f52c",
+    "relation": "后续测量",
+    "description": "时序: Combined_misalignment@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_09db6f23f52c",
+    "target": "M_70b7615ed226",
+    "relation": "后续测量",
+    "description": "时序: Combined_misalignment@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_70b7615ed226",
+    "target": "M_dbcf87b7eff7",
+    "relation": "后续测量",
+    "description": "时序: Combined_misalignment@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3493965a79be",
+    "target": "M_682c24a97125",
+    "relation": "后续测量",
+    "description": "时序: Combined_misalignment@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_682c24a97125",
+    "target": "M_d577ec90009d",
+    "relation": "后续测量",
+    "description": "时序: Combined_misalignment@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_d577ec90009d",
+    "target": "M_dd04761ad9dd",
+    "relation": "后续测量",
+    "description": "时序: Combined_misalignment@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_29d50f5eb4ad",
+    "target": "M_34cf49c1f41f",
+    "relation": "后续测量",
+    "description": "时序: Combined_misalignment@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_34cf49c1f41f",
+    "target": "M_45c45debb2de",
+    "relation": "后续测量",
+    "description": "时序: Combined_misalignment@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_45c45debb2de",
+    "target": "M_cedb60ae498e",
+    "relation": "后续测量",
+    "description": "时序: Combined_misalignment@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_025e592843b4",
+    "target": "M_0a4f7e3ec5d0",
+    "relation": "后续测量",
+    "description": "时序: Combined_misalignment@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_0a4f7e3ec5d0",
+    "target": "M_2c54553242e9",
+    "relation": "后续测量",
+    "description": "时序: Combined_misalignment@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_2c54553242e9",
+    "target": "M_91ffd95a15bd",
+    "relation": "后续测量",
+    "description": "时序: Combined_misalignment@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_2a48ba9a36eb",
+    "target": "M_96c4a422be39",
+    "relation": "后续测量",
+    "description": "时序: Combined_misalignment@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_96c4a422be39",
+    "target": "M_e82cdc9792ad",
+    "relation": "后续测量",
+    "description": "时序: Combined_misalignment@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_e82cdc9792ad",
+    "target": "M_f71566f500f2",
+    "relation": "后续测量",
+    "description": "时序: Combined_misalignment@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_9d23a8bfbf46",
+    "target": "M_c9c500fad415",
+    "relation": "后续测量",
+    "description": "时序: Parallel_misalignment@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_c9c500fad415",
+    "target": "M_e2744f96aef3",
+    "relation": "后续测量",
+    "description": "时序: Parallel_misalignment@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_e2744f96aef3",
+    "target": "M_e530f5b002bc",
+    "relation": "后续测量",
+    "description": "时序: Parallel_misalignment@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_34b0dd7bd3b9",
+    "target": "M_8117c6157f9a",
+    "relation": "后续测量",
+    "description": "时序: Parallel_misalignment@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_8117c6157f9a",
+    "target": "M_e8fbade03254",
+    "relation": "后续测量",
+    "description": "时序: Parallel_misalignment@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_e8fbade03254",
+    "target": "M_ed184c7efadc",
+    "relation": "后续测量",
+    "description": "时序: Parallel_misalignment@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_20d672ff2034",
+    "target": "M_c0120639272f",
+    "relation": "后续测量",
+    "description": "时序: Parallel_misalignment@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_c0120639272f",
+    "target": "M_d2f431ea806e",
+    "relation": "后续测量",
+    "description": "时序: Parallel_misalignment@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_d2f431ea806e",
+    "target": "M_f22022045372",
+    "relation": "后续测量",
+    "description": "时序: Parallel_misalignment@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_01fb6f5f4f65",
+    "target": "M_26d1e9c46cd0",
+    "relation": "后续测量",
+    "description": "时序: Parallel_misalignment@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_26d1e9c46cd0",
+    "target": "M_4e30f7e07b56",
+    "relation": "后续测量",
+    "description": "时序: Parallel_misalignment@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_4e30f7e07b56",
+    "target": "M_7b3c0bdf791a",
+    "relation": "后续测量",
+    "description": "时序: Parallel_misalignment@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_447647c7fc23",
+    "target": "M_66afff03de6a",
+    "relation": "后续测量",
+    "description": "时序: Parallel_misalignment@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_66afff03de6a",
+    "target": "M_971e4865b183",
+    "relation": "后续测量",
+    "description": "时序: Parallel_misalignment@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_971e4865b183",
+    "target": "M_bf2201c08717",
+    "relation": "后续测量",
+    "description": "时序: Parallel_misalignment@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_2c8477ed3cc2",
+    "target": "M_7fdcb770cc4e",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_7fdcb770cc4e",
+    "target": "M_b811c9df2aa6",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_b811c9df2aa6",
+    "target": "M_da7e09550605",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_da7e09550605",
+    "target": "M_ec5886d7cca3",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_5b24eeea7c21",
+    "target": "M_a15517b12247",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_a15517b12247",
+    "target": "M_aabf3d81c68c",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_aabf3d81c68c",
+    "target": "M_b8d1f29d5acf",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_b8d1f29d5acf",
+    "target": "M_c0f881e46741",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_1119b2869e51",
+    "target": "M_5b48ce00a34f",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_5b48ce00a34f",
+    "target": "M_6fdd551d68e7",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6fdd551d68e7",
+    "target": "M_7dec33105933",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_7dec33105933",
+    "target": "M_80725d8c1e61",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_4c5fd48d4358",
+    "target": "M_88d2a788794d",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_88d2a788794d",
+    "target": "M_9f9c9005e4ce",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_9f9c9005e4ce",
+    "target": "M_a17f2ddbe451",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_a17f2ddbe451",
+    "target": "M_d0c709466825",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_86ad23dc3338",
+    "target": "M_94e9cee0687c",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_94e9cee0687c",
+    "target": "M_a5c136a2d625",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_a5c136a2d625",
+    "target": "M_de35d27c51b5",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_de35d27c51b5",
+    "target": "M_e0dbeba6f569",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_discharge@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_4703f3595194",
+    "target": "M_68976713f45f",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_suction@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_68976713f45f",
+    "target": "M_a73595037c80",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_suction@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_646bea566483",
+    "target": "M_6c3da77997a5",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_suction@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6c3da77997a5",
+    "target": "M_758492832cc8",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_suction@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_04cf4ed5a49e",
+    "target": "M_5dfe22708b3d",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_suction@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_5dfe22708b3d",
+    "target": "M_ae1df21031cf",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_suction@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_156435f87438",
+    "target": "M_283d095c2ed8",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_suction@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_283d095c2ed8",
+    "target": "M_2d7b20872441",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_suction@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_0b3b38b0dca4",
+    "target": "M_7f443ec7f42f",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_suction@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_7f443ec7f42f",
+    "target": "M_e7ec1413db26",
+    "relation": "后续测量",
+    "description": "时序: Cavitation_suction@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_4619e9019e9b",
+    "target": "M_6653b2ba2ab9",
+    "relation": "后续测量",
+    "description": "时序: Coupling_damage@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6653b2ba2ab9",
+    "target": "M_946a0402e484",
+    "relation": "后续测量",
+    "description": "时序: Coupling_damage@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_946a0402e484",
+    "target": "M_db60141066a8",
+    "relation": "后续测量",
+    "description": "时序: Coupling_damage@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_5d7898863eb8",
+    "target": "M_7ac243c7fd88",
+    "relation": "后续测量",
+    "description": "时序: Coupling_damage@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_7ac243c7fd88",
+    "target": "M_906d92bee025",
+    "relation": "后续测量",
+    "description": "时序: Coupling_damage@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_906d92bee025",
+    "target": "M_e7f37e6875da",
+    "relation": "后续测量",
+    "description": "时序: Coupling_damage@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_1bceb6842411",
+    "target": "M_82c8791d30cf",
+    "relation": "后续测量",
+    "description": "时序: Coupling_damage@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_82c8791d30cf",
+    "target": "M_8cafabc775bb",
+    "relation": "后续测量",
+    "description": "时序: Coupling_damage@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_8cafabc775bb",
+    "target": "M_f2a8f574ae93",
+    "relation": "后续测量",
+    "description": "时序: Coupling_damage@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_089d31a8d3fd",
+    "target": "M_3893a04c9c31",
+    "relation": "后续测量",
+    "description": "时序: Coupling_damage@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3893a04c9c31",
+    "target": "M_554333702f19",
+    "relation": "后续测量",
+    "description": "时序: Coupling_damage@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_554333702f19",
+    "target": "M_fd88e1beedba",
+    "relation": "后续测量",
+    "description": "时序: Coupling_damage@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_5c39006ab913",
+    "target": "M_6f4a8f68b2e3",
+    "relation": "后续测量",
+    "description": "时序: Coupling_damage@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6f4a8f68b2e3",
+    "target": "M_6fbb216e5c21",
+    "relation": "后续测量",
+    "description": "时序: Coupling_damage@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6fbb216e5c21",
+    "target": "M_94d28911cc53",
+    "relation": "后续测量",
+    "description": "时序: Coupling_damage@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_aaf258c41ebd",
+    "target": "M_d411ad6f9329",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_d411ad6f9329",
+    "target": "M_e789ccbd354a",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_e789ccbd354a",
+    "target": "M_e897bf22ffeb",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_5c57642c6853",
+    "target": "M_6ca7245b55bf",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6ca7245b55bf",
+    "target": "M_a9a0a01cf4f4",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_a9a0a01cf4f4",
+    "target": "M_d83577fa67c9",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3e14a39bdad8",
+    "target": "M_89dba85cf99c",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_89dba85cf99c",
+    "target": "M_d60e38ee6c0d",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_d60e38ee6c0d",
+    "target": "M_d6c31bf14e07",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_02056988f963",
+    "target": "M_1d1c7fcedd10",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_1d1c7fcedd10",
+    "target": "M_6c2e17d7ea20",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6c2e17d7ea20",
+    "target": "M_fecbdf97c023",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_0459ab92db68",
+    "target": "M_639477970148",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_639477970148",
+    "target": "M_b59920ee4b93",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_b59920ee4b93",
+    "target": "M_d46202579fe0",
+    "relation": "后续测量",
+    "description": "时序: Healthy@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_21a0b1df5760",
+    "target": "M_35dc346a4430",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_35dc346a4430",
+    "target": "M_599ca0334a84",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_599ca0334a84",
+    "target": "M_6028880a79a5",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6028880a79a5",
+    "target": "M_9b20fed57621",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_9b20fed57621",
+    "target": "M_9ec74cf4251f",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_027b1b5053dd",
+    "target": "M_085d2b144e8b",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_085d2b144e8b",
+    "target": "M_7ccdb7dcf8f0",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_7ccdb7dcf8f0",
+    "target": "M_7ffcdb4677ad",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_7ffcdb4677ad",
+    "target": "M_ae49d20b99b7",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_ae49d20b99b7",
+    "target": "M_d46d17d45cec",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_19be8b598d04",
+    "target": "M_70c63cb317c5",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_70c63cb317c5",
+    "target": "M_7fe3b8963b8c",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_7fe3b8963b8c",
+    "target": "M_bc57832f727a",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_bc57832f727a",
+    "target": "M_c7feeff3459f",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_c7feeff3459f",
+    "target": "M_e8e817ed1b93",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_2e694d8ef330",
+    "target": "M_343d603a50b0",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_343d603a50b0",
+    "target": "M_3af1f821af62",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_3af1f821af62",
+    "target": "M_4ffcc4673127",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_4ffcc4673127",
+    "target": "M_51ce0f9efc50",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_51ce0f9efc50",
+    "target": "M_f6a0caeae0c9",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_0add2629236a",
+    "target": "M_28d007216275",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_28d007216275",
+    "target": "M_69c1853adc3b",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_69c1853adc3b",
+    "target": "M_6eaf78131a15",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6eaf78131a15",
+    "target": "M_7941559031b1",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_7941559031b1",
+    "target": "M_80b91b08ad31",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_motor@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_03a370a1fcba",
+    "target": "M_45bf1580e132",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_pump@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_45bf1580e132",
+    "target": "M_8799ba3d8959",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_pump@ch1 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_6bc0f16a4830",
+    "target": "M_9e1d0e9a0bcb",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_pump@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_9e1d0e9a0bcb",
+    "target": "M_ce039e4b3f63",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_pump@ch2 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_9194222c9516",
+    "target": "M_b83e1a4a8347",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_pump@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_b83e1a4a8347",
+    "target": "M_d15819fcc96d",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_pump@ch3 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_16cfab0c6204",
+    "target": "M_35b0560a1a98",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_pump@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_35b0560a1a98",
+    "target": "M_9e37e2849329",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_pump@ch4 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_9a5566137e6c",
+    "target": "M_9fa1c81d6590",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_pump@ch5 连续测量",
+    "weight": 0.5
+  },
+  {
+    "source": "M_9fa1c81d6590",
+    "target": "M_f0af5fe68522",
+    "relation": "后续测量",
+    "description": "时序: Unbalance_pump@ch5 连续测量",
+    "weight": 0.5
   }
 ]
