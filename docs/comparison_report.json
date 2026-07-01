@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-07-01T17:40:30.308997",
+  "approaches": [
+    {
+      "name": "Approach A: LightRAG + 自建TKG",
+      "hit_at_1": 0.06,
+      "temporal_accuracy": 0.87,
+      "query_time_p50_ms": 9745.426416397095,
+      "query_time_p95_ms": 18792.825734615326,
+      "by_level": {
+        "L1": {
+          "total": 15,
+          "hit_at_1": 0.13333333333333333,
+          "mrr": 0.0,
+          "temporal_acc": 1.0
+        },
+        "L2": {
+          "total": 15,
+          "hit_at_1": 0.06666666666666667,
+          "mrr": 0.0,
+          "temporal_acc": 1.0
+        },
+        "L3": {
+          "total": 15,
+          "hit_at_1": 0.0,
+          "mrr": 0.0,
+          "temporal_acc": 0.5666666666666667
+        },
+        "L4": {
+          "total": 5,
+          "hit_at_1": 0.0,
+          "mrr": 0.0,
+          "temporal_acc": 1.0
+        }
+      }
+    },
+    {
+      "name": "Approach B: Graphiti + TKG",
+      "hit_at_1": 0.06,
+      "temporal_accuracy": 0.86,
+      "query_time_p50_ms": 8468.186736106873,
+      "query_time_p95_ms": 12558.292698860168,
+      "by_level": {
+        "L1": {
+          "total": 15,
+          "hit_at_1": 0.13333333333333333,
+          "mrr": 0.0,
+          "temporal_acc": 1.0
+        },
+        "L2": {
+          "total": 15,
+          "hit_at_1": 0.06666666666666667,
+          "mrr": 0.0,
+          "temporal_acc": 1.0
+        },
+        "L3": {
+          "total": 15,
+          "hit_at_1": 0.0,
+          "mrr": 0.0,
+          "temporal_acc": 0.5333333333333333
+        },
+        "L4": {
+          "total": 5,
+          "hit_at_1": 0.0,
+          "mrr": 0.0,
+          "temporal_acc": 1.0
+        }
+      }
+    }
+  ],
+  "recommendation": "差异 <15% — 选择部署成本更低的方案A",
+  "decision_applied": "cost_optimized"
+}

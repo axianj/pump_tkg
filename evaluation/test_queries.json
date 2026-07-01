@@ -1,0 +1,452 @@
+[
+  {
+    "id": "L1-001",
+    "level": "L1",
+    "category": "simple_fact",
+    "query": "离心泵 MG 160 MA 电机的额定功率是多少？",
+    "expected_answer": "11kW",
+    "expected_entity": "Motor_MG160MA",
+    "metric_priority": "Hit@1"
+  },
+  {
+    "id": "L1-002",
+    "level": "L1",
+    "category": "simple_fact",
+    "query": "NK 80-250 离心泵的额定转速是多少？",
+    "expected_answer": "1480rpm",
+    "expected_entity": "Pump_NK80-250",
+    "metric_priority": "Hit@1"
+  },
+  {
+    "id": "L1-003",
+    "level": "L1",
+    "category": "simple_fact",
+    "query": "Ch3 传感器安装在哪个位置？",
+    "expected_answer": "电机驱动端轴承 轴向",
+    "expected_entity": "Ch3",
+    "metric_priority": "Hit@1"
+  },
+  {
+    "id": "L1-004",
+    "level": "L1",
+    "category": "simple_fact",
+    "query": "数据集的加速度计采样率是多少？",
+    "expected_answer": "20kHz",
+    "expected_entity": null,
+    "metric_priority": "Hit@1"
+  },
+  {
+    "id": "L1-005",
+    "level": "L1",
+    "category": "simple_fact",
+    "query": "MG 180 MB 电机有多少千瓦？",
+    "expected_answer": "45kW",
+    "expected_entity": "Motor_MG180MB",
+    "metric_priority": "Hit@1"
+  },
+  {
+    "id": "L1-006",
+    "level": "L1",
+    "category": "simple_fact",
+    "query": "离心泵系统由哪些主要部件组成？",
+    "expected_answer": "电机、联轴器、泵体、轴承、轴封",
+    "expected_entity": null,
+    "metric_priority": "MRR"
+  },
+  {
+    "id": "L1-007",
+    "level": "L1",
+    "category": "simple_fact",
+    "query": "BPFO的含义是什么？",
+    "expected_answer": "轴承外圈故障特征频率",
+    "expected_entity": "fault_Bearing_BPFO",
+    "metric_priority": "Hit@1"
+  },
+  {
+    "id": "L1-008",
+    "level": "L1",
+    "category": "simple_fact",
+    "query": "离��泵常见的故障类别有哪些？",
+    "expected_answer": "不对中、不平衡、轴承故障、气蚀、断条、定子短路",
+    "expected_entity": null,
+    "metric_priority": "MRR"
+  },
+  {
+    "id": "L1-009",
+    "level": "L1",
+    "category": "simple_fact",
+    "query": "BPFI对应的中文名称是什么？",
+    "expected_answer": "轴承内圈故障",
+    "expected_entity": "fault_Bearing_BPFI",
+    "metric_priority": "Hit@1"
+  },
+  {
+    "id": "L1-010",
+    "level": "L1",
+    "category": "simple_fact",
+    "query": "数据集中使用了几种实验设置（Setup）？",
+    "expected_answer": "2种",
+    "expected_entity": null,
+    "metric_priority": "Hit@1"
+  },
+  {
+    "id": "L1-011",
+    "level": "L1",
+    "category": "simple_fact",
+    "query": "MG 160 MA 电机的轴承类型是什么？",
+    "expected_answer": "NU311和6311",
+    "expected_entity": "Motor_MG160MA",
+    "metric_priority": "Hit@1"
+  },
+  {
+    "id": "L1-012",
+    "level": "L1",
+    "category": "simple_fact",
+    "query": "Ch1安装在机泵的哪个位置？",
+    "expected_answer": "泵非驱动端轴承 垂直方向",
+    "expected_entity": "Ch1",
+    "metric_priority": "Hit@1"
+  },
+  {
+    "id": "L1-013",
+    "level": "L1",
+    "category": "simple_fact",
+    "query": "离心泵添加润滑油的作用有哪些？",
+    "expected_answer": "润滑冷却、冲洗、密封、减振、保护、卸荷",
+    "expected_entity": null,
+    "metric_priority": "MRR"
+  },
+  {
+    "id": "L1-014",
+    "level": "L1",
+    "category": "simple_fact",
+    "query": "机械密封的重质油泄漏标准是多少？",
+    "expected_answer": "小于5滴/分",
+    "expected_entity": null,
+    "metric_priority": "Hit@1"
+  },
+  {
+    "id": "L1-015",
+    "level": "L1",
+    "category": "simple_fact",
+    "query": "Setup2 使用的是什么型号的电机？",
+    "expected_answer": "MG 180 MB",
+    "expected_entity": "Motor_MG180MB",
+    "metric_priority": "Hit@1"
+  },
+  {
+    "id": "L2-001",
+    "level": "L2",
+    "category": "multi_hop",
+    "query": "角度不对中可能导致哪些轴承故障？",
+    "expected_answer": "BPFO、BPFI、BSF、轴承污染、泵轴承故障",
+    "expected_entities": ["fault_Bearing_BPFO", "fault_Bearing_BPFI", "fault_Bearing_BSF"],
+    "metric_priority": "MRR"
+  },
+  {
+    "id": "L2-002",
+    "level": "L2",
+    "category": "multi_hop",
+    "query": "电机不平衡与哪些故障类型有关联？",
+    "expected_answer": "轴承故障（BPFO、BPFI、BSF等）",
+    "expected_entities": ["fault_Bearing_BPFO"],
+    "metric_priority": "MRR"
+  },
+  {
+    "id": "L2-003",
+    "level": "L2",
+    "category": "multi_hop",
+    "query": "哪些故障属于不对中类故障？",
+    "expected_answer": "角度不对中、平行不对中、复合不对中",
+    "expected_entities": ["fault_Angular_misalignment", "fault_Parallel_misalignment", "fault_Combined_misalignment"],
+    "metric_priority": "MRR"
+  },
+  {
+    "id": "L2-004",
+    "level": "L2",
+    "category": "multi_hop",
+    "query": "联轴器损坏会间接导致哪些轴承问题？",
+    "expected_answer": "通过不对中导致BPFO、BPFI等轴承故障",
+    "expected_entities": ["fault_Bearing_BPFO", "fault_Angular_misalignment"],
+    "metric_priority": "MRR"
+  },
+  {
+    "id": "L2-005",
+    "level": "L2",
+    "category": "multi_hop",
+    "query": "吸入口气蚀和排出口气蚀有什么共同的后果？",
+    "expected_answer": "两者都会导致叶轮损坏",
+    "expected_entities": ["fault_Impeller_fault"],
+    "metric_priority": "Hit@1"
+  },
+  {
+    "id": "L2-006",
+    "level": "L2",
+    "category": "multi_hop",
+    "query": "软脚故障与哪些故障类型有关联？",
+    "expected_answer": "角度不对中、平行不对中",
+    "expected_entities": ["fault_Angular_misalignment", "fault_Parallel_misalignment"],
+    "metric_priority": "MRR"
+  },
+  {
+    "id": "L2-007",
+    "level": "L2",
+    "category": "multi_hop",
+    "query": "Stator_short（定子短路）会导致什么轴承问题？",
+    "expected_answer": "轴承外圈故障（BPFO）",
+    "expected_entities": ["fault_Bearing_BPFO"],
+    "metric_priority": "Hit@1"
+  },
+  {
+    "id": "L2-008",
+    "level": "L2",
+    "category": "multi_hop",
+    "query": "哪些故障属于轴承类故障？",
+    "expected_answer": "BPFO、BPFI、BSF、轴承污染、泵轴承故障",
+    "expected_entities": ["fault_Bearing_BPFO", "fault_Bearing_BPFI", "fault_Bearing_BSF"],
+    "metric_priority": "MRR"
+  },
+  {
+    "id": "L2-009",
+    "level": "L2",
+    "category": "multi_hop",
+    "query": "Loose_foot_motor（电机底脚松动）可能间接导致哪些问题？",
+    "expected_answer": "角度不对中、电机不平衡",
+    "expected_entities": ["fault_Angular_misalignment", "fault_Unbalance_motor"],
+    "metric_priority": "MRR"
+  },
+  {
+    "id": "L2-010",
+    "level": "L2",
+    "category": "multi_hop",
+    "query": "Setup1 中的 MG 160 MA 电机的振动传感器安装在哪些轴承位置？",
+    "expected_answer": "电机驱动端轴承（垂直、轴向）和非驱动端轴承（水平）",
+    "expected_entities": ["Ch1", "Ch2", "Ch3"],
+    "metric_priority": "MRR"
+  },
+  {
+    "id": "L2-011",
+    "level": "L2",
+    "category": "multi_hop",
+    "query": "哪些故障与转频（1X）振动增大有关？",
+    "expected_answer": "电机不平衡、泵不平衡、叶轮故障",
+    "expected_entities": ["fault_Unbalance_motor", "fault_Unbalance_pump", "fault_Impeller_fault"],
+    "metric_priority": "MRR"
+  },
+  {
+    "id": "L2-012",
+    "level": "L2",
+    "category": "multi_hop",
+    "query": "2倍转频（2X）增大是哪些故障的典型特征？",
+    "expected_answer": "角度不对中、平行不对中",
+    "expected_entities": ["fault_Angular_misalignment", "fault_Parallel_misalignment"],
+    "metric_priority": "Hit@1"
+  },
+  {
+    "id": "L2-013",
+    "level": "L2",
+    "category": "multi_hop",
+    "query": "Ch4和Ch5分别测量什么位置？",
+    "expected_answer": "泵驱动端轴承水平、泵非驱动端轴承垂直",
+    "expected_entities": ["Ch4", "Ch5"],
+    "metric_priority": "Hit@1"
+  },
+  {
+    "id": "L2-014",
+    "level": "L2",
+    "category": "multi_hop",
+    "query": "泵不平衡属于哪一大类故障？",
+    "expected_answer": "不平衡类故障",
+    "expected_entities": ["fault_cat_unbalance"],
+    "metric_priority": "Hit@1"
+  },
+  {
+    "id": "L2-015",
+    "level": "L2",
+    "category": "multi_hop",
+    "query": "Setup2 的 NK 80-160 泵的监测点有哪些？",
+    "expected_answer": "泵驱动端和非驱动端轴承位置的传感器",
+    "expected_entities": ["Ch4", "Ch5"],
+    "metric_priority": "MRR"
+  },
+  {
+    "id": "L3-001",
+    "level": "L3",
+    "category": "temporal",
+    "query": "角度不对中的故障演化路径是什么？从不对中到轴承损坏经历了哪些步骤？",
+    "expected_answer": "角度不对中 → 轴承外圈故障/内圈故障/滚动体故障 → 泵轴承故障",
+    "expected_temporal_chain": ["fault_Angular_misalignment", "fault_Bearing_BPFO"],
+    "metric_priority": "temporal_accuracy"
+  },
+  {
+    "id": "L3-002",
+    "level": "L3",
+    "category": "temporal",
+    "query": "气蚀故障的传播路径是什么？",
+    "expected_answer": "吸入口气蚀/排出口气蚀 → 叶轮故障",
+    "expected_temporal_chain": ["fault_Cavitation_suction", "fault_Impeller_fault"],
+    "metric_priority": "temporal_accuracy"
+  },
+  {
+    "id": "L3-003",
+    "level": "L3",
+    "category": "temporal",
+    "query": "联轴器损坏的故障传播链是什么？",
+    "expected_answer": "联轴器损坏 → 角度不对中/平行不对中 → 轴承故障",
+    "expected_temporal_chain": ["fault_Coupling_damage", "fault_Angular_misalignment", "fault_Bearing_BPFO"],
+    "metric_priority": "temporal_accuracy"
+  },
+  {
+    "id": "L3-004",
+    "level": "L3",
+    "category": "temporal",
+    "query": "定子短路的后续影响是什么？",
+    "expected_answer": "定子短路 → 轴承外圈故障",
+    "expected_temporal_chain": ["fault_Stator_short", "fault_Bearing_BPFO"],
+    "metric_priority": "temporal_accuracy"
+  },
+  {
+    "id": "L3-005",
+    "level": "L3",
+    "category": "temporal",
+    "query": "从底脚松动到轴承损坏的完整故障传播链是怎样的？",
+    "expected_answer": "电机底脚松动/泵底脚松动 → 角度不对中 → 轴承故障 或 电机不平衡 → 轴承故障",
+    "expected_temporal_chain": ["fault_Loose_foot_motor", "fault_Angular_misalignment", "fault_Bearing_BPFO"],
+    "metric_priority": "temporal_accuracy"
+  },
+  {
+    "id": "L3-006",
+    "level": "L3",
+    "category": "temporal",
+    "query": "如果发现了软脚故障，后续可能会发展出什么故障？",
+    "expected_answer": "角度不对中、平行不对中",
+    "expected_temporal_chain": ["fault_Soft_foot", "fault_Angular_misalignment"],
+    "metric_priority": "temporal_accuracy"
+  },
+  {
+    "id": "L3-007",
+    "level": "L3",
+    "category": "temporal",
+    "query": "轴承外圈故障的根因可能有哪些？（逆向追因）",
+    "expected_answer": "角度不对中、平行不对中、复合不对中、电机不平衡、泵不平衡、定子短路",
+    "expected_entities": ["fault_Angular_misalignment", "fault_Unbalance_motor", "fault_Stator_short"],
+    "metric_priority": "temporal_accuracy"
+  },
+  {
+    "id": "L3-008",
+    "level": "L3",
+    "category": "temporal",
+    "query": "泵轴承故障的上游故障有哪些？（逆向追因）",
+    "expected_answer": "角度不对中、平行不对中、复合不对中、电机不平衡、泵不平衡",
+    "expected_entities": ["fault_Angular_misalignment", "fault_Unbalance_motor"],
+    "metric_priority": "temporal_accuracy"
+  },
+  {
+    "id": "L3-009",
+    "level": "L3",
+    "category": "temporal",
+    "query": "测量记录的振动RMS值如果连续三次上升，说明什么？",
+    "expected_answer": "故障正在恶化（EVOLVES_TO），需要检查对应的故障类型",
+    "expected_temporal_chain": [],
+    "metric_priority": "temporal_accuracy"
+  },
+  {
+    "id": "L3-010",
+    "level": "L3",
+    "category": "temporal",
+    "query": "不平衡故障如果不处理，长期会发展成什么问题？",
+    "expected_answer": "轴承外圈、内圈、滚动体或泵轴承故障",
+    "expected_temporal_chain": ["fault_Unbalance_motor", "fault_Bearing_BPFO"],
+    "metric_priority": "temporal_accuracy"
+  },
+  {
+    "id": "L3-011",
+    "level": "L3",
+    "category": "temporal",
+    "query": "在故障演化过程中，不对中类故障的三个子类型之间有什么关系？",
+    "expected_answer": "角度不对中、平行不对中、复合不对中是关联关系，可能同时出现",
+    "expected_entities": ["fault_Angular_misalignment", "fault_Parallel_misalignment", "fault_Combined_misalignment"],
+    "metric_priority": "temporal_accuracy"
+  },
+  {
+    "id": "L3-012",
+    "level": "L3",
+    "category": "temporal",
+    "query": "轴承内圈故障和轴承外圈故障可能同时发生吗？它们有什么共同的上游故障？",
+    "expected_answer": "可以同时发生，共同上游包括不对中、不平衡",
+    "expected_entities": ["fault_Bearing_BPFI", "fault_Bearing_BPFO"],
+    "metric_priority": "temporal_accuracy"
+  },
+  {
+    "id": "L3-013",
+    "level": "L3",
+    "category": "temporal",
+    "query": "离心泵盘不动车时为什么不能启动？这会导致什么故障传播？",
+    "expected_answer": "叶轮卡住或泵轴弯曲或锈死，强行启动会导致泵轴断裂、叶轮破碎、电机线圈烧毁",
+    "expected_entities": [],
+    "metric_priority": "temporal_accuracy"
+  },
+  {
+    "id": "L3-014",
+    "level": "L3",
+    "category": "temporal",
+    "query": "润滑油含水会导致什么危害？",
+    "expected_answer": "粘度降低、减弱油膜强度、低温结冰、加速氧化、增加泡沫、金属部件生锈",
+    "expected_entities": [],
+    "metric_priority": "MRR"
+  },
+  {
+    "id": "L3-015",
+    "level": "L3",
+    "category": "temporal",
+    "query": "备用泵定期盘车的作用是什么？与故障预防有何关系？",
+    "expected_answer": "防止内生垢卡住、防止泵轴变形、润滑轴承——预防泵轴承故障",
+    "expected_entities": ["fault_Pump_bearing"],
+    "metric_priority": "MRR"
+  },
+  {
+    "id": "L4-001",
+    "level": "L4",
+    "category": "diagnosis",
+    "query": "设备运行时轴向振动显著增大、2倍转频分量突出，请诊断可能的故障类型及原因",
+    "expected_answer": "角度不对中或平行不对中（2X振动突出+轴向振动大）",
+    "expected_entities": ["fault_Angular_misalignment", "fault_Parallel_misalignment"],
+    "metric_priority": "diagnosis_accuracy"
+  },
+  {
+    "id": "L4-002",
+    "level": "L4",
+    "category": "diagnosis",
+    "query": "1倍转频振动增大、径向振动为主，可能是什么故障？需要采取什么措施？",
+    "expected_answer": "不平衡故障（电机不平衡或泵不平衡），需要动平衡校正",
+    "expected_entities": ["fault_Unbalance_motor", "fault_Unbalance_pump"],
+    "metric_priority": "diagnosis_accuracy"
+  },
+  {
+    "id": "L4-003",
+    "level": "L4",
+    "category": "diagnosis",
+    "query": "轴承故障特征频率（BPFO）处出现异常峰值，同时有边频带，这是什么故障？如何验证？",
+    "expected_answer": "轴承外圈故障，通过包络谱分析确认",
+    "expected_entities": ["fault_Bearing_BPFO"],
+    "metric_priority": "diagnosis_accuracy"
+  },
+  {
+    "id": "L4-004",
+    "level": "L4",
+    "category": "diagnosis",
+    "query": "离心泵出现宽频带高频振动并伴有噪声，可能是哪种故障？需要检查什么？",
+    "expected_answer": "气蚀故障，检查入口压力和过滤器",
+    "expected_entities": ["fault_Cavitation_suction", "fault_Cavitation_discharge"],
+    "metric_priority": "diagnosis_accuracy"
+  },
+  {
+    "id": "L4-005",
+    "level": "L4",
+    "category": "diagnosis",
+    "query": "如果一台MG 160 MA电机驱动的离心泵同时出现1X和2X振动增大，且轴向振动也增大，请综合分析可能的故障链",
+    "expected_answer": "可能是复合不对中（不仅有角度不对中还存在不平衡的成分），进一步可能导致轴承磨损",
+    "expected_entities": ["fault_Combined_misalignment", "fault_Unbalance_motor"],
+    "metric_priority": "diagnosis_accuracy"
+  }
+]
