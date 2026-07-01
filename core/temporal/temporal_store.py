@@ -260,11 +260,15 @@ class TemporalStore:
                 """
                 MATCH (cause:Entity)-[r_cause:TEMPORAL]->(effect:Entity)
                 WHERE r_cause.type IN ['导致', '演化为']
-                OPTIONAL MATCH (cause)-[r_other:TEMPORAL]->(effect)
+                MATCH (cause)-[r_other:TEMPORAL]->(effect)
                 WHERE r_other.type IN ['导致', '演化为']
-                  AND r_other.valid_from < r_cause.valid_from
-                RETURN cause.id, effect.id, r_cause.valid_from AS from1,
-                       r_other.valid_from AS from2
+                  AND r_cause.valid_from IS NOT NULL
+                  AND r_other.valid_from IS NOT NULL
+                  AND r_cause.valid_from < r_other.valid_from
+                WITH DISTINCT cause.id AS causeId, effect.id AS effectId,
+                     r_cause.valid_from AS causeFrom, r_other.valid_from AS effectFrom
+                RETURN causeId, effectId, causeFrom, effectFrom
+                LIMIT 50
                 """
             )
             for record in result:

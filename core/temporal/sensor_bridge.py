@@ -250,9 +250,15 @@ class SensorBridge:
         Returns:
             [{measurement_id, timestamp, rms_value, exceeded_threshold, ...}]
         """
+        # Apply time window filter
+        import time as _time
+        cutoff_time = datetime.now() - timedelta(hours=time_window_hours)
+        
         events = []
         prev_rms = {}
         for m in sorted(self._measurements, key=lambda x: x["timestamp"]):
+            if m["timestamp"] < cutoff_time:
+                continue
             ch = m["entity_attrs"].get("channel", "")
             if channel and ch != channel:
                 continue

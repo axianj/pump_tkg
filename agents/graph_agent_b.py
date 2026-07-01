@@ -71,9 +71,7 @@ def temporal_retrieve_b(state: AgentState, components: SharedRetrievalComponents
             if zh in state["query"] or code.lower().replace("_", "") in state["query"].lower().replace(" ", ""):
                 entity_id = f"fault_{code}"
                 # 时序范围查询 (Graphiti 原生或回退)
-                temporal_results = components.temporal_store.query_time_range(
-                    start_time, end_time
-                )
+                temporal_results = (components.temporal_store.query_time_range(start_time, end_time) if hasattr(components.temporal_store, "query_time_range") else [])
                 for r in temporal_results[:10]:
                     if r.get("head") == entity_id or r.get("tail") == entity_id:
                         results.append({
@@ -86,9 +84,7 @@ def temporal_retrieve_b(state: AgentState, components: SharedRetrievalComponents
                         })
 
                 # 路径追踪
-                paths = components.temporal_store.trace_temporal_path(
-                    entity_id, direction="forward", max_depth=3
-                )
+                paths = (components.temporal_store.trace_temporal_path(entity_id, direction="forward", max_depth=3) if hasattr(components.temporal_store, "trace_temporal_path") else [])
                 for path in paths[:3]:
                     results.append({
                         "type": "temporal_path",

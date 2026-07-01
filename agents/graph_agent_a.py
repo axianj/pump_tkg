@@ -166,7 +166,7 @@ def temporal_retrieve(state: AgentState, components: SharedRetrievalComponents) 
     # 叠加 LightRAG 检索（如果可用）
     if components.lightrag_engine is not None:
         try:
-            lr_results = components.lightrag_engine.query(state["query"], mode="hybrid")
+            lr_results = [{"content": components.lightrag_engine.query_sync(state["query"], mode="hybrid")}]
             for r in lr_results[:3]:
                 results.append({
                     "type": "lightrag",

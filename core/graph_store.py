@@ -173,13 +173,15 @@ class KuzuGraphStore:
         if source_id:
             result = self._conn.execute(
                 "MATCH (a:Entity {id: $id})-[r:TEMPORAL]->(b:Entity) "
-                "RETURN a.id, r.relation_type, b.id, r.* LIMIT $limit",
+                "RETURN a.id, r.relation_type, b.id, "
+                "r.valid_from, r.valid_to, r.confidence, r.source, r.description LIMIT $limit",
                 {"id": source_id, "limit": limit},
             )
         else:
             result = self._conn.execute(
                 "MATCH (a:Entity)-[r:TEMPORAL]->(b:Entity) "
-                "RETURN a.id, r.relation_type, b.id, r.* LIMIT $limit",
+                "RETURN a.id, r.relation_type, b.id, "
+                "r.valid_from, r.valid_to, r.confidence, r.source, r.description LIMIT $limit",
                 {"limit": limit},
             )
         out = []
