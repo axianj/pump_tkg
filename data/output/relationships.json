@@ -3,3549 +3,721 @@
     "source": "Motor_MG160MA",
     "target": "Motor_MG160MA_DE",
     "relation": "包含",
-    "description": "",
+    "description": "MG 160 MA包含驱动端轴承",
     "weight": 1.0
   },
   {
     "source": "Motor_MG160MA",
     "target": "Motor_MG160MA_NDE",
     "relation": "包含",
-    "description": "",
+    "description": "MG 160 MA包含非驱动端轴承",
     "weight": 1.0
   },
   {
     "source": "Motor_MG180MB",
     "target": "Motor_MG180MB_DE",
     "relation": "包含",
-    "description": "",
+    "description": "MG 180 MB包含驱动端轴承",
     "weight": 1.0
   },
   {
     "source": "Motor_MG180MB",
     "target": "Motor_MG180MB_NDE",
     "relation": "包含",
-    "description": "",
+    "description": "MG 180 MB包含非驱动端轴承",
     "weight": 1.0
   },
   {
     "source": "Pump_NK80-250",
     "target": "Pump_NK80-250_DE",
     "relation": "包含",
-    "description": "",
+    "description": "NK 80-250包含驱动端轴承",
     "weight": 1.0
   },
   {
     "source": "Pump_NK80-250",
     "target": "Pump_NK80-250_NDE",
     "relation": "包含",
-    "description": "",
+    "description": "NK 80-250包含非驱动端轴承",
     "weight": 1.0
   },
   {
     "source": "Pump_NK80-160",
     "target": "Pump_NK80-160_DE",
     "relation": "包含",
-    "description": "",
+    "description": "NK 80-160包含驱动端轴承",
     "weight": 1.0
   },
   {
     "source": "Pump_NK80-160",
     "target": "Pump_NK80-160_NDE",
     "relation": "包含",
-    "description": "",
+    "description": "NK 80-160包含非驱动端轴承",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Angular_misalignment",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Angular_misalignment",
+    "target": "fault_Parallel_misalignment",
+    "relation": "关联",
+    "description": "同类故障: 不对中类",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Angular_misalignment",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Angular_misalignment",
+    "target": "fault_Combined_misalignment",
+    "relation": "关联",
+    "description": "同类故障: 不对中类",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Parallel_misalignment",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Parallel_misalignment",
+    "target": "fault_Combined_misalignment",
+    "relation": "关联",
+    "description": "同类故障: 不对中类",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Parallel_misalignment",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Cavitation_suction",
+    "target": "fault_Cavitation_discharge",
+    "relation": "关联",
+    "description": "同类故障: 气蚀类",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Combined_misalignment",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Bearing_BPFO",
+    "target": "fault_Bearing_BPFI",
+    "relation": "关联",
+    "description": "同类故障: 轴承类",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Combined_misalignment",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Bearing_BPFO",
+    "target": "fault_Bearing_BSF",
+    "relation": "关联",
+    "description": "同类故障: 轴承类",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Unbalance_motor",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Bearing_BPFO",
+    "target": "fault_Bearing_contaminated",
+    "relation": "关联",
+    "description": "同类故障: 轴承类",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Unbalance_motor",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Bearing_BPFO",
+    "target": "fault_Pump_bearing",
+    "relation": "关联",
+    "description": "同类故障: 轴承类",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Unbalance_pump",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Bearing_BPFI",
+    "target": "fault_Bearing_BSF",
+    "relation": "关联",
+    "description": "同类故障: 轴承类",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Unbalance_pump",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Bearing_BPFI",
+    "target": "fault_Bearing_contaminated",
+    "relation": "关联",
+    "description": "同类故障: 轴承类",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Coupling_damage",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Bearing_BPFI",
+    "target": "fault_Pump_bearing",
+    "relation": "关联",
+    "description": "同类故障: 轴承类",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Coupling_damage",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Bearing_BSF",
+    "target": "fault_Bearing_contaminated",
+    "relation": "关联",
+    "description": "同类故障: 轴承类",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Cavitation_suction",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Bearing_BSF",
+    "target": "fault_Pump_bearing",
+    "relation": "关联",
+    "description": "同类故障: 轴承类",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Cavitation_suction",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Bearing_contaminated",
+    "target": "fault_Pump_bearing",
+    "relation": "关联",
+    "description": "同类故障: 轴承类",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Cavitation_discharge",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Unbalance_motor",
+    "target": "fault_Unbalance_pump",
+    "relation": "关联",
+    "description": "同类故障: 不平衡类",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Cavitation_discharge",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Angular_misalignment",
+    "target": "fault_Bearing_BPFO",
+    "relation": "导致",
+    "description": "角度不对中 可能导致 轴承外圈故障",
+    "weight": 0.7
+  },
+  {
+    "source": "fault_Angular_misalignment",
+    "target": "fault_Bearing_BPFI",
+    "relation": "导致",
+    "description": "角度不对中 可能导致 轴承内圈故障",
+    "weight": 0.7
+  },
+  {
+    "source": "fault_Angular_misalignment",
+    "target": "fault_Bearing_BSF",
+    "relation": "导致",
+    "description": "角度不对中 可能导致 轴承滚动体故障",
+    "weight": 0.7
+  },
+  {
+    "source": "fault_Angular_misalignment",
+    "target": "fault_Bearing_contaminated",
+    "relation": "导致",
+    "description": "角度不对中 可能导致 轴承污染",
+    "weight": 0.7
+  },
+  {
+    "source": "fault_Angular_misalignment",
+    "target": "fault_Pump_bearing",
+    "relation": "导致",
+    "description": "角度不对中 可能导致 泵轴承故障",
+    "weight": 0.7
+  },
+  {
+    "source": "fault_Parallel_misalignment",
+    "target": "fault_Bearing_BPFO",
+    "relation": "导致",
+    "description": "平行不对中 可能导致 轴承外圈故障",
+    "weight": 0.7
+  },
+  {
+    "source": "fault_Parallel_misalignment",
+    "target": "fault_Bearing_BPFI",
+    "relation": "导致",
+    "description": "平行不对中 可能导致 轴承内圈故障",
+    "weight": 0.7
+  },
+  {
+    "source": "fault_Parallel_misalignment",
+    "target": "fault_Bearing_BSF",
+    "relation": "导致",
+    "description": "平行不对中 可能导致 轴承滚动体故障",
+    "weight": 0.7
+  },
+  {
+    "source": "fault_Parallel_misalignment",
+    "target": "fault_Bearing_contaminated",
+    "relation": "导致",
+    "description": "平行不对中 可能导致 轴承污染",
+    "weight": 0.7
+  },
+  {
+    "source": "fault_Parallel_misalignment",
+    "target": "fault_Pump_bearing",
+    "relation": "导致",
+    "description": "平行不对中 可能导致 泵轴承故障",
+    "weight": 0.7
+  },
+  {
+    "source": "fault_Combined_misalignment",
+    "target": "fault_Bearing_BPFO",
+    "relation": "导致",
+    "description": "复合不对中 可能导致 轴承外圈故障",
+    "weight": 0.7
+  },
+  {
+    "source": "fault_Combined_misalignment",
+    "target": "fault_Bearing_BPFI",
+    "relation": "导致",
+    "description": "复合不对中 可能导致 轴承内圈故障",
+    "weight": 0.7
+  },
+  {
+    "source": "fault_Combined_misalignment",
+    "target": "fault_Bearing_BSF",
+    "relation": "导致",
+    "description": "复合不对中 可能导致 轴承滚动体故障",
+    "weight": 0.7
+  },
+  {
+    "source": "fault_Combined_misalignment",
+    "target": "fault_Bearing_contaminated",
+    "relation": "导致",
+    "description": "复合不对中 可能导致 轴承污染",
+    "weight": 0.7
+  },
+  {
+    "source": "fault_Combined_misalignment",
+    "target": "fault_Pump_bearing",
+    "relation": "导致",
+    "description": "复合不对中 可能导致 泵轴承故障",
+    "weight": 0.7
+  },
+  {
+    "source": "fault_Unbalance_motor",
+    "target": "fault_Bearing_BPFO",
+    "relation": "导致",
+    "description": "电机不平衡 可能导致 轴承外圈故障",
+    "weight": 0.6
+  },
+  {
+    "source": "fault_Unbalance_motor",
+    "target": "fault_Bearing_BPFI",
+    "relation": "导致",
+    "description": "电机不平衡 可能导致 轴承内圈故障",
+    "weight": 0.6
+  },
+  {
+    "source": "fault_Unbalance_motor",
+    "target": "fault_Bearing_BSF",
+    "relation": "导致",
+    "description": "电机不平衡 可能导致 轴承滚动体故障",
+    "weight": 0.6
+  },
+  {
+    "source": "fault_Unbalance_motor",
+    "target": "fault_Bearing_contaminated",
+    "relation": "导致",
+    "description": "电机不平衡 可能导致 轴承污染",
+    "weight": 0.6
+  },
+  {
+    "source": "fault_Unbalance_motor",
+    "target": "fault_Pump_bearing",
+    "relation": "导致",
+    "description": "电机不平衡 可能导致 泵轴承故障",
+    "weight": 0.6
+  },
+  {
+    "source": "fault_Unbalance_pump",
+    "target": "fault_Bearing_BPFO",
+    "relation": "导致",
+    "description": "泵不平衡 可能导致 轴承外圈故障",
+    "weight": 0.6
+  },
+  {
+    "source": "fault_Unbalance_pump",
+    "target": "fault_Bearing_BPFI",
+    "relation": "导致",
+    "description": "泵不平衡 可能导致 轴承内圈故障",
+    "weight": 0.6
+  },
+  {
+    "source": "fault_Unbalance_pump",
+    "target": "fault_Bearing_BSF",
+    "relation": "导致",
+    "description": "泵不平衡 可能导致 轴承滚动体故障",
+    "weight": 0.6
+  },
+  {
+    "source": "fault_Unbalance_pump",
+    "target": "fault_Bearing_contaminated",
+    "relation": "导致",
+    "description": "泵不平衡 可能导致 轴承污染",
+    "weight": 0.6
+  },
+  {
+    "source": "fault_Unbalance_pump",
+    "target": "fault_Pump_bearing",
+    "relation": "导致",
+    "description": "泵不平衡 可能导致 泵轴承故障",
+    "weight": 0.6
+  },
+  {
+    "source": "fault_Cavitation_suction",
+    "target": "fault_Impeller_fault",
+    "relation": "导致",
+    "description": "吸入口气蚀可能导致叶轮损坏",
+    "weight": 0.8
+  },
+  {
+    "source": "fault_Cavitation_discharge",
+    "target": "fault_Impeller_fault",
+    "relation": "导致",
+    "description": "排出口气蚀可能导致叶轮损坏",
+    "weight": 0.8
+  },
+  {
+    "source": "fault_Coupling_damage",
+    "target": "fault_Angular_misalignment",
+    "relation": "导致",
+    "description": "联轴器损坏可能导致角度不对中",
+    "weight": 0.8
+  },
+  {
+    "source": "fault_Coupling_damage",
+    "target": "fault_Parallel_misalignment",
+    "relation": "导致",
+    "description": "联轴器损坏可能导致平行不对中",
+    "weight": 0.7
+  },
+  {
+    "source": "fault_Soft_foot",
+    "target": "fault_Angular_misalignment",
+    "relation": "导致",
+    "description": "软脚可能导致角度不对中",
+    "weight": 0.6
+  },
+  {
+    "source": "fault_Soft_foot",
+    "target": "fault_Parallel_misalignment",
+    "relation": "导致",
+    "description": "软脚可能导致平行不对中",
+    "weight": 0.6
+  },
+  {
+    "source": "fault_Loose_foot_motor",
+    "target": "fault_Angular_misalignment",
+    "relation": "导致",
+    "description": "电机底脚松动可能导致不对中",
+    "weight": 0.5
+  },
+  {
+    "source": "fault_Loose_foot_motor",
+    "target": "fault_Unbalance_motor",
+    "relation": "导致",
+    "description": "电机底脚松动可能导致不平衡",
+    "weight": 0.5
+  },
+  {
+    "source": "fault_Loose_foot_pump",
+    "target": "fault_Angular_misalignment",
+    "relation": "导致",
+    "description": "泵底脚松动可能导致不对中",
+    "weight": 0.5
+  },
+  {
+    "source": "fault_Loose_foot_pump",
+    "target": "fault_Unbalance_motor",
+    "relation": "导致",
+    "description": "泵底脚松动可能导致不平衡",
+    "weight": 0.5
+  },
+  {
+    "source": "fault_Stator_short",
+    "target": "fault_Bearing_BPFO",
+    "relation": "导致",
+    "description": "定子短路导致的异常振动可能加速轴承外圈磨损",
+    "weight": 0.5
+  },
+  {
+    "source": "fault_Angular_misalignment",
+    "target": "fault_cat_misalignment",
+    "relation": "属于",
+    "description": "角度不对中属于不对中类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Bent_shaft",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Parallel_misalignment",
+    "target": "fault_cat_misalignment",
+    "relation": "属于",
+    "description": "平行不对中属于不对中类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Bent_shaft",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Combined_misalignment",
+    "target": "fault_cat_misalignment",
+    "relation": "属于",
+    "description": "复合不对中属于不对中类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Impeller_fault",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Unbalance_motor",
+    "target": "fault_cat_unbalance",
+    "relation": "属于",
+    "description": "电机不平衡属于不平衡类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Impeller_fault",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Unbalance_pump",
+    "target": "fault_cat_unbalance",
+    "relation": "属于",
+    "description": "泵不平衡属于不平衡类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Bearing_BPFO",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Bearing_BPFO",
+    "target": "fault_cat_bearing",
+    "relation": "属于",
+    "description": "轴承外圈故障属于轴承类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Bearing_BPFO",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Bearing_BPFI",
+    "target": "fault_cat_bearing",
+    "relation": "属于",
+    "description": "轴承内圈故障属于轴承类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Bearing_BPFI",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Bearing_BSF",
+    "target": "fault_cat_bearing",
+    "relation": "属于",
+    "description": "轴承滚动体故障属于轴承类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Bearing_BPFI",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Bearing_contaminated",
+    "target": "fault_cat_bearing",
+    "relation": "属于",
+    "description": "轴承污染属于轴承类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Bearing_contaminated",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Pump_bearing",
+    "target": "fault_cat_bearing",
+    "relation": "属于",
+    "description": "泵轴承故障属于轴承类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Bearing_contaminated",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Cavitation_suction",
+    "target": "fault_cat_cavitation",
+    "relation": "属于",
+    "description": "吸入口气蚀属于气蚀类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Bearing_BSF",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Cavitation_discharge",
+    "target": "fault_cat_cavitation",
+    "relation": "属于",
+    "description": "排出口气蚀属于气蚀类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Bearing_BSF",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Soft_foot",
+    "target": "fault_cat_structure",
+    "relation": "属于",
+    "description": "软脚属于结构/安装类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Soft_foot",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Loose_foot_motor",
+    "target": "fault_cat_structure",
+    "relation": "属于",
+    "description": "电机底脚松动属于结构/安装类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Soft_foot",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Loose_foot_pump",
+    "target": "fault_cat_structure",
+    "relation": "属于",
+    "description": "泵底脚松动属于结构/安装类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Loose_foot_motor",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Bent_shaft",
+    "target": "fault_cat_structure",
+    "relation": "属于",
+    "description": "轴弯曲属于结构/安装类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Loose_foot_motor",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Coupling_damage",
+    "target": "fault_cat_structure",
+    "relation": "属于",
+    "description": "联轴器损坏属于结构/安装类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Loose_foot_pump",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Broken_rotor_bar",
+    "target": "fault_cat_electrical",
+    "relation": "属于",
+    "description": "断条属于电气类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Loose_foot_pump",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Stator_short",
+    "target": "fault_cat_electrical",
+    "relation": "属于",
+    "description": "定子短路属于电气类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "f_Broken_rotor_bar",
-    "relation": "包含",
-    "description": "",
+    "source": "fault_Impeller_fault",
+    "target": "fault_cat_impeller",
+    "relation": "属于",
+    "description": "叶轮故障属于叶轮类故障",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "f_Broken_rotor_bar",
-    "relation": "包含",
-    "description": "",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG160MA",
-    "target": "f_Stator_short",
-    "relation": "包含",
-    "description": "",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG180MB",
-    "target": "f_Stator_short",
-    "relation": "包含",
-    "description": "",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG160MA",
-    "target": "f_Pump_bearing",
-    "relation": "包含",
-    "description": "",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG180MB",
-    "target": "f_Pump_bearing",
-    "relation": "包含",
-    "description": "",
-    "weight": 1.0
-  },
-  {
-    "source": "pt_Ch1",
+    "source": "Ch1_Motor_NDE_bearing_H",
     "target": "Ch1",
     "relation": "安装于",
-    "description": "",
+    "description": "Motor_NDE_bearing安装Ch1传感器",
     "weight": 1.0
   },
   {
-    "source": "pt_Ch2",
+    "source": "Motor_MG160MA_NDE",
+    "target": "Ch1_Motor_NDE_bearing_H",
+    "relation": "监测点",
+    "description": "Motor_NDE_bearing位置设置监测点",
+    "weight": 1.0
+  },
+  {
+    "source": "Ch2_Motor_DE_bearing_V",
     "target": "Ch2",
     "relation": "安装于",
-    "description": "",
+    "description": "Motor_DE_bearing安装Ch2传感器",
     "weight": 1.0
   },
   {
-    "source": "pt_Ch3",
+    "source": "Motor_MG160MA_DE",
+    "target": "Ch2_Motor_DE_bearing_V",
+    "relation": "监测点",
+    "description": "Motor_DE_bearing位置设置监测点",
+    "weight": 1.0
+  },
+  {
+    "source": "Ch3_Motor_DE_bearing_A",
     "target": "Ch3",
     "relation": "安装于",
-    "description": "",
+    "description": "Motor_DE_bearing安装Ch3传感器",
     "weight": 1.0
   },
   {
-    "source": "pt_Ch4",
+    "source": "Motor_MG180MB_DE",
+    "target": "Ch3_Motor_DE_bearing_A",
+    "relation": "监测点",
+    "description": "Motor_DE_bearing位置设置监测点",
+    "weight": 1.0
+  },
+  {
+    "source": "Ch4_Pump_DE_bearing_H",
     "target": "Ch4",
     "relation": "安装于",
-    "description": "",
+    "description": "Pump_DE_bearing安装Ch4传感器",
     "weight": 1.0
   },
   {
-    "source": "pt_Ch5",
+    "source": "Pump_NK80-250",
+    "target": "Ch4_Pump_DE_bearing_H",
+    "relation": "监测点",
+    "description": "Pump_DE_bearing位置设置监测点",
+    "weight": 1.0
+  },
+  {
+    "source": "Ch5_Pump_NDE_bearing_V",
     "target": "Ch5",
     "relation": "安装于",
-    "description": "",
+    "description": "Pump_NDE_bearing安装Ch5传感器",
     "weight": 1.0
   },
   {
-    "source": "M_SIM_001",
-    "target": "fault_Parallel_misalignment",
-    "relation": "表现为",
-    "description": "该测量记录显示平行不对中特征",
+    "source": "Pump_NK80-250",
+    "target": "Ch5_Pump_NDE_bearing_V",
+    "relation": "监测点",
+    "description": "Pump_NDE_bearing位置设置监测点",
     "weight": 1.0
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_001",
-    "relation": "监测",
-    "description": "Motor4在50%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_001",
+    "source": "Motor_MG160MA",
     "target": "Speed_50pct",
     "relation": "工况",
-    "description": "转速50%",
+    "description": "MG160MA可在50%额定转速运行",
     "weight": 1.0
   },
   {
-    "source": "M_SIM_001",
-    "target": "M_SIM_001_rms",
-    "relation": "特征",
-    "description": "rms=0.607",
+    "source": "Motor_MG160MA",
+    "target": "Speed_75pct",
+    "relation": "工况",
+    "description": "MG160MA可在75%额定转速运行",
     "weight": 1.0
   },
   {
-    "source": "M_SIM_001",
-    "target": "M_SIM_001_peak",
-    "relation": "特征",
-    "description": "peak=3.249",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_001",
-    "target": "M_SIM_001_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.279",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_001",
-    "target": "M_SIM_001_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.227",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_001",
-    "target": "M_SIM_001_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.041",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_001",
-    "target": "M_SIM_001_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.017",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_001",
-    "target": "M_SIM_001_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.026",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_001",
-    "target": "M_SIM_001_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.011",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_001",
-    "target": "M_SIM_001_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=3.174",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_001",
-    "target": "M_SIM_001_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=3.876",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_002",
-    "target": "fault_Bearing_contaminated",
-    "relation": "表现为",
-    "description": "该测量记录显示轴承污染特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_002",
-    "relation": "监测",
-    "description": "Motor4在100%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_002",
+    "source": "Motor_MG160MA",
     "target": "Speed_100pct",
     "relation": "工况",
-    "description": "转速100%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_002",
-    "target": "M_SIM_002_rms",
-    "relation": "特征",
-    "description": "rms=0.580",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_002",
-    "target": "M_SIM_002_peak",
-    "relation": "特征",
-    "description": "peak=4.629",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_002",
-    "target": "M_SIM_002_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.150",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_002",
-    "target": "M_SIM_002_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.093",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_002",
-    "target": "M_SIM_002_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.036",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_002",
-    "target": "M_SIM_002_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.094",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_002",
-    "target": "M_SIM_002_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.108",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_002",
-    "target": "M_SIM_002_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.045",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_002",
-    "target": "M_SIM_002_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=3.575",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_002",
-    "target": "M_SIM_002_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=6.653",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_003",
-    "target": "fault_Bearing_BSF",
-    "relation": "表现为",
-    "description": "该测量记录显示轴承滚动体故障特征",
+    "description": "MG160MA可在100%额定转速运行",
     "weight": 1.0
   },
   {
     "source": "Motor_MG160MA",
-    "target": "M_SIM_003",
-    "relation": "监测",
-    "description": "Motor2在75%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_003",
-    "target": "Speed_75pct",
+    "target": "Speed_70pct",
     "relation": "工况",
-    "description": "转速75%",
+    "description": "MG160MA可在70%额定转速运行",
     "weight": 1.0
   },
   {
-    "source": "M_SIM_003",
-    "target": "M_SIM_003_rms",
-    "relation": "特征",
-    "description": "rms=1.455",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_003",
-    "target": "M_SIM_003_peak",
-    "relation": "特征",
-    "description": "peak=2.688",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_003",
-    "target": "M_SIM_003_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.229",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_003",
-    "target": "M_SIM_003_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.092",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_003",
-    "target": "M_SIM_003_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.025",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_003",
-    "target": "M_SIM_003_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.055",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_003",
-    "target": "M_SIM_003_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.020",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_003",
-    "target": "M_SIM_003_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.008",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_003",
-    "target": "M_SIM_003_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=1.046",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_003",
-    "target": "M_SIM_003_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=2.086",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_004",
-    "target": "fault_Impeller_fault",
+    "source": "fault_Angular_misalignment",
+    "target": "signal_pattern_freq_2x",
     "relation": "表现为",
-    "description": "该测量记录显示叶轮故障特征",
-    "weight": 1.0
+    "description": "角度不对中的核心特征：2X分量显著增大",
+    "weight": 0.9
   },
   {
-    "source": "Motor_MG160MA",
-    "target": "M_SIM_004",
-    "relation": "监测",
-    "description": "Motor2在50%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_004",
-    "target": "Speed_50pct",
-    "relation": "工况",
-    "description": "转速50%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_004",
-    "target": "M_SIM_004_rms",
-    "relation": "特征",
-    "description": "rms=2.724",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_004",
-    "target": "M_SIM_004_peak",
-    "relation": "特征",
-    "description": "peak=3.186",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_004",
-    "target": "M_SIM_004_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.397",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_004",
-    "target": "M_SIM_004_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.078",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_004",
-    "target": "M_SIM_004_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.028",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_004",
-    "target": "M_SIM_004_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.014",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_004",
-    "target": "M_SIM_004_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.025",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_004",
-    "target": "M_SIM_004_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.015",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_004",
-    "target": "M_SIM_004_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=2.927",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_004",
-    "target": "M_SIM_004_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=4.114",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_005",
-    "target": "fault_Unbalance_pump",
+    "source": "fault_Parallel_misalignment",
+    "target": "signal_pattern_freq_2x",
     "relation": "表现为",
-    "description": "该测量记录显示泵不平衡特征",
-    "weight": 1.0
+    "description": "平行不对中同样引起2X增大（轴向分量相对角度不对中偏小）",
+    "weight": 0.9
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_005",
-    "relation": "监测",
-    "description": "Motor4在75%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_005",
-    "target": "Speed_75pct",
-    "relation": "工况",
-    "description": "转速75%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_005",
-    "target": "M_SIM_005_rms",
-    "relation": "特征",
-    "description": "rms=1.368",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_005",
-    "target": "M_SIM_005_peak",
-    "relation": "特征",
-    "description": "peak=2.330",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_005",
-    "target": "M_SIM_005_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.408",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_005",
-    "target": "M_SIM_005_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.087",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_005",
-    "target": "M_SIM_005_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.038",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_005",
-    "target": "M_SIM_005_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.026",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_005",
-    "target": "M_SIM_005_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.022",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_005",
-    "target": "M_SIM_005_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.007",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_005",
-    "target": "M_SIM_005_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=3.449",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_005",
-    "target": "M_SIM_005_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=3.973",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_006",
-    "target": "fault_Impeller_fault",
+    "source": "fault_Unbalance_motor",
+    "target": "signal_pattern_freq_1x",
     "relation": "表现为",
-    "description": "该测量记录显示叶轮故障特征",
-    "weight": 1.0
+    "description": "不平衡的核心特征：1X径向振动为主导",
+    "weight": 0.9
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_006",
-    "relation": "监测",
-    "description": "Motor4在100%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_006",
-    "target": "Speed_100pct",
-    "relation": "工况",
-    "description": "转速100%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_006",
-    "target": "M_SIM_006_rms",
-    "relation": "特征",
-    "description": "rms=0.288",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_006",
-    "target": "M_SIM_006_peak",
-    "relation": "特征",
-    "description": "peak=2.990",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_006",
-    "target": "M_SIM_006_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.128",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_006",
-    "target": "M_SIM_006_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.063",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_006",
-    "target": "M_SIM_006_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.033",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_006",
-    "target": "M_SIM_006_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.029",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_006",
-    "target": "M_SIM_006_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.012",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_006",
-    "target": "M_SIM_006_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.005",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_006",
-    "target": "M_SIM_006_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=2.952",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_006",
-    "target": "M_SIM_006_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=3.573",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_007",
-    "target": "fault_Pump_bearing",
+    "source": "fault_Unbalance_pump",
+    "target": "signal_pattern_freq_1x",
     "relation": "表现为",
-    "description": "该测量记录显示泵轴承故障特征",
-    "weight": 1.0
+    "description": "泵不平衡同样表现为1X径向振动增大",
+    "weight": 0.9
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_007",
-    "relation": "监测",
-    "description": "Motor4在50%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_007",
-    "target": "Speed_50pct",
-    "relation": "工况",
-    "description": "转速50%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_007",
-    "target": "M_SIM_007_rms",
-    "relation": "特征",
-    "description": "rms=1.201",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_007",
-    "target": "M_SIM_007_peak",
-    "relation": "特征",
-    "description": "peak=3.388",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_007",
-    "target": "M_SIM_007_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.285",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_007",
-    "target": "M_SIM_007_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.057",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_007",
-    "target": "M_SIM_007_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.036",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_007",
-    "target": "M_SIM_007_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.068",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_007",
-    "target": "M_SIM_007_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.100",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_007",
-    "target": "M_SIM_007_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.034",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_007",
-    "target": "M_SIM_007_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=3.461",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_007",
-    "target": "M_SIM_007_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=6.917",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_008",
-    "target": "fault_Bearing_BSF",
+    "source": "fault_Bearing_BPFO",
+    "target": "signal_pattern_freq_bpfo",
     "relation": "表现为",
-    "description": "该测量记录显示轴承滚动体故障特征",
-    "weight": 1.0
+    "description": "轴承外圈故障的频域特征",
+    "weight": 0.9
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_008",
-    "relation": "监测",
-    "description": "Motor4在100%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_008",
-    "target": "Speed_100pct",
-    "relation": "工况",
-    "description": "转速100%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_008",
-    "target": "M_SIM_008_rms",
-    "relation": "特征",
-    "description": "rms=0.562",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_008",
-    "target": "M_SIM_008_peak",
-    "relation": "特征",
-    "description": "peak=4.180",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_008",
-    "target": "M_SIM_008_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.193",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_008",
-    "target": "M_SIM_008_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.056",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_008",
-    "target": "M_SIM_008_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.022",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_008",
-    "target": "M_SIM_008_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.119",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_008",
-    "target": "M_SIM_008_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.061",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_008",
-    "target": "M_SIM_008_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.035",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_008",
-    "target": "M_SIM_008_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=3.830",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_008",
-    "target": "M_SIM_008_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=7.142",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_009",
-    "target": "fault_Coupling_damage",
+    "source": "fault_Bearing_BPFI",
+    "target": "signal_pattern_freq_bpfi",
     "relation": "表现为",
-    "description": "该测量记录显示联轴器损坏特征",
-    "weight": 1.0
+    "description": "轴承内圈故障的频域特征",
+    "weight": 0.9
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_009",
-    "relation": "监测",
-    "description": "Motor4在75%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_009",
-    "target": "Speed_75pct",
-    "relation": "工况",
-    "description": "转速75%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_009",
-    "target": "M_SIM_009_rms",
-    "relation": "特征",
-    "description": "rms=1.327",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_009",
-    "target": "M_SIM_009_peak",
-    "relation": "特征",
-    "description": "peak=3.020",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_009",
-    "target": "M_SIM_009_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.183",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_009",
-    "target": "M_SIM_009_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.063",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_009",
-    "target": "M_SIM_009_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.048",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_009",
-    "target": "M_SIM_009_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.015",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_009",
-    "target": "M_SIM_009_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.026",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_009",
-    "target": "M_SIM_009_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.008",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_009",
-    "target": "M_SIM_009_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=2.698",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_009",
-    "target": "M_SIM_009_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=4.161",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "fault_Bearing_contaminated",
+    "source": "fault_Bearing_BSF",
+    "target": "signal_pattern_freq_bsf",
     "relation": "表现为",
-    "description": "该测量记录显示轴承污染特征",
-    "weight": 1.0
+    "description": "滚动体故障的频域特征",
+    "weight": 0.9
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_010",
-    "relation": "监测",
-    "description": "Motor4在100%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "Speed_100pct",
-    "relation": "工况",
-    "description": "转速100%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "M_SIM_010_rms",
-    "relation": "特征",
-    "description": "rms=1.093",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "M_SIM_010_peak",
-    "relation": "特征",
-    "description": "peak=4.025",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "M_SIM_010_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.172",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "M_SIM_010_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.072",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "M_SIM_010_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.022",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "M_SIM_010_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.028",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "M_SIM_010_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.040",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "M_SIM_010_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.006",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "M_SIM_010_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=1.076",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "M_SIM_010_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=1.867",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_011",
-    "target": "fault_Bearing_BSF",
+    "source": "fault_Cavitation_suction",
+    "target": "signal_pattern_freq_broadband",
     "relation": "表现为",
-    "description": "该测量记录显示轴承滚动体故障特征",
-    "weight": 1.0
+    "description": "气蚀的频域特征：宽频带能量增加",
+    "weight": 0.9
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_011",
-    "relation": "监测",
-    "description": "Motor4在50%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_011",
-    "target": "Speed_50pct",
-    "relation": "工况",
-    "description": "转速50%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_011",
-    "target": "M_SIM_011_rms",
-    "relation": "特征",
-    "description": "rms=0.569",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_011",
-    "target": "M_SIM_011_peak",
-    "relation": "特征",
-    "description": "peak=2.799",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_011",
-    "target": "M_SIM_011_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.269",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_011",
-    "target": "M_SIM_011_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.059",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_011",
-    "target": "M_SIM_011_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.021",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_011",
-    "target": "M_SIM_011_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.111",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_011",
-    "target": "M_SIM_011_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.078",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_011",
-    "target": "M_SIM_011_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.040",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_011",
-    "target": "M_SIM_011_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=3.669",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_011",
-    "target": "M_SIM_011_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=6.444",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_012",
-    "target": "fault_Bent_shaft",
+    "source": "fault_Cavitation_discharge",
+    "target": "signal_pattern_freq_broadband",
     "relation": "表现为",
-    "description": "该测量记录显示轴弯曲特征",
-    "weight": 1.0
+    "description": "排出口气蚀同样表现为宽频振动",
+    "weight": 0.9
   },
   {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_012",
-    "relation": "监测",
-    "description": "Motor4在75%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_012",
-    "target": "Speed_75pct",
-    "relation": "工况",
-    "description": "转速75%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_012",
-    "target": "M_SIM_012_rms",
-    "relation": "特征",
-    "description": "rms=0.877",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_012",
-    "target": "M_SIM_012_peak",
-    "relation": "特征",
-    "description": "peak=2.569",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_012",
-    "target": "M_SIM_012_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.161",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_012",
-    "target": "M_SIM_012_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.051",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_012",
-    "target": "M_SIM_012_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.037",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_012",
-    "target": "M_SIM_012_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.024",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_012",
-    "target": "M_SIM_012_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.013",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_012",
-    "target": "M_SIM_012_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.007",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_012",
-    "target": "M_SIM_012_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=3.213",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_012",
-    "target": "M_SIM_012_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=3.899",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_013",
-    "target": "fault_Combined_misalignment",
+    "source": "fault_Impeller_fault",
+    "target": "signal_pattern_freq_1x",
     "relation": "表现为",
-    "description": "该测量记录显示复合不对中特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_013",
-    "relation": "监测",
-    "description": "Motor4在50%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_013",
-    "target": "Speed_50pct",
-    "relation": "工况",
-    "description": "转速50%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_013",
-    "target": "M_SIM_013_rms",
-    "relation": "特征",
-    "description": "rms=1.323",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_013",
-    "target": "M_SIM_013_peak",
-    "relation": "特征",
-    "description": "peak=2.525",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_013",
-    "target": "M_SIM_013_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.199",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_013",
-    "target": "M_SIM_013_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.167",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_013",
-    "target": "M_SIM_013_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.044",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_013",
-    "target": "M_SIM_013_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.022",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_013",
-    "target": "M_SIM_013_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.013",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_013",
-    "target": "M_SIM_013_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.011",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_013",
-    "target": "M_SIM_013_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=2.724",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_013",
-    "target": "M_SIM_013_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=3.650",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_014",
-    "target": "fault_Pump_bearing",
-    "relation": "表现为",
-    "description": "该测量记录显示泵轴承故障特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_014",
-    "relation": "监测",
-    "description": "Motor4在75%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_014",
-    "target": "Speed_75pct",
-    "relation": "工况",
-    "description": "转速75%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_014",
-    "target": "M_SIM_014_rms",
-    "relation": "特征",
-    "description": "rms=0.831",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_014",
-    "target": "M_SIM_014_peak",
-    "relation": "特征",
-    "description": "peak=4.913",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_014",
-    "target": "M_SIM_014_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.149",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_014",
-    "target": "M_SIM_014_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.069",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_014",
-    "target": "M_SIM_014_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.028",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_014",
-    "target": "M_SIM_014_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.108",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_014",
-    "target": "M_SIM_014_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.075",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_014",
-    "target": "M_SIM_014_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.025",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_014",
-    "target": "M_SIM_014_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=1.964",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_014",
-    "target": "M_SIM_014_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=3.524",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "fault_Unbalance_pump",
-    "relation": "表现为",
-    "description": "该测量记录显示泵不平衡特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_015",
-    "relation": "监测",
-    "description": "Motor4在50%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "Speed_50pct",
-    "relation": "工况",
-    "description": "转速50%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "M_SIM_015_rms",
-    "relation": "特征",
-    "description": "rms=0.677",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "M_SIM_015_peak",
-    "relation": "特征",
-    "description": "peak=3.297",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "M_SIM_015_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.163",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "M_SIM_015_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.073",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "M_SIM_015_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.047",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "M_SIM_015_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.020",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "M_SIM_015_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.013",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "M_SIM_015_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.006",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "M_SIM_015_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=2.681",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "M_SIM_015_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=3.362",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_016",
-    "target": "fault_Unbalance_pump",
-    "relation": "表现为",
-    "description": "该测量记录显示泵不平衡特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG160MA",
-    "target": "M_SIM_016",
-    "relation": "监测",
-    "description": "Motor2在75%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_016",
-    "target": "Speed_75pct",
-    "relation": "工况",
-    "description": "转速75%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_016",
-    "target": "M_SIM_016_rms",
-    "relation": "特征",
-    "description": "rms=2.237",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_016",
-    "target": "M_SIM_016_peak",
-    "relation": "特征",
-    "description": "peak=3.645",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_016",
-    "target": "M_SIM_016_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=1.505",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_016",
-    "target": "M_SIM_016_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.084",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_016",
-    "target": "M_SIM_016_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.042",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_016",
-    "target": "M_SIM_016_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.019",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_016",
-    "target": "M_SIM_016_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.028",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_016",
-    "target": "M_SIM_016_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.008",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_016",
-    "target": "M_SIM_016_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=2.902",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_016",
-    "target": "M_SIM_016_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=4.844",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_017",
-    "target": "fault_Bearing_BPFI",
-    "relation": "表现为",
-    "description": "该测量记录显示轴承内圈故障特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_017",
-    "relation": "监测",
-    "description": "Motor4在75%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_017",
-    "target": "Speed_75pct",
-    "relation": "工况",
-    "description": "转速75%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_017",
-    "target": "M_SIM_017_rms",
-    "relation": "特征",
-    "description": "rms=0.530",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_017",
-    "target": "M_SIM_017_peak",
-    "relation": "特征",
-    "description": "peak=3.272",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_017",
-    "target": "M_SIM_017_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.107",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_017",
-    "target": "M_SIM_017_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.071",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_017",
-    "target": "M_SIM_017_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.037",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_017",
-    "target": "M_SIM_017_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.069",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_017",
-    "target": "M_SIM_017_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.040",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_017",
-    "target": "M_SIM_017_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.026",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_017",
-    "target": "M_SIM_017_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=2.375",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_017",
-    "target": "M_SIM_017_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=4.458",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_018",
-    "target": "fault_Pump_bearing",
-    "relation": "表现为",
-    "description": "该测量记录显示泵轴承故障特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG160MA",
-    "target": "M_SIM_018",
-    "relation": "监测",
-    "description": "Motor2在50%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_018",
-    "target": "Speed_50pct",
-    "relation": "工况",
-    "description": "转速50%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_018",
-    "target": "M_SIM_018_rms",
-    "relation": "特征",
-    "description": "rms=0.676",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_018",
-    "target": "M_SIM_018_peak",
-    "relation": "特征",
-    "description": "peak=2.983",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_018",
-    "target": "M_SIM_018_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.214",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_018",
-    "target": "M_SIM_018_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.052",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_018",
-    "target": "M_SIM_018_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.036",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_018",
-    "target": "M_SIM_018_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.051",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_018",
-    "target": "M_SIM_018_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.070",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_018",
-    "target": "M_SIM_018_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.020",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_018",
-    "target": "M_SIM_018_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=2.450",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_018",
-    "target": "M_SIM_018_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=3.586",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_019",
-    "target": "fault_Unbalance_motor",
-    "relation": "表现为",
-    "description": "该测量记录显示电机不平衡特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_019",
-    "relation": "监测",
-    "description": "Motor4在100%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_019",
-    "target": "Speed_100pct",
-    "relation": "工况",
-    "description": "转速100%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_019",
-    "target": "M_SIM_019_rms",
-    "relation": "特征",
-    "description": "rms=1.580",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_019",
-    "target": "M_SIM_019_peak",
-    "relation": "特征",
-    "description": "peak=3.149",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_019",
-    "target": "M_SIM_019_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.546",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_019",
-    "target": "M_SIM_019_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.084",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_019",
-    "target": "M_SIM_019_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.027",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_019",
-    "target": "M_SIM_019_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.013",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_019",
-    "target": "M_SIM_019_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.026",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_019",
-    "target": "M_SIM_019_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.009",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_019",
-    "target": "M_SIM_019_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=2.680",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_019",
-    "target": "M_SIM_019_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=4.188",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_020",
-    "target": "fault_Combined_misalignment",
-    "relation": "表现为",
-    "description": "该测量记录显示复合不对中特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG160MA",
-    "target": "M_SIM_020",
-    "relation": "监测",
-    "description": "Motor2在75%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_020",
-    "target": "Speed_75pct",
-    "relation": "工况",
-    "description": "转速75%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_020",
-    "target": "M_SIM_020_rms",
-    "relation": "特征",
-    "description": "rms=1.745",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_020",
-    "target": "M_SIM_020_peak",
-    "relation": "特征",
-    "description": "peak=2.294",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_020",
-    "target": "M_SIM_020_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.418",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_020",
-    "target": "M_SIM_020_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.191",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_020",
-    "target": "M_SIM_020_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.033",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_020",
-    "target": "M_SIM_020_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.010",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_020",
-    "target": "M_SIM_020_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.023",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_020",
-    "target": "M_SIM_020_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.015",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_020",
-    "target": "M_SIM_020_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=3.446",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_020",
-    "target": "M_SIM_020_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=4.187",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_021",
-    "target": "fault_Unbalance_pump",
-    "relation": "表现为",
-    "description": "该测量记录显示泵不平衡特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_021",
-    "relation": "监测",
-    "description": "Motor4在75%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_021",
-    "target": "Speed_75pct",
-    "relation": "工况",
-    "description": "转速75%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_021",
-    "target": "M_SIM_021_rms",
-    "relation": "特征",
-    "description": "rms=0.720",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_021",
-    "target": "M_SIM_021_peak",
-    "relation": "特征",
-    "description": "peak=3.271",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_021",
-    "target": "M_SIM_021_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.326",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_021",
-    "target": "M_SIM_021_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.089",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_021",
-    "target": "M_SIM_021_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.029",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_021",
-    "target": "M_SIM_021_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.015",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_021",
-    "target": "M_SIM_021_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.021",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_021",
-    "target": "M_SIM_021_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.008",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_021",
-    "target": "M_SIM_021_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=3.496",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_021",
-    "target": "M_SIM_021_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=3.233",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_022",
-    "target": "fault_Unbalance_motor",
-    "relation": "表现为",
-    "description": "该测量记录显示电机不平衡特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG160MA",
-    "target": "M_SIM_022",
-    "relation": "监测",
-    "description": "Motor2在50%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_022",
-    "target": "Speed_50pct",
-    "relation": "工况",
-    "description": "转速50%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_022",
-    "target": "M_SIM_022_rms",
-    "relation": "特征",
-    "description": "rms=0.676",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_022",
-    "target": "M_SIM_022_peak",
-    "relation": "特征",
-    "description": "peak=2.601",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_022",
-    "target": "M_SIM_022_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.440",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_022",
-    "target": "M_SIM_022_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.060",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_022",
-    "target": "M_SIM_022_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.031",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_022",
-    "target": "M_SIM_022_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.029",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_022",
-    "target": "M_SIM_022_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.022",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_022",
-    "target": "M_SIM_022_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.006",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_022",
-    "target": "M_SIM_022_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=2.568",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_022",
-    "target": "M_SIM_022_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=4.065",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_023",
-    "target": "fault_Bearing_contaminated",
-    "relation": "表现为",
-    "description": "该测量记录显示轴承污染特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_023",
-    "relation": "监测",
-    "description": "Motor4在75%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_023",
-    "target": "Speed_75pct",
-    "relation": "工况",
-    "description": "转速75%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_023",
-    "target": "M_SIM_023_rms",
-    "relation": "特征",
-    "description": "rms=1.062",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_023",
-    "target": "M_SIM_023_peak",
-    "relation": "特征",
-    "description": "peak=4.409",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_023",
-    "target": "M_SIM_023_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.220",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_023",
-    "target": "M_SIM_023_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.051",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_023",
-    "target": "M_SIM_023_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.041",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_023",
-    "target": "M_SIM_023_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.066",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_023",
-    "target": "M_SIM_023_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.068",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_023",
-    "target": "M_SIM_023_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.027",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_023",
-    "target": "M_SIM_023_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=2.226",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_023",
-    "target": "M_SIM_023_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=3.479",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_024",
-    "target": "fault_Angular_misalignment",
-    "relation": "表现为",
-    "description": "该测量记录显示角度不对中特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG160MA",
-    "target": "M_SIM_024",
-    "relation": "监测",
-    "description": "Motor2在75%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_024",
-    "target": "Speed_75pct",
-    "relation": "工况",
-    "description": "转速75%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_024",
-    "target": "M_SIM_024_rms",
-    "relation": "特征",
-    "description": "rms=1.429",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_024",
-    "target": "M_SIM_024_peak",
-    "relation": "特征",
-    "description": "peak=2.784",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_024",
-    "target": "M_SIM_024_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.275",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_024",
-    "target": "M_SIM_024_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.224",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_024",
-    "target": "M_SIM_024_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.037",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_024",
-    "target": "M_SIM_024_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.013",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_024",
-    "target": "M_SIM_024_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.026",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_024",
-    "target": "M_SIM_024_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.006",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_024",
-    "target": "M_SIM_024_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=3.484",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_024",
-    "target": "M_SIM_024_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=4.999",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_025",
-    "target": "fault_Cavitation_discharge",
-    "relation": "表现为",
-    "description": "该测量记录显示排出口气蚀特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_025",
-    "relation": "监测",
-    "description": "Motor4在50%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_025",
-    "target": "Speed_50pct",
-    "relation": "工况",
-    "description": "转速50%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_025",
-    "target": "M_SIM_025_rms",
-    "relation": "特征",
-    "description": "rms=0.751",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_025",
-    "target": "M_SIM_025_peak",
-    "relation": "特征",
-    "description": "peak=3.308",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_025",
-    "target": "M_SIM_025_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.311",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_025",
-    "target": "M_SIM_025_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.130",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_025",
-    "target": "M_SIM_025_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.052",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_025",
-    "target": "M_SIM_025_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.036",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_025",
-    "target": "M_SIM_025_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.044",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_025",
-    "target": "M_SIM_025_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.009",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_025",
-    "target": "M_SIM_025_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=2.575",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_025",
-    "target": "M_SIM_025_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=3.214",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_026",
-    "target": "fault_Coupling_damage",
-    "relation": "表现为",
-    "description": "该测量记录显示联轴器损坏特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_026",
-    "relation": "监测",
-    "description": "Motor4在100%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_026",
-    "target": "Speed_100pct",
-    "relation": "工况",
-    "description": "转速100%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_026",
-    "target": "M_SIM_026_rms",
-    "relation": "特征",
-    "description": "rms=0.878",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_026",
-    "target": "M_SIM_026_peak",
-    "relation": "特征",
-    "description": "peak=4.891",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_026",
-    "target": "M_SIM_026_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.159",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_026",
-    "target": "M_SIM_026_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.065",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_026",
-    "target": "M_SIM_026_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.047",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_026",
-    "target": "M_SIM_026_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.025",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_026",
-    "target": "M_SIM_026_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.019",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_026",
-    "target": "M_SIM_026_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.009",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_026",
-    "target": "M_SIM_026_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=3.405",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_026",
-    "target": "M_SIM_026_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=4.892",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_027",
-    "target": "fault_Coupling_damage",
-    "relation": "表现为",
-    "description": "该测量记录显示联轴器损坏特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_027",
-    "relation": "监测",
-    "description": "Motor4在50%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_027",
-    "target": "Speed_50pct",
-    "relation": "工况",
-    "description": "转速50%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_027",
-    "target": "M_SIM_027_rms",
-    "relation": "特征",
-    "description": "rms=1.495",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_027",
-    "target": "M_SIM_027_peak",
-    "relation": "特征",
-    "description": "peak=2.841",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_027",
-    "target": "M_SIM_027_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.196",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_027",
-    "target": "M_SIM_027_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.060",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_027",
-    "target": "M_SIM_027_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.030",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_027",
-    "target": "M_SIM_027_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.022",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_027",
-    "target": "M_SIM_027_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.022",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_027",
-    "target": "M_SIM_027_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.006",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_027",
-    "target": "M_SIM_027_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=2.930",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_027",
-    "target": "M_SIM_027_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=3.204",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_028",
-    "target": "fault_Broken_rotor_bar",
-    "relation": "表现为",
-    "description": "该测量记录显示断条特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG160MA",
-    "target": "M_SIM_028",
-    "relation": "监测",
-    "description": "Motor2在75%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_028",
-    "target": "Speed_75pct",
-    "relation": "工况",
-    "description": "转速75%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_028",
-    "target": "M_SIM_028_rms",
-    "relation": "特征",
-    "description": "rms=1.512",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_028",
-    "target": "M_SIM_028_peak",
-    "relation": "特征",
-    "description": "peak=3.770",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_028",
-    "target": "M_SIM_028_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.362",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_028",
-    "target": "M_SIM_028_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.065",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_028",
-    "target": "M_SIM_028_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.027",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_028",
-    "target": "M_SIM_028_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.016",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_028",
-    "target": "M_SIM_028_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.026",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_028",
-    "target": "M_SIM_028_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.010",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_028",
-    "target": "M_SIM_028_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=2.840",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_028",
-    "target": "M_SIM_028_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=4.025",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_029",
-    "target": "fault_Combined_misalignment",
-    "relation": "表现为",
-    "description": "该测量记录显示复合不对中特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_029",
-    "relation": "监测",
-    "description": "Motor4在50%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_029",
-    "target": "Speed_50pct",
-    "relation": "工况",
-    "description": "转速50%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_029",
-    "target": "M_SIM_029_rms",
-    "relation": "特征",
-    "description": "rms=2.059",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_029",
-    "target": "M_SIM_029_peak",
-    "relation": "特征",
-    "description": "peak=3.737",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_029",
-    "target": "M_SIM_029_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.446",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_029",
-    "target": "M_SIM_029_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.344",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_029",
-    "target": "M_SIM_029_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.027",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_029",
-    "target": "M_SIM_029_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.026",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_029",
-    "target": "M_SIM_029_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.027",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_029",
-    "target": "M_SIM_029_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.014",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_029",
-    "target": "M_SIM_029_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=2.943",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_029",
-    "target": "M_SIM_029_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=3.289",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_030",
-    "target": "fault_Pump_bearing",
-    "relation": "表现为",
-    "description": "该测量记录显示泵轴承故障特征",
-    "weight": 1.0
-  },
-  {
-    "source": "Motor_MG180MB",
-    "target": "M_SIM_030",
-    "relation": "监测",
-    "description": "Motor4在100%转速下采集",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_030",
-    "target": "Speed_100pct",
-    "relation": "工况",
-    "description": "转速100%",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_030",
-    "target": "M_SIM_030_rms",
-    "relation": "特征",
-    "description": "rms=1.340",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_030",
-    "target": "M_SIM_030_peak",
-    "relation": "特征",
-    "description": "peak=4.361",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_030",
-    "target": "M_SIM_030_freq_1x",
-    "relation": "特征",
-    "description": "freq_1x=0.115",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_030",
-    "target": "M_SIM_030_freq_2x",
-    "relation": "特征",
-    "description": "freq_2x=0.092",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_030",
-    "target": "M_SIM_030_freq_3x",
-    "relation": "特征",
-    "description": "freq_3x=0.030",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_030",
-    "target": "M_SIM_030_freq_bpfo",
-    "relation": "特征",
-    "description": "freq_bpfo=0.162",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_030",
-    "target": "M_SIM_030_freq_bpfi",
-    "relation": "特征",
-    "description": "freq_bpfi=0.113",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_030",
-    "target": "M_SIM_030_freq_bsf",
-    "relation": "特征",
-    "description": "freq_bsf=0.046",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_030",
-    "target": "M_SIM_030_kurtosis",
-    "relation": "特征",
-    "description": "kurtosis=4.851",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_030",
-    "target": "M_SIM_030_crest_factor",
-    "relation": "特征",
-    "description": "crest_factor=9.241",
-    "weight": 1.0
-  },
-  {
-    "source": "M_SIM_002",
-    "target": "M_SIM_010",
-    "relation": "后续测量",
-    "description": "M_SIM_002 → M_SIM_010 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "M_SIM_002",
-    "relation": "前次测量",
-    "description": "M_SIM_010 ← M_SIM_002 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "M_SIM_023",
-    "relation": "后续测量",
-    "description": "M_SIM_010 → M_SIM_023 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_023",
-    "target": "M_SIM_010",
-    "relation": "前次测量",
-    "description": "M_SIM_023 ← M_SIM_010 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_003",
-    "target": "M_SIM_008",
-    "relation": "后续测量",
-    "description": "M_SIM_003 → M_SIM_008 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_008",
-    "target": "M_SIM_003",
-    "relation": "前次测量",
-    "description": "M_SIM_008 ← M_SIM_003 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_008",
-    "target": "M_SIM_011",
-    "relation": "后续测量",
-    "description": "M_SIM_008 → M_SIM_011 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_011",
-    "target": "M_SIM_008",
-    "relation": "前次测量",
-    "description": "M_SIM_011 ← M_SIM_008 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_004",
-    "target": "M_SIM_006",
-    "relation": "后续测量",
-    "description": "M_SIM_004 → M_SIM_006 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_006",
-    "target": "M_SIM_004",
-    "relation": "前次测量",
-    "description": "M_SIM_006 ← M_SIM_004 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_005",
-    "target": "M_SIM_015",
-    "relation": "后续测量",
-    "description": "M_SIM_005 → M_SIM_015 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "M_SIM_005",
-    "relation": "前次测量",
-    "description": "M_SIM_015 ← M_SIM_005 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "M_SIM_016",
-    "relation": "后续测量",
-    "description": "M_SIM_015 → M_SIM_016 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_016",
-    "target": "M_SIM_015",
-    "relation": "前次测量",
-    "description": "M_SIM_016 ← M_SIM_015 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_016",
-    "target": "M_SIM_021",
-    "relation": "后续测量",
-    "description": "M_SIM_016 → M_SIM_021 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_021",
-    "target": "M_SIM_016",
-    "relation": "前次测量",
-    "description": "M_SIM_021 ← M_SIM_016 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_007",
-    "target": "M_SIM_014",
-    "relation": "后续测量",
-    "description": "M_SIM_007 → M_SIM_014 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_014",
-    "target": "M_SIM_007",
-    "relation": "前次测量",
-    "description": "M_SIM_014 ← M_SIM_007 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_014",
-    "target": "M_SIM_018",
-    "relation": "后续测量",
-    "description": "M_SIM_014 → M_SIM_018 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_018",
-    "target": "M_SIM_014",
-    "relation": "前次测量",
-    "description": "M_SIM_018 ← M_SIM_014 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_018",
-    "target": "M_SIM_030",
-    "relation": "后续测量",
-    "description": "M_SIM_018 → M_SIM_030 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_030",
-    "target": "M_SIM_018",
-    "relation": "前次测量",
-    "description": "M_SIM_030 ← M_SIM_018 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_009",
-    "target": "M_SIM_026",
-    "relation": "后续测量",
-    "description": "M_SIM_009 → M_SIM_026 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_026",
-    "target": "M_SIM_009",
-    "relation": "前次测量",
-    "description": "M_SIM_026 ← M_SIM_009 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_026",
-    "target": "M_SIM_027",
-    "relation": "后续测量",
-    "description": "M_SIM_026 → M_SIM_027 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_027",
-    "target": "M_SIM_026",
-    "relation": "前次测量",
-    "description": "M_SIM_027 ← M_SIM_026 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_013",
-    "target": "M_SIM_020",
-    "relation": "后续测量",
-    "description": "M_SIM_013 → M_SIM_020 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_020",
-    "target": "M_SIM_013",
-    "relation": "前次测量",
-    "description": "M_SIM_020 ← M_SIM_013 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_020",
-    "target": "M_SIM_029",
-    "relation": "后续测量",
-    "description": "M_SIM_020 → M_SIM_029 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_029",
-    "target": "M_SIM_020",
-    "relation": "前次测量",
-    "description": "M_SIM_029 ← M_SIM_020 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_019",
-    "target": "M_SIM_022",
-    "relation": "后续测量",
-    "description": "M_SIM_019 → M_SIM_022 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_022",
-    "target": "M_SIM_019",
-    "relation": "前次测量",
-    "description": "M_SIM_022 ← M_SIM_019 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_002",
-    "target": "M_SIM_005",
-    "relation": "后续测量",
-    "description": "M_SIM_002 → M_SIM_005 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_005",
-    "target": "M_SIM_002",
-    "relation": "前次测量",
-    "description": "M_SIM_005 ← M_SIM_002 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_006",
-    "target": "M_SIM_018",
-    "relation": "后续测量",
-    "description": "M_SIM_006 → M_SIM_018 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_018",
-    "target": "M_SIM_006",
-    "relation": "前次测量",
-    "description": "M_SIM_018 ← M_SIM_006 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_007",
-    "target": "M_SIM_008",
-    "relation": "后续测量",
-    "description": "M_SIM_007 → M_SIM_008 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_008",
-    "target": "M_SIM_007",
-    "relation": "前次测量",
-    "description": "M_SIM_008 ← M_SIM_007 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_009",
-    "target": "M_SIM_010",
-    "relation": "后续测量",
-    "description": "M_SIM_009 → M_SIM_010 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "M_SIM_009",
-    "relation": "前次测量",
-    "description": "M_SIM_010 ← M_SIM_009 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_014",
-    "target": "M_SIM_015",
-    "relation": "后续测量",
-    "description": "M_SIM_014 → M_SIM_015 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "M_SIM_014",
-    "relation": "前次测量",
-    "description": "M_SIM_015 ← M_SIM_014 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "M_SIM_020",
-    "relation": "后续测量",
-    "description": "M_SIM_015 → M_SIM_020 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_020",
-    "target": "M_SIM_015",
-    "relation": "前次测量",
-    "description": "M_SIM_020 ← M_SIM_015 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_001",
-    "target": "M_SIM_009",
-    "relation": "后续测量",
-    "description": "M_SIM_001 → M_SIM_009 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_009",
-    "target": "M_SIM_001",
-    "relation": "前次测量",
-    "description": "M_SIM_009 ← M_SIM_001 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_002",
-    "target": "M_SIM_015",
-    "relation": "后续测量",
-    "description": "M_SIM_002 → M_SIM_015 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "M_SIM_002",
-    "relation": "前次测量",
-    "description": "M_SIM_015 ← M_SIM_002 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_006",
-    "target": "M_SIM_013",
-    "relation": "后续测量",
-    "description": "M_SIM_006 → M_SIM_013 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_013",
-    "target": "M_SIM_006",
-    "relation": "前次测量",
-    "description": "M_SIM_013 ← M_SIM_006 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_008",
-    "target": "M_SIM_010",
-    "relation": "后续测量",
-    "description": "M_SIM_008 → M_SIM_010 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "M_SIM_008",
-    "relation": "前次测量",
-    "description": "M_SIM_010 ← M_SIM_008 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_004",
-    "target": "M_SIM_005",
-    "relation": "后续测量",
-    "description": "M_SIM_004 → M_SIM_005 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_005",
-    "target": "M_SIM_004",
-    "relation": "前次测量",
-    "description": "M_SIM_005 ← M_SIM_004 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_006",
-    "target": "M_SIM_012",
-    "relation": "后续测量",
-    "description": "M_SIM_006 → M_SIM_012 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_012",
-    "target": "M_SIM_006",
-    "relation": "前次测量",
-    "description": "M_SIM_012 ← M_SIM_006 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "M_SIM_014",
-    "relation": "后续测量",
-    "description": "M_SIM_010 → M_SIM_014 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_014",
-    "target": "M_SIM_010",
-    "relation": "前次测量",
-    "description": "M_SIM_014 ← M_SIM_010 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_013",
-    "target": "M_SIM_015",
-    "relation": "后续测量",
-    "description": "M_SIM_013 → M_SIM_015 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_015",
-    "target": "M_SIM_013",
-    "relation": "前次测量",
-    "description": "M_SIM_015 ← M_SIM_013 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_002",
-    "target": "M_SIM_008",
-    "relation": "后续测量",
-    "description": "M_SIM_002 → M_SIM_008 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_008",
-    "target": "M_SIM_002",
-    "relation": "前次测量",
-    "description": "M_SIM_008 ← M_SIM_002 (时序后继)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_003",
-    "target": "M_SIM_010",
-    "relation": "后续测量",
-    "description": "M_SIM_003 → M_SIM_010 (时序前驱)",
-    "weight": 0.5
-  },
-  {
-    "source": "M_SIM_010",
-    "target": "M_SIM_003",
-    "relation": "前次测量",
-    "description": "M_SIM_010 ← M_SIM_003 (时序后继)",
-    "weight": 0.5
+    "description": "叶轮磨损/不平衡导致1X增大",
+    "weight": 0.9
   }
 ]

@@ -1,0 +1,419 @@
+# 离心泵设备故障诊断时序知识图谱平台 — 完整项目实施计划（修订版）
+
+## Context
+
+### 项目定位
+基于时序知识图谱的航空泵类设备故障管理及预测方法研究。
+分为两大板块：
+- **板块一：TKG 构建** — 从设备文档和传感器数据构建时序知识图谱（当前阶段侧重）
+- **板块二：故障诊断与预测** — 基于 TKG + 深度学习模型实现诊断和预测（后续阶段）
+
+两板块在一定程度上可并行推进。
+
+### 当前项目状态
+`pump_tkg` 已基于纯文本构建了一个基础的静态知识图谱（设备→部件→故障类型+传感器），支持 JSON → ECharts 可视化 + Neo4j 导入 + Streamlit Web 界面。存在关键缺陷：
+- 静态图谱，无时序推理能力
+- 无混合检索（向量+图谱），无 Agentic RAG
+- 诊断逻辑为关键词匹配，无 LLM
+- 传感器数据仅为模拟
+
+### 已确认前提条件
+- ✅ 完整 TKG_Data 真实传感器数据集（CSV 振动/电流数据 + 附属设备文档 PDF）
+- ✅ Neo4j 已安装并运行
+- ✅ Ollama 已安装并下载本地 LLM 模型
+
+### 核心参考文献结论
+1. **Li et al. (Science, 2017)** — 时序网络在可控性、能量效率、轨迹紧凑性上远超静态网络。**时序性是根本性优势，不是锦上添花**
+2. **框架对比 PDF** — 纯 GraphRAG 效果差，混合检索（向量+预定义图谱，Scenario 5）是唯一有效方案，Agentic RAG（Scenario 8）最优
+3. **实施参考 DOCX** — 推荐两套方案对比实验，标准化评估指标
+4. **进展报告** — 技术选型已确定（BERT-BiGRU-Attention-CRF 实体识别，BiGRU-Attention 关系抽取，时序翻译模型 Baseline + GNN 核心推理），核心创新在于**将时间升维为关系维度**
+
+---
+
+## 关键技术决策（经讨论确认）
+
+### 决策 1：时序模型 — 抛弃"时间作属性"，采用"时序四元组"
+**结论**：完全摈弃现有的 `TemporalAdapter` 设计（将时间戳作为实体属性），采用时序四元组模型。
+
+```
+时序四元组: (头实体, 时序关系, 尾实体, 时间区间/时间点)
+
+时序关系类型:
+  - BEFORE / AFTER（先于 / 后于）     → 事件序列链
+  - CAUSES / CAUSED_BY（导致 / 被导致）→ 因果链（故障传播）
+  - DURING（期间并发）                 → 共現关系
+  - TERMINATES（终止）                 → 维修/恢复关系
+  - EVOLVES_TO（演化为）               → 故障劣化路径
+
+示例:
+  (轴承BPFO故障, CAUSES, 振动RMS超阈值, [t₁, t₂])
+  (角度不对中, EVOLVES_TO, 轴承BPFO故障, [t₀, t₁])
+  (对中调整操作, TERMINATES, 角度不对中, [t₂])
+```
+
+**理论基础**：
+- Li et al. (Science, 2017) 证明：时序边（temporal links）的存在使得网络能够在更少的"快照"内实现完全可控，所需控制能量低几个数量级
+- 与进展报告中的技术路线一致：`TTansE` 翻译模型作为基线，`EvolveGCN` 作为核心推理模型，两者都以时序四元组为基础
+
+### 决策 2：Neo4j 的定位与桌面应用方案
+- **当前阶段**：Neo4j 作为开发验证阶段的图数据库，利用 Cypher 进行复杂图查询和时序链遍历
+- **数据流**：`entities.json` + `relationships.json` → `neo4j_import.py` → Neo4j（批量导入）
+- **ECharts 可视化的局限性**：JSON 在浏览器内存中加载，<1000 节点可接受，不适用于大规模时序图谱；不支持图查询
+- **桌面应用替代方案**（Phase 6 评估）：
+  - **Kùzu**（首选）：Python 原生嵌入式图数据库，`pip install kuzu`，支持 Cypher 语法，无需独立服务进程，专为嵌入式场景设计
+  - **DuckDB + 图查询扩展**：备选，适合混合查询场景
+
+### 决策 3：两大板块的并行策略
+- **TKG 构建**依赖文本（设备文档 + 故障知识 + 传感器元数据），当前即可推进
+- **故障预测**依赖传感器信号 + 深度学习模型训练，相对独立
+- **交汇点**：TKG 提供"故障因果知识"，DL 模型提供"信号模式匹配"，融合决策实现预测
+- **当前计划**：Phase 2-4 聚焦 TKG 构建，Phase 5 预留预测模型接口
+
+### 决策 4：不追求全自动图谱抽取
+- 根据框架对比 PDF 的 Scenario 4 结论：自动抽取三元组噪声大、召回率低
+- 采取"预定义 Schema + 半自动填充"策略：核心设备-故障关系预定义，传感器数据按 Schema 自动注入，非结构化文档信息由向量库补充
+
+---
+
+## Phase 1: 基础设施重构 + 真实数据接入（预计 4-5 天）
+
+**目标**：修复缺陷，统一代码结构，接入真实数据集，建立 Baseline。
+
+### 1.1 代码质量修复
+- 修复 `scripts/build_index.py:169` 的 Bug（`domain._build_equipment_specs.__class__` 输出 Python repr）
+- 统一 `build_index.py` 和 `build_full.py` 的图构建逻辑，抽取为 `core/kg_builder.py`
+- 清理 `{core,data` 错误目录
+- 创建 `requirements.txt` / `pyproject.toml`
+
+### 1.2 真实数据集接入
+- 实现 `scripts/ingest_real_sensors.py`：
+  - 解析 TKG_Data 真实 CSV（振动/电流信号 → 时域/频域特征提取）
+  - 特征包括：RMS、峰值、峭度、1X/2X/3X 转频分量、BPFO/BPFI/BSF 故障特征频率分量
+  - 关联 CSV 文件路径中的元数据（故障类型、严重度、转速）
+- 处理附属设备文档（PDF 中的技术参数表、设备结构信息），提取为结构化设备规格
+
+### 1.3 建立 Baseline 评估框架
+- 定义评估查询集（30 条，覆盖 L1/L2/L3/L4 四个层级）
+- 在现有纯文本 KG + Neo4j 上运行 Baseline 测试
+- 记录基线指标（Hit@1、MRR、查询延迟）
+
+### 交付物
+- `core/kg_builder.py` — 统一的 KG 构建模块
+- `scripts/ingest_real_sensors.py` — 真实 CSV 解析
+- `evaluation/test_queries.json` — 标准化测试查询集
+- `docs/baseline_results.md` — 基准测试结果
+
+---
+
+## Phase 2: 时序知识图谱核心引擎（预计 6-8 天）
+
+**目标**：构建基于时序四元组的 TKG 核心引擎，这是整个项目的基础设施，两套方案共用。
+
+> **关键设计决定**：时序模块不绑定于任何特定框架（Graphiti 或 LightRAG），而是一个独立的、框架无关的 Python 模块。方案 A 和 B 只是在这个时序核心之上的不同检索和编排策略。
+
+### 2.1 时序四元组模型 (`core/temporal/temporal_quad.py`)
+
+```python
+@dataclass
+class TemporalQuad:
+    """时序四元组: (头实体, 时序关系, 尾实体, 时间区间)"""
+    head_entity: str       # 头实体 ID
+    relation: TemporalRelation  # 时序关系类型
+    tail_entity: str       # 尾实体 ID
+    valid_from: datetime   # 关系生效时间
+    valid_to: Optional[datetime]  # 关系失效时间 (None=持续至今)
+    confidence: float = 1.0
+    source: str = ""       # 来源（文档/传感器推导）
+
+class TemporalRelation(Enum):
+    BEFORE = "先于"
+    AFTER = "后于"
+    CAUSES = "导致"
+    CAUSED_BY = "被导致"
+    DURING = "期间并发"
+    TERMINATES = "终止"
+    EVOLVES_TO = "演化为"
+    MEASURED_AT = "测量于"
+```
+
+### 2.2 时序图谱存储 (`core/temporal/temporal_store.py`)
+- 基于 Neo4j 的时序四元组存储层
+- 支持的操作：
+  - `insert_quad(quad)` — 插入时序四元组
+  - `query_at_time(timestamp)` — 获取某时刻的图谱快照
+  - `query_time_range(start, end)` — 时间范围查询
+  - `trace_temporal_path(start_entity, direction, max_depth)` — 时序链遍历
+  - `detect_temporal_conflicts(quad)` — 时序冲突检测与消解
+- 使用 Neo4j 的时间索引优化时序查询性能
+
+### 2.3 时序推理引擎 (`core/temporal/temporal_reasoner.py`)
+- 实现两类推理：
+  - **规则推理**：基于 Allen 区间代数的时序关系传递性推理
+    - 例：`A BEFORE B` ∧ `B BEFORE C` ⇒ `A BEFORE C`
+    - 例：`A CAUSES B` ∧ `B BEFORE C` ⇒ `A BEFORE C`
+  - **图遍历推理**：在时序图上做路径搜索，发现间接因果链
+    - 例：追踪"角度不对中 → 轴承磨损 → 振动超阈值"的完整故障传播链
+- 预留深度学习推理接口（Phase 5 对接 TTansE / EvolveGCN）
+
+### 2.4 传感器-图谱桥接 (`core/temporal/sensor_bridge.py`)
+- 从传感器 CSV 特征向量 → 时序四元组：
+  - `feature_threshold_event(feature_name, threshold, time_window)` → 生成 EVOLVES_TO 关系
+  - `trend_detection(series, window)` → 检测上升/下降/突变趋势，生成 CAUSES 关系
+  - `anomaly_injection(anomalies)` → 异常标记为测量记录实体并链接到时序链
+
+### 交付物
+- `core/temporal/` — 时序知识图谱核心引擎
+  - `__init__.py`
+  - `temporal_quad.py` — 时序四元组数据模型
+  - `temporal_store.py` — Neo4j 存储层
+  - `temporal_reasoner.py` — 时序推理引擎
+  - `sensor_bridge.py` — 传感器-图谱桥接
+- `tests/test_temporal/` — 时序模块单元测试
+
+---
+
+## Phase 3: 实验轨 A — LightRAG + 混合检索 + Agent（预计 5-7 天）
+
+**目标**：在时序核心之上，用 LightRAG + RAG-Anything 构建轻量方案。
+
+### 3.1 架构
+```
+┌──────────────────────────────────────────────┐
+│           Langgraph Agent (Router)            │
+│  ┌───────────┐ ┌─────────────┐ ┌──────────┐ │
+│  │ 简单事实   │ │ 时序+因果    │ │ 多模态    │ │
+│  │ → Chroma  │ │ → TKG Core  │ │ → RA-Anyt │ │
+│  │ 向量检索   │ │ 时序推理     │ │ 文档解析  │ │
+│  └───────────┘ └─────────────┘ └──────────┘ │
+├──────────────────────────────────────────────┤
+│  存储层                                       │
+│  ┌──────────┐ ┌──────────────┐ ┌──────────┐ │
+│  │ Chroma   │ │ Neo4j        │ │ LightRAG │ │
+│  │ 文档向量  │ │ TKG 时序四元组│ │ 图存储    │ │
+│  └──────────┘ └──────────────┘ └──────────┘ │
+│  LLM: Ollama (qwen2.5 / llama3)              │
+└──────────────────────────────────────────────┘
+```
+
+### 3.2 模块开发
+- `core/vector_store.py` — Chroma 向量库封装（存储设备文档块 + 传感器特征向量）
+- `core/lightrag_engine.py` — LightRAG 集成（global 模式处理图谱关系，local 模式精确匹配）
+- `core/multimodal_engine.py` — RAG-Anything 多模态处理（设备手册中的图表/表格/公式）
+- `agents/graph_agent_a.py` — Langgraph Agent：Router → 路由 → 检索 → 综合 → 诊断结论
+
+### 3.3 混合检索策略
+- 用户提问 → Router Agent 分类（简单事实 / 时序因果 / 多模态文档）
+- 时序查询 → 先走 Neo4j TKG Core 的 `trace_temporal_path`，再叠加 Chroma 向量检索补充上下文
+- 结果融合：RRF（Reciprocal Rank Fusion）合并排序
+
+### 交付物
+- `core/vector_store.py`、`core/lightrag_engine.py`、`core/multimodal_engine.py`
+- `agents/graph_agent_a.py`
+- `configs/approach_a.yaml`
+
+---
+
+## Phase 4: 实验轨 B — Graphiti + Agent（预计 5-7 天）
+
+**目标**：在时序核心之上，用 Graphiti（原生时序 KG 框架）作为替代时序存储后端，对比原生支持 vs 自建时序模块。
+
+### 4.1 架构
+```
+┌──────────────────────────────────────────────┐
+│           Langgraph Agent (Router)            │
+│  ┌───────────┐ ┌─────────────┐ ┌──────────┐ │
+│  │ 简单事实   │ │ 时序推理     │ │ 故障传播  │ │
+│  │ → Chroma  │ │ → Graphiti  │ │ → TKG    │ │
+│  │ 向量检索   │ │ Temporal API│ │ Reasoner  │ │
+│  └───────────┘ └─────────────┘ └──────────┘ │
+├──────────────────────────────────────────────┤
+│  Graphiti + Neo4j（双时态：event_time/ingest_time）│
+│  Chroma 向量库                                 │
+│  LLM: Ollama                                   │
+└──────────────────────────────────────────────┘
+```
+
+### 4.2 核心问题
+- **Graphiti 与我们的时序四元组模型的关系**：Graphiti 的 Entity/Relationship 天然支持时间戳，但需要将我们的时序关系（CAUSES/BEFORE/EVOLVES_TO 等）映射为 Graphiti 的 Relationship 类型
+- **关键测试点**：Graphiti 的 `temporal_between` API 性能是否能满足需求（目标 ≤2s）
+
+### 4.3 模块开发
+- `core/graphiti_engine.py` — Graphiti 集成（迁移 Neo4j 数据 → Graphiti 双时态格式）
+- `core/hybrid_search.py` — 混合检索（Graphiti 时序查询 + Chroma 向量 + RRF 融合）
+- `agents/graph_agent_b.py` — Agent（与方案 A 相同的状态结构和路由逻辑，保证公平对比）
+- `scripts/migrate_to_graphiti.py` — Neo4j 数据迁移脚本
+
+### 交付物
+- `core/graphiti_engine.py`、`core/hybrid_search.py`
+- `agents/graph_agent_b.py`
+- `configs/approach_b.yaml`
+
+---
+
+## Phase 5: 对比评估与方案选择（预计 3-4 天）
+
+### 5.1 评估框架
+- **测试集**：50+ 条查询，分 L1-L4 四层
+  - L1 — 简单事实（15 条）
+  - L2 — 多跳关联（15 条）
+  - L3 — 时序推理（15 条）
+  - L4 — 故障诊断推理（5 条）
+- **评估指标**：
+  | 指标 | 说明 | 目标值 |
+  |------|------|--------|
+  | Hit@1 | Top-1 准确率 | >0.85 |
+  | MRR | 平均倒数排名 | >0.90 |
+  | 时序推理准确率 | 时序查询正确率 | >0.80 |
+  | 查询延迟 P50/P95 | | P50<500ms, P95<2s |
+  | 索引构建时间 | 全量数据 | <10min |
+  | 内存峰值 | | <8GB |
+
+### 5.2 对比维度
+```
+Baseline (纯文本 KG)  vs  方案A (LightRAG+自建TKG)  vs  方案B (Graphiti+TKG)
+```
+
+### 5.3 决策标准
+- 差异 <15% → 选低成本方案（方案 A）
+- 方案 B 在时序推理上领先 >20% 且延迟可接受 → 选方案 B
+- 各有优劣 → 混合方案（Graphiti 做时序存储 + LightRAG 做文档检索）
+
+---
+
+## Phase 6: 最终方案全量开发（预计 5-7 天）
+
+### 6.1 完善内容
+- 全量传感器数据导入 TKG_Data 所有 CSV
+- 优化检索性能（缓存、索引优化）
+- 增量更新机制
+- Web UI 增强（时序趋势图、故障传播图、Agent 对话）
+
+### 6.2 预测模块接口预留
+```
+core/prediction/
+├── __init__.py
+├── signal_encoder.py     # 传感器信号 → 特征向量编码
+├── tkg_encoder.py        # 时序图谱 → 图嵌入编码
+├── fusion_predictor.py   # 特征+图谱 融合预测接口
+└── models/               # DL 模型占位
+    ├── ttrans_e.py       # TTansE 基线
+    └── evolve_gcn.py     # EvolveGCN 核心推理
+```
+
+### 6.3 桌面应用评估
+- 评估 Kùzu 作为嵌入式图数据库替代 Neo4j
+- 评估 Streamlit vs 其他桌面化方案
+
+---
+
+## Phase 7: 部署与文档（预计 2-3 天）
+
+- `docker-compose.yml`（Neo4j + Chroma + Ollama + App）
+- `README.md`、`docs/architecture.md`
+- CLAUDE.md 更新
+
+---
+
+## 目标项目目录结构
+
+```
+pump_tkg/
+├── pump_main.py                    # 主 CLI
+├── requirements.txt
+├── pyproject.toml
+├── Dockerfile
+├── docker-compose.yml
+├── README.md
+├── CLAUDE.md
+│
+├── core/
+│   ├── __init__.py
+│   ├── pump_domain.py              # 领域本体 (已有，保留)
+│   ├── kg_builder.py               # [NEW] 统一 KG 构建器
+│   ├── temporal/                   # [NEW] 时序核心（框架无关）
+│   │   ├── __init__.py
+│   │   ├── temporal_quad.py        # 时序四元组模型
+│   │   ├── temporal_store.py       # Neo4j 时序存储
+│   │   ├── temporal_reasoner.py    # 时序推理引擎
+│   │   └── sensor_bridge.py        # 传感器-图谱桥接
+│   ├── vector_store.py             # Chroma 封装
+│   ├── lightrag_engine.py          # LightRAG 集成
+│   ├── multimodal_engine.py        # RAG-Anything 多模态
+│   ├── graphiti_engine.py          # Graphiti 集成
+│   └── hybrid_search.py            # 混合检索 + RRF
+│
+├── agents/
+│   ├── __init__.py
+│   ├── graph_agent_a.py            # 方案A Agent
+│   ├── graph_agent_b.py            # 方案B Agent
+│   └── shared_state.py             # 共享状态定义
+│
+├── prediction/                     # [NEW] 预测模块接口
+│   ├── __init__.py
+│   ├── signal_encoder.py
+│   ├── tkg_encoder.py
+│   └── fusion_predictor.py
+│
+├── scripts/
+│   ├── build_index.py
+│   ├── build_full.py
+│   ├── ingest_real_sensors.py      # [NEW] 真实 CSV 解析
+│   └── migrate_to_graphiti.py
+│
+├── visualize/
+│   ├── echart_viz.py
+│   └── neo4j_import.py
+│
+├── web/
+│   └── app.py
+│
+├── evaluation/
+│   ├── test_queries.json
+│   ├── run_eval.py
+│   └── report_generator.py
+│
+├── configs/
+│   ├── approach_a.yaml
+│   └── approach_b.yaml
+│
+├── data/
+│   ├── knowledge/
+│   ├── sensors/
+│   └── output/
+│
+└── tests/
+    └── test_temporal/
+```
+
+---
+
+## 风险与缓解
+
+| 风险 | 缓解措施 |
+|------|----------|
+| Graphiti API 不稳定 | Phase 4 前先在隔离环境验证核心 API |
+| Ollama 推理延迟超标 | 提前压测，必要时使用量化模型 |
+| 时序四元组查询性能差 | 优化 Neo4j 时间索引，必要时预计算关键路径 |
+| 方案差异不显著 | 预设 15% 阈值，快速决策 |
+| Kùzu 功能不足 | 保留 Neo4j 作为 fallback |
+
+---
+
+## 验证方法
+
+### Phase 1 验证
+- `python pump_main.py build --full` 成功完成
+- 真实 CSV 解析成功提取特征，输出已知故障类型的正确统计量
+
+### Phase 2 验证
+- 时序四元组模型正确表示故障演化链
+- `temporal_reasoner.trace_path("角度不对中", depth=3)` 返回"不对中→轴承磨损→振动超阈值"
+
+### Phase 3/4 验证
+- 方案A&B 均能通过全部 L1-L4 查询
+- Agent 正确路由不同类型查询
+- 延迟在目标范围内
+
+### Phase 5 验证
+- 至少一个方案在所有关键指标上显著优于 Baseline
+- 决策标准明确，选定最终方案

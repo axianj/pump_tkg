@@ -1,0 +1,50 @@
+# 离心泵故障诊断时序知识图谱
+# https://github.com/YOUR_USERNAME/pump_tkg  (创建后替换)
+
+# Python 编译缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 虚拟环境
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude 内部文件
+.claude/
+C:\Users\Administrator\.claude\
+
+# 临时/日志文件
+*.log
+*.tmp
+
+# 数据集（太大不适合提交到 Git）
+# 如果有本地数据集，建议单独管理
+data/sensors/*.csv
+data/sensors/*.7z
+data/sensors/Dataset/
+
+# 但保留目录结构
+!data/sensors/.gitkeep
+!data/knowledge/.gitkeep
+!data/output/.gitkeep
+
+# Neo4j 本地数据
+*.db
+*.db-shm
+*.db-wal
+
+# Docker
+docker-compose.override.yml
+
+# OS
+.DS_Store
+Thumbs.db

@@ -3,2604 +3,472 @@
     "id": "Motor_MG160MA",
     "type": "设备",
     "name": "MG 160 MA",
-    "description": "电机 MG 160 MA",
-    "degree": 0
-  },
-  {
-    "id": "Motor_MG160MA_DE",
-    "type": "部件",
-    "name": "MG 160 MA驱动端轴承",
-    "description": "",
-    "degree": 0
-  },
-  {
-    "id": "Motor_MG160MA_NDE",
-    "type": "部件",
-    "name": "MG 160 MA非驱动端轴承",
-    "description": "",
+    "description": "电机 MG 160 MA, 11.0kW, 1480rpm, Setup 1 中使用; 可变速 50%/75%/100%",
+    "source": "datasheet_pdf",
     "degree": 0
   },
   {
     "id": "Motor_MG180MB",
     "type": "设备",
     "name": "MG 180 MB",
-    "description": "电机 MG 180 MB",
-    "degree": 0
-  },
-  {
-    "id": "Motor_MG180MB_DE",
-    "type": "部件",
-    "name": "MG 180 MB驱动端轴承",
-    "description": "",
-    "degree": 0
-  },
-  {
-    "id": "Motor_MG180MB_NDE",
-    "type": "部件",
-    "name": "MG 180 MB非驱动端轴承",
-    "description": "",
+    "description": "电机 MG 180 MB, 45.0kW, 2960rpm, Setup 2 中使用; 固定转速 70%",
+    "source": "datasheet_pdf",
     "degree": 0
   },
   {
     "id": "Pump_NK80-250",
     "type": "设备",
     "name": "NK 80-250",
-    "description": "离心泵 NK 80-250",
-    "degree": 0
-  },
-  {
-    "id": "Pump_NK80-250_DE",
-    "type": "部件",
-    "name": "NK 80-250驱动端轴承",
-    "description": "",
-    "degree": 0
-  },
-  {
-    "id": "Pump_NK80-250_NDE",
-    "type": "部件",
-    "name": "NK 80-250非驱动端轴承",
-    "description": "",
+    "description": "离心泵 NK 80-250, 1480rpm, Setup 1 用离心泵",
+    "source": "datasheet_pdf",
     "degree": 0
   },
   {
     "id": "Pump_NK80-160",
     "type": "设备",
     "name": "NK 80-160",
-    "description": "离心泵 NK 80-160",
+    "description": "离心泵 NK 80-160, 2960rpm, Setup 2 用离心泵",
+    "source": "datasheet_pdf",
+    "degree": 0
+  },
+  {
+    "id": "Motor_MG160MA_DE",
+    "type": "部件",
+    "name": "MG 160 MA驱动端轴承",
+    "description": "Drive End bearing (MG 160 MA)",
+    "source": "",
+    "degree": 0
+  },
+  {
+    "id": "Motor_MG160MA_NDE",
+    "type": "部件",
+    "name": "MG 160 MA非驱动端轴承",
+    "description": "Non-Drive End bearing (MG 160 MA)",
+    "source": "",
+    "degree": 0
+  },
+  {
+    "id": "Motor_MG180MB_DE",
+    "type": "部件",
+    "name": "MG 180 MB驱动端轴承",
+    "description": "Drive End bearing (MG 180 MB)",
+    "source": "",
+    "degree": 0
+  },
+  {
+    "id": "Motor_MG180MB_NDE",
+    "type": "部件",
+    "name": "MG 180 MB非驱动端轴承",
+    "description": "Non-Drive End bearing (MG 180 MB)",
+    "source": "",
+    "degree": 0
+  },
+  {
+    "id": "Pump_NK80-250_DE",
+    "type": "部件",
+    "name": "NK 80-250驱动端轴承",
+    "description": "Drive End bearing (NK 80-250)",
+    "source": "",
+    "degree": 0
+  },
+  {
+    "id": "Pump_NK80-250_NDE",
+    "type": "部件",
+    "name": "NK 80-250非驱动端轴承",
+    "description": "Non-Drive End bearing (NK 80-250)",
+    "source": "",
     "degree": 0
   },
   {
     "id": "Pump_NK80-160_DE",
     "type": "部件",
     "name": "NK 80-160驱动端轴承",
-    "description": "",
+    "description": "Drive End bearing (NK 80-160)",
+    "source": "",
     "degree": 0
   },
   {
     "id": "Pump_NK80-160_NDE",
     "type": "部件",
     "name": "NK 80-160非驱动端轴承",
-    "description": "",
+    "description": "Non-Drive End bearing (NK 80-160)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Angular_misalignment",
+    "id": "fault_Angular_misalignment",
     "type": "故障类型",
     "name": "角度不对中",
-    "description": "角度不对中(Angular_misalignment)",
+    "description": "角度不对中 (Angular_misalignment)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Parallel_misalignment",
+    "id": "fault_Parallel_misalignment",
     "type": "故障类型",
     "name": "平行不对中",
-    "description": "平行不对中(Parallel_misalignment)",
+    "description": "平行不对中 (Parallel_misalignment)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Combined_misalignment",
+    "id": "fault_Combined_misalignment",
     "type": "故障类型",
     "name": "复合不对中",
-    "description": "复合不对中(Combined_misalignment)",
+    "description": "复合不对中 (Combined_misalignment)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Unbalance_motor",
+    "id": "fault_Unbalance_motor",
     "type": "故障类型",
     "name": "电机不平衡",
-    "description": "电机不平衡(Unbalance_motor)",
+    "description": "电机不平衡 (Unbalance_motor)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Unbalance_pump",
+    "id": "fault_Unbalance_pump",
     "type": "故障类型",
     "name": "泵不平衡",
-    "description": "泵不平衡(Unbalance_pump)",
+    "description": "泵不平衡 (Unbalance_pump)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Coupling_damage",
+    "id": "fault_Coupling_damage",
     "type": "故障类型",
     "name": "联轴器损坏",
-    "description": "联轴器损坏(Coupling_damage)",
+    "description": "联轴器损坏 (Coupling_damage)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Cavitation_suction",
+    "id": "fault_Cavitation_suction",
     "type": "故障类型",
     "name": "吸入口气蚀",
-    "description": "吸入口气蚀(Cavitation_suction)",
+    "description": "吸入口气蚀 (Cavitation_suction)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Cavitation_discharge",
+    "id": "fault_Cavitation_discharge",
     "type": "故障类型",
     "name": "排出口气蚀",
-    "description": "排出口气蚀(Cavitation_discharge)",
+    "description": "排出口气蚀 (Cavitation_discharge)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Bent_shaft",
+    "id": "fault_Bent_shaft",
     "type": "故障类型",
     "name": "轴弯曲",
-    "description": "轴弯曲(Bent_shaft)",
+    "description": "轴弯曲 (Bent_shaft)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Impeller_fault",
+    "id": "fault_Impeller_fault",
     "type": "故障类型",
     "name": "叶轮故障",
-    "description": "叶轮故障(Impeller_fault)",
+    "description": "叶轮故障 (Impeller_fault)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Bearing_BPFO",
+    "id": "fault_Bearing_BPFO",
     "type": "故障类型",
     "name": "轴承外圈故障",
-    "description": "轴承外圈故障(Bearing_BPFO)",
+    "description": "轴承外圈故障 (Bearing_BPFO)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Bearing_BPFI",
+    "id": "fault_Bearing_BPFI",
     "type": "故障类型",
     "name": "轴承内圈故障",
-    "description": "轴承内圈故障(Bearing_BPFI)",
+    "description": "轴承内圈故障 (Bearing_BPFI)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Bearing_contaminated",
+    "id": "fault_Bearing_contaminated",
     "type": "故障类型",
     "name": "轴承污染",
-    "description": "轴承污染(Bearing_contaminated)",
+    "description": "轴承污染 (Bearing_contaminated)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Bearing_BSF",
+    "id": "fault_Bearing_BSF",
     "type": "故障类型",
     "name": "轴承滚动体故障",
-    "description": "轴承滚动体故障(Bearing_BSF)",
+    "description": "轴承滚动体故障 (Bearing_BSF)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Soft_foot",
+    "id": "fault_Soft_foot",
     "type": "故障类型",
     "name": "软脚",
-    "description": "软脚(Soft_foot)",
+    "description": "软脚 (Soft_foot)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Loose_foot_motor",
+    "id": "fault_Loose_foot_motor",
     "type": "故障类型",
     "name": "电机底脚松动",
-    "description": "电机底脚松动(Loose_foot_motor)",
+    "description": "电机底脚松动 (Loose_foot_motor)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Loose_foot_pump",
+    "id": "fault_Loose_foot_pump",
     "type": "故障类型",
     "name": "泵底脚松动",
-    "description": "泵底脚松动(Loose_foot_pump)",
+    "description": "泵底脚松动 (Loose_foot_pump)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Broken_rotor_bar",
+    "id": "fault_Broken_rotor_bar",
     "type": "故障类型",
     "name": "断条",
-    "description": "断条(Broken_rotor_bar)",
+    "description": "断条 (Broken_rotor_bar)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Stator_short",
+    "id": "fault_Stator_short",
     "type": "故障类型",
     "name": "定子短路",
-    "description": "定子短路(Stator_short)",
+    "description": "定子短路 (Stator_short)",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "f_Pump_bearing",
+    "id": "fault_Pump_bearing",
     "type": "故障类型",
     "name": "泵轴承故障",
-    "description": "泵轴承故障(Pump_bearing)",
+    "description": "泵轴承故障 (Pump_bearing)",
+    "source": "",
+    "degree": 0
+  },
+  {
+    "id": "fault_cat_misalignment",
+    "type": "故障类型",
+    "name": "不对中类故障",
+    "description": "故障大类: 不对中类故障",
+    "source": "",
+    "degree": 0
+  },
+  {
+    "id": "fault_cat_unbalance",
+    "type": "故障类型",
+    "name": "不平衡类故障",
+    "description": "故障大类: 不平衡类故障",
+    "source": "",
+    "degree": 0
+  },
+  {
+    "id": "fault_cat_bearing",
+    "type": "故障类型",
+    "name": "轴承类故障",
+    "description": "故障大类: 轴承类故障",
+    "source": "",
+    "degree": 0
+  },
+  {
+    "id": "fault_cat_cavitation",
+    "type": "故障类型",
+    "name": "气蚀类故障",
+    "description": "故障大类: 气蚀类故障",
+    "source": "",
+    "degree": 0
+  },
+  {
+    "id": "fault_cat_structure",
+    "type": "故障类型",
+    "name": "结构/安装类故障",
+    "description": "故障大类: 结构/安装类故障",
+    "source": "",
+    "degree": 0
+  },
+  {
+    "id": "fault_cat_electrical",
+    "type": "故障类型",
+    "name": "电气类故障",
+    "description": "故障大类: 电气类故障",
+    "source": "",
+    "degree": 0
+  },
+  {
+    "id": "fault_cat_impeller",
+    "type": "故障类型",
+    "name": "叶轮类故障",
+    "description": "故障大类: 叶轮类故障",
+    "source": "",
     "degree": 0
   },
   {
     "id": "Ch1",
     "type": "传感器",
     "name": "Ch1 电机非驱动端轴承水平",
-    "description": "Motor_NDE_bearing H向",
+    "description": "Motor_NDE_bearing H向 加速度计, 20kHz, 100 mV/g",
+    "source": "dataset_readme",
     "degree": 0
   },
   {
-    "id": "pt_Ch1",
+    "id": "Ch1_Motor_NDE_bearing_H",
     "type": "监测点",
     "name": "电机非驱动端轴承水平",
-    "description": "Motor_NDE_bearing",
+    "description": "Motor_NDE_bearing (H向) 振动监测点",
+    "source": "",
     "degree": 0
   },
   {
     "id": "Ch2",
     "type": "传感器",
     "name": "Ch2 电机驱动端轴承垂直",
-    "description": "Motor_DE_bearing V向",
+    "description": "Motor_DE_bearing V向 加速度计, 20kHz, 100 mV/g",
+    "source": "dataset_readme",
     "degree": 0
   },
   {
-    "id": "pt_Ch2",
+    "id": "Ch2_Motor_DE_bearing_V",
     "type": "监测点",
     "name": "电机驱动端轴承垂直",
-    "description": "Motor_DE_bearing",
+    "description": "Motor_DE_bearing (V向) 振动监测点",
+    "source": "",
     "degree": 0
   },
   {
     "id": "Ch3",
     "type": "传感器",
     "name": "Ch3 电机驱动端轴承轴向",
-    "description": "Motor_DE_bearing A向",
+    "description": "Motor_DE_bearing A向 加速度计, 20kHz, 100 mV/g",
+    "source": "dataset_readme",
     "degree": 0
   },
   {
-    "id": "pt_Ch3",
+    "id": "Ch3_Motor_DE_bearing_A",
     "type": "监测点",
     "name": "电机驱动端轴承轴向",
-    "description": "Motor_DE_bearing",
+    "description": "Motor_DE_bearing (A向) 振动监测点",
+    "source": "",
     "degree": 0
   },
   {
     "id": "Ch4",
     "type": "传感器",
     "name": "Ch4 泵驱动端轴承水平",
-    "description": "Pump_DE_bearing H向",
+    "description": "Pump_DE_bearing H向 加速度计, 20kHz, 100 mV/g",
+    "source": "dataset_readme",
     "degree": 0
   },
   {
-    "id": "pt_Ch4",
+    "id": "Ch4_Pump_DE_bearing_H",
     "type": "监测点",
     "name": "泵驱动端轴承水平",
-    "description": "Pump_DE_bearing",
+    "description": "Pump_DE_bearing (H向) 振动监测点",
+    "source": "",
     "degree": 0
   },
   {
     "id": "Ch5",
     "type": "传感器",
     "name": "Ch5 泵非驱动端轴承垂直",
-    "description": "Pump_NDE_bearing V向",
+    "description": "Pump_NDE_bearing V向 加速度计, 20kHz, 100 mV/g",
+    "source": "dataset_readme",
     "degree": 0
   },
   {
-    "id": "pt_Ch5",
+    "id": "Ch5_Pump_NDE_bearing_V",
     "type": "监测点",
     "name": "泵非驱动端轴承垂直",
-    "description": "Pump_NDE_bearing",
+    "description": "Pump_NDE_bearing (V向) 振动监测点",
+    "source": "",
     "degree": 0
   },
   {
-    "id": "M_SIM_001",
-    "type": "测量记录",
-    "name": "测量_07-01_08:00",
-    "description": "故障:平行不对中 严重度:2/4 转速:50% | rms=0.607, peak=3.249, freq_1x=0.279, freq_2x=0.227, freq_3x=0.041",
-    "degree": 2
+    "id": "Speed_50pct",
+    "type": "工况条件",
+    "name": "50%额定转速",
+    "description": "电机额定转速的 50%",
+    "source": "",
+    "degree": 0
   },
   {
-    "id": "M_SIM_001_rms",
-    "type": "信号特征",
-    "name": "rms=0.607",
-    "description": "测量M_SIM_001的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_001_peak",
-    "type": "信号特征",
-    "name": "peak=3.249",
-    "description": "测量M_SIM_001的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_001_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.279",
-    "description": "测量M_SIM_001的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_001_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.227",
-    "description": "测量M_SIM_001的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_001_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.041",
-    "description": "测量M_SIM_001的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_001_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.017",
-    "description": "测量M_SIM_001的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_001_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.026",
-    "description": "测量M_SIM_001的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_001_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.011",
-    "description": "测量M_SIM_001的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_001_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=3.174",
-    "description": "测量M_SIM_001的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_001_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=3.876",
-    "description": "测量M_SIM_001的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_002",
-    "type": "测量记录",
-    "name": "测量_07-01_14:00",
-    "description": "故障:轴承污染 严重度:3/4 转速:100% | rms=0.580, peak=4.629, freq_1x=0.150, freq_2x=0.093, freq_3x=0.036",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_002_rms",
-    "type": "信号特征",
-    "name": "rms=0.580",
-    "description": "测量M_SIM_002的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_002_peak",
-    "type": "信号特征",
-    "name": "peak=4.629",
-    "description": "测量M_SIM_002的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_002_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.150",
-    "description": "测量M_SIM_002的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_002_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.093",
-    "description": "测量M_SIM_002的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_002_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.036",
-    "description": "测量M_SIM_002的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_002_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.094",
-    "description": "测量M_SIM_002的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_002_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.108",
-    "description": "测量M_SIM_002的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_002_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.045",
-    "description": "测量M_SIM_002的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_002_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=3.575",
-    "description": "测量M_SIM_002的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_002_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=6.653",
-    "description": "测量M_SIM_002的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_003",
-    "type": "测量记录",
-    "name": "测量_07-01_20:00",
-    "description": "故障:轴承滚动体故障 严重度:1/4 转速:75% | rms=1.455, peak=2.688, freq_1x=0.229, freq_2x=0.092, freq_3x=0.025",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_003_rms",
-    "type": "信号特征",
-    "name": "rms=1.455",
-    "description": "测量M_SIM_003的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_003_peak",
-    "type": "信号特征",
-    "name": "peak=2.688",
-    "description": "测量M_SIM_003的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_003_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.229",
-    "description": "测量M_SIM_003的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_003_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.092",
-    "description": "测量M_SIM_003的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_003_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.025",
-    "description": "测量M_SIM_003的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_003_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.055",
-    "description": "测量M_SIM_003的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_003_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.020",
-    "description": "测量M_SIM_003的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_003_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.008",
-    "description": "测量M_SIM_003的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_003_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=1.046",
-    "description": "测量M_SIM_003的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_003_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=2.086",
-    "description": "测量M_SIM_003的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_004",
-    "type": "测量记录",
-    "name": "测量_07-02_02:00",
-    "description": "故障:叶轮故障 严重度:4/4 转速:50% | rms=2.724, peak=3.186, freq_1x=0.397, freq_2x=0.078, freq_3x=0.028",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_004_rms",
-    "type": "信号特征",
-    "name": "rms=2.724",
-    "description": "测量M_SIM_004的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_004_peak",
-    "type": "信号特征",
-    "name": "peak=3.186",
-    "description": "测量M_SIM_004的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_004_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.397",
-    "description": "测量M_SIM_004的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_004_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.078",
-    "description": "测量M_SIM_004的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_004_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.028",
-    "description": "测量M_SIM_004的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_004_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.014",
-    "description": "测量M_SIM_004的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_004_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.025",
-    "description": "测量M_SIM_004的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_004_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.015",
-    "description": "测量M_SIM_004的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_004_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=2.927",
-    "description": "测量M_SIM_004的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_004_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=4.114",
-    "description": "测量M_SIM_004的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_005",
-    "type": "测量记录",
-    "name": "测量_07-02_08:00",
-    "description": "故障:泵不平衡 严重度:2/4 转速:75% | rms=1.368, peak=2.330, freq_1x=0.408, freq_2x=0.087, freq_3x=0.038",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_005_rms",
-    "type": "信号特征",
-    "name": "rms=1.368",
-    "description": "测量M_SIM_005的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_005_peak",
-    "type": "信号特征",
-    "name": "peak=2.330",
-    "description": "测量M_SIM_005的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_005_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.408",
-    "description": "测量M_SIM_005的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_005_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.087",
-    "description": "测量M_SIM_005的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_005_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.038",
-    "description": "测量M_SIM_005的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_005_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.026",
-    "description": "测量M_SIM_005的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_005_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.022",
-    "description": "测量M_SIM_005的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_005_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.007",
-    "description": "测量M_SIM_005的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_005_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=3.449",
-    "description": "测量M_SIM_005的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_005_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=3.973",
-    "description": "测量M_SIM_005的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_006",
-    "type": "测量记录",
-    "name": "测量_07-02_14:00",
-    "description": "故障:叶轮故障 严重度:1/4 转速:100% | rms=0.288, peak=2.990, freq_1x=0.128, freq_2x=0.063, freq_3x=0.033",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_006_rms",
-    "type": "信号特征",
-    "name": "rms=0.288",
-    "description": "测量M_SIM_006的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_006_peak",
-    "type": "信号特征",
-    "name": "peak=2.990",
-    "description": "测量M_SIM_006的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_006_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.128",
-    "description": "测量M_SIM_006的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_006_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.063",
-    "description": "测量M_SIM_006的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_006_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.033",
-    "description": "测量M_SIM_006的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_006_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.029",
-    "description": "测量M_SIM_006的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_006_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.012",
-    "description": "测量M_SIM_006的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_006_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.005",
-    "description": "测量M_SIM_006的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_006_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=2.952",
-    "description": "测量M_SIM_006的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_006_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=3.573",
-    "description": "测量M_SIM_006的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_007",
-    "type": "测量记录",
-    "name": "测量_07-02_20:00",
-    "description": "故障:泵轴承故障 严重度:3/4 转速:50% | rms=1.201, peak=3.388, freq_1x=0.285, freq_2x=0.057, freq_3x=0.036",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_007_rms",
-    "type": "信号特征",
-    "name": "rms=1.201",
-    "description": "测量M_SIM_007的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_007_peak",
-    "type": "信号特征",
-    "name": "peak=3.388",
-    "description": "测量M_SIM_007的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_007_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.285",
-    "description": "测量M_SIM_007的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_007_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.057",
-    "description": "测量M_SIM_007的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_007_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.036",
-    "description": "测量M_SIM_007的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_007_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.068",
-    "description": "测量M_SIM_007的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_007_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.100",
-    "description": "测量M_SIM_007的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_007_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.034",
-    "description": "测量M_SIM_007的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_007_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=3.461",
-    "description": "测量M_SIM_007的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_007_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=6.917",
-    "description": "测量M_SIM_007的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_008",
-    "type": "测量记录",
-    "name": "测量_07-03_02:00",
-    "description": "故障:轴承滚动体故障 严重度:3/4 转速:100% | rms=0.562, peak=4.180, freq_1x=0.193, freq_2x=0.056, freq_3x=0.022",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_008_rms",
-    "type": "信号特征",
-    "name": "rms=0.562",
-    "description": "测量M_SIM_008的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_008_peak",
-    "type": "信号特征",
-    "name": "peak=4.180",
-    "description": "测量M_SIM_008的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_008_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.193",
-    "description": "测量M_SIM_008的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_008_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.056",
-    "description": "测量M_SIM_008的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_008_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.022",
-    "description": "测量M_SIM_008的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_008_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.119",
-    "description": "测量M_SIM_008的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_008_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.061",
-    "description": "测量M_SIM_008的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_008_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.035",
-    "description": "测量M_SIM_008的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_008_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=3.830",
-    "description": "测量M_SIM_008的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_008_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=7.142",
-    "description": "测量M_SIM_008的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_009",
-    "type": "测量记录",
-    "name": "测量_07-03_08:00",
-    "description": "故障:联轴器损坏 严重度:4/4 转速:75% | rms=1.327, peak=3.020, freq_1x=0.183, freq_2x=0.063, freq_3x=0.048",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_009_rms",
-    "type": "信号特征",
-    "name": "rms=1.327",
-    "description": "测量M_SIM_009的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_009_peak",
-    "type": "信号特征",
-    "name": "peak=3.020",
-    "description": "测量M_SIM_009的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_009_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.183",
-    "description": "测量M_SIM_009的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_009_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.063",
-    "description": "测量M_SIM_009的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_009_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.048",
-    "description": "测量M_SIM_009的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_009_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.015",
-    "description": "测量M_SIM_009的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_009_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.026",
-    "description": "测量M_SIM_009的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_009_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.008",
-    "description": "测量M_SIM_009的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_009_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=2.698",
-    "description": "测量M_SIM_009的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_009_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=4.161",
-    "description": "测量M_SIM_009的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_010",
-    "type": "测量记录",
-    "name": "测量_07-03_14:00",
-    "description": "故障:轴承污染 严重度:1/4 转速:100% | rms=1.093, peak=4.025, freq_1x=0.172, freq_2x=0.072, freq_3x=0.022",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_010_rms",
-    "type": "信号特征",
-    "name": "rms=1.093",
-    "description": "测量M_SIM_010的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_010_peak",
-    "type": "信号特征",
-    "name": "peak=4.025",
-    "description": "测量M_SIM_010的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_010_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.172",
-    "description": "测量M_SIM_010的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_010_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.072",
-    "description": "测量M_SIM_010的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_010_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.022",
-    "description": "测量M_SIM_010的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_010_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.028",
-    "description": "测量M_SIM_010的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_010_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.040",
-    "description": "测量M_SIM_010的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_010_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.006",
-    "description": "测量M_SIM_010的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_010_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=1.076",
-    "description": "测量M_SIM_010的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_010_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=1.867",
-    "description": "测量M_SIM_010的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_011",
-    "type": "测量记录",
-    "name": "测量_07-03_20:00",
-    "description": "故障:轴承滚动体故障 严重度:3/4 转速:50% | rms=0.569, peak=2.799, freq_1x=0.269, freq_2x=0.059, freq_3x=0.021",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_011_rms",
-    "type": "信号特征",
-    "name": "rms=0.569",
-    "description": "测量M_SIM_011的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_011_peak",
-    "type": "信号特征",
-    "name": "peak=2.799",
-    "description": "测量M_SIM_011的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_011_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.269",
-    "description": "测量M_SIM_011的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_011_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.059",
-    "description": "测量M_SIM_011的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_011_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.021",
-    "description": "测量M_SIM_011的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_011_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.111",
-    "description": "测量M_SIM_011的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_011_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.078",
-    "description": "测量M_SIM_011的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_011_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.040",
-    "description": "测量M_SIM_011的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_011_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=3.669",
-    "description": "测量M_SIM_011的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_011_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=6.444",
-    "description": "测量M_SIM_011的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_012",
-    "type": "测量记录",
-    "name": "测量_07-04_02:00",
-    "description": "故障:轴弯曲 严重度:2/4 转速:75% | rms=0.877, peak=2.569, freq_1x=0.161, freq_2x=0.051, freq_3x=0.037",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_012_rms",
-    "type": "信号特征",
-    "name": "rms=0.877",
-    "description": "测量M_SIM_012的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_012_peak",
-    "type": "信号特征",
-    "name": "peak=2.569",
-    "description": "测量M_SIM_012的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_012_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.161",
-    "description": "测量M_SIM_012的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_012_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.051",
-    "description": "测量M_SIM_012的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_012_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.037",
-    "description": "测量M_SIM_012的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_012_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.024",
-    "description": "测量M_SIM_012的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_012_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.013",
-    "description": "测量M_SIM_012的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_012_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.007",
-    "description": "测量M_SIM_012的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_012_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=3.213",
-    "description": "测量M_SIM_012的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_012_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=3.899",
-    "description": "测量M_SIM_012的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_013",
-    "type": "测量记录",
-    "name": "测量_07-04_08:00",
-    "description": "故障:复合不对中 严重度:2/4 转速:50% | rms=1.323, peak=2.525, freq_1x=0.199, freq_2x=0.167, freq_3x=0.044",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_013_rms",
-    "type": "信号特征",
-    "name": "rms=1.323",
-    "description": "测量M_SIM_013的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_013_peak",
-    "type": "信号特征",
-    "name": "peak=2.525",
-    "description": "测量M_SIM_013的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_013_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.199",
-    "description": "测量M_SIM_013的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_013_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.167",
-    "description": "测量M_SIM_013的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_013_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.044",
-    "description": "测量M_SIM_013的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_013_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.022",
-    "description": "测量M_SIM_013的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_013_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.013",
-    "description": "测量M_SIM_013的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_013_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.011",
-    "description": "测量M_SIM_013的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_013_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=2.724",
-    "description": "测量M_SIM_013的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_013_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=3.650",
-    "description": "测量M_SIM_013的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_014",
-    "type": "测量记录",
-    "name": "测量_07-04_14:00",
-    "description": "故障:泵轴承故障 严重度:2/4 转速:75% | rms=0.831, peak=4.913, freq_1x=0.149, freq_2x=0.069, freq_3x=0.028",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_014_rms",
-    "type": "信号特征",
-    "name": "rms=0.831",
-    "description": "测量M_SIM_014的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_014_peak",
-    "type": "信号特征",
-    "name": "peak=4.913",
-    "description": "测量M_SIM_014的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_014_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.149",
-    "description": "测量M_SIM_014的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_014_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.069",
-    "description": "测量M_SIM_014的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_014_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.028",
-    "description": "测量M_SIM_014的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_014_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.108",
-    "description": "测量M_SIM_014的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_014_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.075",
-    "description": "测量M_SIM_014的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_014_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.025",
-    "description": "测量M_SIM_014的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_014_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=1.964",
-    "description": "测量M_SIM_014的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_014_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=3.524",
-    "description": "测量M_SIM_014的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_015",
-    "type": "测量记录",
-    "name": "测量_07-04_20:00",
-    "description": "故障:泵不平衡 严重度:1/4 转速:50% | rms=0.677, peak=3.297, freq_1x=0.163, freq_2x=0.073, freq_3x=0.047",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_015_rms",
-    "type": "信号特征",
-    "name": "rms=0.677",
-    "description": "测量M_SIM_015的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_015_peak",
-    "type": "信号特征",
-    "name": "peak=3.297",
-    "description": "测量M_SIM_015的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_015_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.163",
-    "description": "测量M_SIM_015的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_015_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.073",
-    "description": "测量M_SIM_015的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_015_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.047",
-    "description": "测量M_SIM_015的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_015_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.020",
-    "description": "测量M_SIM_015的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_015_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.013",
-    "description": "测量M_SIM_015的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_015_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.006",
-    "description": "测量M_SIM_015的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_015_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=2.681",
-    "description": "测量M_SIM_015的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_015_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=3.362",
-    "description": "测量M_SIM_015的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_016",
-    "type": "测量记录",
-    "name": "测量_07-05_02:00",
-    "description": "故障:泵不平衡 严重度:4/4 转速:75% | rms=2.237, peak=3.645, freq_1x=1.505, freq_2x=0.084, freq_3x=0.042",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_016_rms",
-    "type": "信号特征",
-    "name": "rms=2.237",
-    "description": "测量M_SIM_016的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_016_peak",
-    "type": "信号特征",
-    "name": "peak=3.645",
-    "description": "测量M_SIM_016的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_016_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=1.505",
-    "description": "测量M_SIM_016的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_016_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.084",
-    "description": "测量M_SIM_016的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_016_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.042",
-    "description": "测量M_SIM_016的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_016_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.019",
-    "description": "测量M_SIM_016的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_016_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.028",
-    "description": "测量M_SIM_016的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_016_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.008",
-    "description": "测量M_SIM_016的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_016_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=2.902",
-    "description": "测量M_SIM_016的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_016_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=4.844",
-    "description": "测量M_SIM_016的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_017",
-    "type": "测量记录",
-    "name": "测量_07-05_08:00",
-    "description": "故障:轴承内圈故障 严重度:2/4 转速:75% | rms=0.530, peak=3.272, freq_1x=0.107, freq_2x=0.071, freq_3x=0.037",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_017_rms",
-    "type": "信号特征",
-    "name": "rms=0.530",
-    "description": "测量M_SIM_017的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_017_peak",
-    "type": "信号特征",
-    "name": "peak=3.272",
-    "description": "测量M_SIM_017的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_017_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.107",
-    "description": "测量M_SIM_017的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_017_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.071",
-    "description": "测量M_SIM_017的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_017_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.037",
-    "description": "测量M_SIM_017的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_017_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.069",
-    "description": "测量M_SIM_017的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_017_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.040",
-    "description": "测量M_SIM_017的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_017_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.026",
-    "description": "测量M_SIM_017的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_017_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=2.375",
-    "description": "测量M_SIM_017的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_017_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=4.458",
-    "description": "测量M_SIM_017的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_018",
-    "type": "测量记录",
-    "name": "测量_07-05_14:00",
-    "description": "故障:泵轴承故障 严重度:2/4 转速:50% | rms=0.676, peak=2.983, freq_1x=0.214, freq_2x=0.052, freq_3x=0.036",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_018_rms",
-    "type": "信号特征",
-    "name": "rms=0.676",
-    "description": "测量M_SIM_018的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_018_peak",
-    "type": "信号特征",
-    "name": "peak=2.983",
-    "description": "测量M_SIM_018的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_018_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.214",
-    "description": "测量M_SIM_018的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_018_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.052",
-    "description": "测量M_SIM_018的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_018_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.036",
-    "description": "测量M_SIM_018的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_018_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.051",
-    "description": "测量M_SIM_018的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_018_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.070",
-    "description": "测量M_SIM_018的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_018_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.020",
-    "description": "测量M_SIM_018的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_018_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=2.450",
-    "description": "测量M_SIM_018的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_018_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=3.586",
-    "description": "测量M_SIM_018的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_019",
-    "type": "测量记录",
-    "name": "测量_07-05_20:00",
-    "description": "故障:电机不平衡 严重度:2/4 转速:100% | rms=1.580, peak=3.149, freq_1x=0.546, freq_2x=0.084, freq_3x=0.027",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_019_rms",
-    "type": "信号特征",
-    "name": "rms=1.580",
-    "description": "测量M_SIM_019的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_019_peak",
-    "type": "信号特征",
-    "name": "peak=3.149",
-    "description": "测量M_SIM_019的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_019_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.546",
-    "description": "测量M_SIM_019的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_019_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.084",
-    "description": "测量M_SIM_019的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_019_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.027",
-    "description": "测量M_SIM_019的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_019_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.013",
-    "description": "测量M_SIM_019的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_019_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.026",
-    "description": "测量M_SIM_019的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_019_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.009",
-    "description": "测量M_SIM_019的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_019_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=2.680",
-    "description": "测量M_SIM_019的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_019_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=4.188",
-    "description": "测量M_SIM_019的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_020",
-    "type": "测量记录",
-    "name": "测量_07-06_02:00",
-    "description": "故障:复合不对中 严重度:3/4 转速:75% | rms=1.745, peak=2.294, freq_1x=0.418, freq_2x=0.191, freq_3x=0.033",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_020_rms",
-    "type": "信号特征",
-    "name": "rms=1.745",
-    "description": "测量M_SIM_020的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_020_peak",
-    "type": "信号特征",
-    "name": "peak=2.294",
-    "description": "测量M_SIM_020的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_020_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.418",
-    "description": "测量M_SIM_020的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_020_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.191",
-    "description": "测量M_SIM_020的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_020_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.033",
-    "description": "测量M_SIM_020的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_020_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.010",
-    "description": "测量M_SIM_020的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_020_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.023",
-    "description": "测量M_SIM_020的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_020_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.015",
-    "description": "测量M_SIM_020的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_020_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=3.446",
-    "description": "测量M_SIM_020的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_020_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=4.187",
-    "description": "测量M_SIM_020的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_021",
-    "type": "测量记录",
-    "name": "测量_07-06_08:00",
-    "description": "故障:泵不平衡 严重度:1/4 转速:75% | rms=0.720, peak=3.271, freq_1x=0.326, freq_2x=0.089, freq_3x=0.029",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_021_rms",
-    "type": "信号特征",
-    "name": "rms=0.720",
-    "description": "测量M_SIM_021的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_021_peak",
-    "type": "信号特征",
-    "name": "peak=3.271",
-    "description": "测量M_SIM_021的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_021_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.326",
-    "description": "测量M_SIM_021的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_021_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.089",
-    "description": "测量M_SIM_021的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_021_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.029",
-    "description": "测量M_SIM_021的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_021_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.015",
-    "description": "测量M_SIM_021的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_021_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.021",
-    "description": "测量M_SIM_021的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_021_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.008",
-    "description": "测量M_SIM_021的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_021_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=3.496",
-    "description": "测量M_SIM_021的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_021_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=3.233",
-    "description": "测量M_SIM_021的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_022",
-    "type": "测量记录",
-    "name": "测量_07-06_14:00",
-    "description": "故障:电机不平衡 严重度:1/4 转速:50% | rms=0.676, peak=2.601, freq_1x=0.440, freq_2x=0.060, freq_3x=0.031",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_022_rms",
-    "type": "信号特征",
-    "name": "rms=0.676",
-    "description": "测量M_SIM_022的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_022_peak",
-    "type": "信号特征",
-    "name": "peak=2.601",
-    "description": "测量M_SIM_022的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_022_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.440",
-    "description": "测量M_SIM_022的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_022_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.060",
-    "description": "测量M_SIM_022的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_022_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.031",
-    "description": "测量M_SIM_022的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_022_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.029",
-    "description": "测量M_SIM_022的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_022_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.022",
-    "description": "测量M_SIM_022的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_022_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.006",
-    "description": "测量M_SIM_022的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_022_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=2.568",
-    "description": "测量M_SIM_022的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_022_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=4.065",
-    "description": "测量M_SIM_022的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_023",
-    "type": "测量记录",
-    "name": "测量_07-06_20:00",
-    "description": "故障:轴承污染 严重度:2/4 转速:75% | rms=1.062, peak=4.409, freq_1x=0.220, freq_2x=0.051, freq_3x=0.041",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_023_rms",
-    "type": "信号特征",
-    "name": "rms=1.062",
-    "description": "测量M_SIM_023的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_023_peak",
-    "type": "信号特征",
-    "name": "peak=4.409",
-    "description": "测量M_SIM_023的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_023_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.220",
-    "description": "测量M_SIM_023的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_023_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.051",
-    "description": "测量M_SIM_023的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_023_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.041",
-    "description": "测量M_SIM_023的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_023_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.066",
-    "description": "测量M_SIM_023的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_023_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.068",
-    "description": "测量M_SIM_023的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_023_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.027",
-    "description": "测量M_SIM_023的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_023_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=2.226",
-    "description": "测量M_SIM_023的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_023_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=3.479",
-    "description": "测量M_SIM_023的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_024",
-    "type": "测量记录",
-    "name": "测量_07-07_02:00",
-    "description": "故障:角度不对中 严重度:3/4 转速:75% | rms=1.429, peak=2.784, freq_1x=0.275, freq_2x=0.224, freq_3x=0.037",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_024_rms",
-    "type": "信号特征",
-    "name": "rms=1.429",
-    "description": "测量M_SIM_024的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_024_peak",
-    "type": "信号特征",
-    "name": "peak=2.784",
-    "description": "测量M_SIM_024的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_024_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.275",
-    "description": "测量M_SIM_024的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_024_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.224",
-    "description": "测量M_SIM_024的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_024_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.037",
-    "description": "测量M_SIM_024的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_024_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.013",
-    "description": "测量M_SIM_024的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_024_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.026",
-    "description": "测量M_SIM_024的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_024_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.006",
-    "description": "测量M_SIM_024的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_024_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=3.484",
-    "description": "测量M_SIM_024的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_024_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=4.999",
-    "description": "测量M_SIM_024的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_025",
-    "type": "测量记录",
-    "name": "测量_07-07_08:00",
-    "description": "故障:排出口气蚀 严重度:4/4 转速:50% | rms=0.751, peak=3.308, freq_1x=0.311, freq_2x=0.130, freq_3x=0.052",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_025_rms",
-    "type": "信号特征",
-    "name": "rms=0.751",
-    "description": "测量M_SIM_025的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_025_peak",
-    "type": "信号特征",
-    "name": "peak=3.308",
-    "description": "测量M_SIM_025的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_025_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.311",
-    "description": "测量M_SIM_025的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_025_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.130",
-    "description": "测量M_SIM_025的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_025_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.052",
-    "description": "测量M_SIM_025的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_025_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.036",
-    "description": "测量M_SIM_025的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_025_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.044",
-    "description": "测量M_SIM_025的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_025_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.009",
-    "description": "测量M_SIM_025的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_025_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=2.575",
-    "description": "测量M_SIM_025的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_025_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=3.214",
-    "description": "测量M_SIM_025的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_026",
-    "type": "测量记录",
-    "name": "测量_07-07_14:00",
-    "description": "故障:联轴器损坏 严重度:4/4 转速:100% | rms=0.878, peak=4.891, freq_1x=0.159, freq_2x=0.065, freq_3x=0.047",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_026_rms",
-    "type": "信号特征",
-    "name": "rms=0.878",
-    "description": "测量M_SIM_026的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_026_peak",
-    "type": "信号特征",
-    "name": "peak=4.891",
-    "description": "测量M_SIM_026的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_026_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.159",
-    "description": "测量M_SIM_026的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_026_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.065",
-    "description": "测量M_SIM_026的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_026_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.047",
-    "description": "测量M_SIM_026的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_026_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.025",
-    "description": "测量M_SIM_026的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_026_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.019",
-    "description": "测量M_SIM_026的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_026_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.009",
-    "description": "测量M_SIM_026的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_026_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=3.405",
-    "description": "测量M_SIM_026的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_026_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=4.892",
-    "description": "测量M_SIM_026的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_027",
-    "type": "测量记录",
-    "name": "测量_07-07_20:00",
-    "description": "故障:联轴器损坏 严重度:2/4 转速:50% | rms=1.495, peak=2.841, freq_1x=0.196, freq_2x=0.060, freq_3x=0.030",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_027_rms",
-    "type": "信号特征",
-    "name": "rms=1.495",
-    "description": "测量M_SIM_027的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_027_peak",
-    "type": "信号特征",
-    "name": "peak=2.841",
-    "description": "测量M_SIM_027的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_027_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.196",
-    "description": "测量M_SIM_027的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_027_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.060",
-    "description": "测量M_SIM_027的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_027_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.030",
-    "description": "测量M_SIM_027的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_027_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.022",
-    "description": "测量M_SIM_027的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_027_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.022",
-    "description": "测量M_SIM_027的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_027_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.006",
-    "description": "测量M_SIM_027的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_027_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=2.930",
-    "description": "测量M_SIM_027的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_027_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=3.204",
-    "description": "测量M_SIM_027的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_028",
-    "type": "测量记录",
-    "name": "测量_07-08_02:00",
-    "description": "故障:断条 严重度:4/4 转速:75% | rms=1.512, peak=3.770, freq_1x=0.362, freq_2x=0.065, freq_3x=0.027",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_028_rms",
-    "type": "信号特征",
-    "name": "rms=1.512",
-    "description": "测量M_SIM_028的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_028_peak",
-    "type": "信号特征",
-    "name": "peak=3.770",
-    "description": "测量M_SIM_028的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_028_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.362",
-    "description": "测量M_SIM_028的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_028_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.065",
-    "description": "测量M_SIM_028的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_028_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.027",
-    "description": "测量M_SIM_028的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_028_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.016",
-    "description": "测量M_SIM_028的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_028_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.026",
-    "description": "测量M_SIM_028的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_028_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.010",
-    "description": "测量M_SIM_028的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_028_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=2.840",
-    "description": "测量M_SIM_028的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_028_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=4.025",
-    "description": "测量M_SIM_028的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_029",
-    "type": "测量记录",
-    "name": "测量_07-08_08:00",
-    "description": "故障:复合不对中 严重度:3/4 转速:50% | rms=2.059, peak=3.737, freq_1x=0.446, freq_2x=0.344, freq_3x=0.027",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_029_rms",
-    "type": "信号特征",
-    "name": "rms=2.059",
-    "description": "测量M_SIM_029的rms特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_029_peak",
-    "type": "信号特征",
-    "name": "peak=3.737",
-    "description": "测量M_SIM_029的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_029_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.446",
-    "description": "测量M_SIM_029的freq_1x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_029_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.344",
-    "description": "测量M_SIM_029的freq_2x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_029_freq_3x",
-    "type": "信号特征",
-    "name": "freq_3x=0.027",
-    "description": "测量M_SIM_029的freq_3x特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_029_freq_bpfo",
-    "type": "信号特征",
-    "name": "freq_bpfo=0.026",
-    "description": "测量M_SIM_029的freq_bpfo特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_029_freq_bpfi",
-    "type": "信号特征",
-    "name": "freq_bpfi=0.027",
-    "description": "测量M_SIM_029的freq_bpfi特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_029_freq_bsf",
-    "type": "信号特征",
-    "name": "freq_bsf=0.014",
-    "description": "测量M_SIM_029的freq_bsf特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_029_kurtosis",
-    "type": "信号特征",
-    "name": "kurtosis=2.943",
-    "description": "测量M_SIM_029的kurtosis特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_029_crest_factor",
-    "type": "信号特征",
-    "name": "crest_factor=3.289",
-    "description": "测量M_SIM_029的crest_factor特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_030",
-    "type": "测量记录",
-    "name": "测量_07-08_14:00",
-    "description": "故障:泵轴承故障 严重度:4/4 转速:100% | rms=1.340, peak=4.361, freq_1x=0.115, freq_2x=0.092, freq_3x=0.030",
-    "degree": 2
-  },
-  {
-    "id": "M_SIM_030_rms",
-    "type": "信号特征",
-    "name": "rms=1.340",
-    "description": "测量M_SIM_030的rms特征值",
-    "degree": 1
+    "id": "Speed_75pct",
+    "type": "工况条件",
+    "name": "75%额定转速",
+    "description": "电机额定转速的 75%",
+    "source": "",
+    "degree": 0
   },
   {
-    "id": "M_SIM_030_peak",
-    "type": "信号特征",
-    "name": "peak=4.361",
-    "description": "测量M_SIM_030的peak特征值",
-    "degree": 1
-  },
-  {
-    "id": "M_SIM_030_freq_1x",
-    "type": "信号特征",
-    "name": "freq_1x=0.115",
-    "description": "测量M_SIM_030的freq_1x特征值",
-    "degree": 1
+    "id": "Speed_100pct",
+    "type": "工况条件",
+    "name": "100%额定转速",
+    "description": "电机额定转速的 100%",
+    "source": "",
+    "degree": 0
   },
   {
-    "id": "M_SIM_030_freq_2x",
-    "type": "信号特征",
-    "name": "freq_2x=0.092",
-    "description": "测量M_SIM_030的freq_2x特征值",
-    "degree": 1
+    "id": "Speed_70pct",
+    "type": "工况条件",
+    "name": "70%额定转速",
+    "description": "电机额定转速的 70%",
+    "source": "",
+    "degree": 0
   },
   {
-    "id": "M_SIM_030_freq_3x",
+    "id": "signal_pattern_freq_2x",
     "type": "信号特征",
-    "name": "freq_3x=0.030",
-    "description": "测量M_SIM_030的freq_3x特征值",
-    "degree": 1
+    "name": "2倍转频(2X)振动分量突出",
+    "description": "典型信号特征: 2倍转频(2X)振动分量突出",
+    "source": "",
+    "degree": 0
   },
   {
-    "id": "M_SIM_030_freq_bpfo",
+    "id": "signal_pattern_freq_1x",
     "type": "信号特征",
-    "name": "freq_bpfo=0.162",
-    "description": "测量M_SIM_030的freq_bpfo特征值",
-    "degree": 1
+    "name": "1倍转频(1X)振动分量突出",
+    "description": "典型信号特征: 1倍转频(1X)振动分量突出",
+    "source": "",
+    "degree": 0
   },
   {
-    "id": "M_SIM_030_freq_bpfi",
+    "id": "signal_pattern_freq_bpfo",
     "type": "信号特征",
-    "name": "freq_bpfi=0.113",
-    "description": "测量M_SIM_030的freq_bpfi特征值",
-    "degree": 1
+    "name": "BPFO特征频率增加",
+    "description": "典型信号特征: BPFO特征频率增加",
+    "source": "",
+    "degree": 0
   },
   {
-    "id": "M_SIM_030_freq_bsf",
+    "id": "signal_pattern_freq_bpfi",
     "type": "信号特征",
-    "name": "freq_bsf=0.046",
-    "description": "测量M_SIM_030的freq_bsf特征值",
-    "degree": 1
+    "name": "BPFI特征频率增加",
+    "description": "典型信号特征: BPFI特征频率增加",
+    "source": "",
+    "degree": 0
   },
   {
-    "id": "M_SIM_030_kurtosis",
+    "id": "signal_pattern_freq_bsf",
     "type": "信号特征",
-    "name": "kurtosis=4.851",
-    "description": "测量M_SIM_030的kurtosis特征值",
-    "degree": 1
+    "name": "BSF特征频率增加",
+    "description": "典型信号特征: BSF特征频率增加",
+    "source": "",
+    "degree": 0
   },
   {
-    "id": "M_SIM_030_crest_factor",
+    "id": "signal_pattern_freq_broadband",
     "type": "信号特征",
-    "name": "crest_factor=9.241",
-    "description": "测量M_SIM_030的crest_factor特征值",
-    "degree": 1
+    "name": "宽频带高频振动",
+    "description": "典型信号特征: 宽频带高频振动",
+    "source": "",
+    "degree": 0
   }
 ]

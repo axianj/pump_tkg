@@ -1,0 +1,388 @@
+# 离心泵设备故障诊断时序知识图谱平台 — 完整项目实施计划
+
+## Context
+
+**问题背景**: 当前项目 `pump_tkg` 已基于纯文本构建了一个基础的知识图谱（设备→部件→故障类型+传感器），支持 JSON 导出、ECharts 可视化、Neo4j 导入和 Streamlit Web 界面。但存在关键缺陷：
+- 只有静态图谱，无时序推理能力（无法回答"过去72小时内轴承温度趋势如何"）
+- 纯文本构建，无混合检索（向量+图谱），无 LLM 驱动的 Agent 智能体
+- 传感器数据仅为模拟，无真实 CSV 解析
+- 诊断逻辑是基于关键词匹配的离线模式，而非 LLM+RAG
+
+**参考文档核心结论**（来自 PDF 框架对比 + DOCX 实施参考）:
+1. **纯 GraphRAG 效果差** — 自动抽取三元组的 Hit@1/MRR 远低于传统向量检索，纯图遍历不可行
+2. **混合检索（向量+预定义图谱）是唯一有效方案** — Scenario 5
+3. **Agentic RAG 在复杂多步推理中表现最优** — Scenario 8，Langgraph 应作为核心编排引擎
+4. **Graphiti 是唯一原生支持时序 KG 的开源框架** — 双时态模型（事件时间+摄入时间）
+5. **推荐对比实验** — 同时构建两套方案，用相同数据集对比后决定最终架构
+
+**已确认前提条件**:
+- ✅ 完整 TKG_Data 真实传感器数据集（CSV 振动数据 + 设备手册 PDF）
+- ✅ Neo4j 已安装并运行
+- ✅ Ollama 已安装并下载本地 LLM 模型
+- ✅ 实施策略：按 Phase 1→2→3→4→5→6 顺序推进
+
+**预期成果**: 一个由 Langgraph 驱动的 Agentic RAG 平台，支持时序知识图谱推理、混合检索、本地 LLM 推理，能够进行离心泵设备的智能故障诊断与预测。
+
+---
+
+## Phase 1: 基础设施标准化与代码重构（预计 3-5 天）
+
+**目标**: 修复现有代码缺陷，统一项目结构，为双轨对比实验奠定基础。
+
+### 1.1 代码质量修复
+- 修复 `scripts/build_index.py:169` 的 Bug（`domain._build_equipment_specs.__class__` 输出 Python repr 而非故障名称）
+- 统一 `build_index.py` 和 `build_full.py` 的图构建逻辑，抽取为 `core/kg_builder.py`（单一职责：领域知识→实体/关系 JSON）
+- 清理 `{core,data` 错误目录
+
+### 1.2 真实传感器数据接入
+- 实现 `scripts/ingest_sensors.py` 中 `--from-file` 的真实 CSV 解析逻辑
+- 从 TKG_Data 数据集的 CSV 文件中提取：时间戳、通道、RMS、峰值、1X/2X/BPFO/BPFI 等频域特征
+- 集成到 `core/temporal_adapter.py`，使 `parse_measurement_from_path` 能解析真实文件内容（不仅是路径元数据）
+
+### 1.3 项目依赖管理
+- 创建 `requirements.txt`（核心依赖：lightrag-hku, neo4j, streamlit, langgraph, chromadb）
+- 创建 `requirements-dev.txt`（Graphiti, rag-anything 用于实验轨）
+- 增加 `pyproject.toml` 或 `setup.py`
+
+### 1.4 评估基准建立
+- 基于现有纯文本 KG + Neo4j，建立 Baseline 评估框架
+- 定义测试查询集（20 条，覆盖：简单事实查询、多跳关联查询、时序推理查询）
+- 记录 Baseline 指标（准确率、延迟、覆盖率）作为后续对比的参照
+
+### 交付物
+- `core/kg_builder.py` — 统一的知识图谱构建模块
+- `requirements.txt` / `pyproject.toml`
+- `data/test_queries.json` — 标准化测试查询集
+- `docs/baseline_results.md` — 基准测试结果
+
+---
+
+## Phase 2: 实验轨 A — LightRAG + RAG-Anything + Temporal Module + Langgraph + Ollama（预计 5-7 天）
+
+**目标**: 构建轻量化方案。以 LightRAG 为检索核心，手动增强时序能力，RAG-Anything 处理多模态文档，Langgraph 做 Agent 编排。
+
+### 2.1 架构设计
+```
+┌─────────────────────────────────────────────────────────┐
+│                   Langgraph Agent (Router)               │
+│  ┌──────────┐  ┌───────────┐  ┌────────────────────┐   │
+│  │ 简单事实  │  │ 时序推理   │  │ 多模态文档查询      │   │
+│  │ → Vector  │  │ → LightRAG│  │ → RAG-Anything     │   │
+│  │   Search  │  │ + Temporal│  │                    │   │
+│  └──────────┘  └───────────┘  └────────────────────┘   │
+├─────────────────────────────────────────────────────────┤
+│  存储层                                                 │
+│  ┌──────────┐  ┌───────────┐  ┌────────────────────┐   │
+│  │ Chroma   │  │ LightRAG  │  │ JSON (时序关系链)    │   │
+│  │ (向量)   │  │ (图存储)   │  │ temporal_rels.json │   │
+│  └──────────┘  └───────────┘  └────────────────────┘   │
+├─────────────────────────────────────────────────────────┤
+│  LLM: Ollama (本地 qwen2.5 / llama3)                    │
+└─────────────────────────────────────────────────────────┘
+```
+
+### 2.2 模块开发
+
+#### 2.2.1 时序模块增强 (`core/temporal_adapter_v2.py`)
+- 在现有 `TemporalAdapter` 基础上增加：
+  - **时间属性注入**: 将时间戳作为实体的一等属性（valid_from / valid_to），支持时间范围过滤
+  - **时序聚合**: 按时间窗口（小时/天/周）聚合传感器统计特征
+  - **趋势检测**: 简单规则（连续上升/下降/突变）作为图谱推理的前置过滤器
+- 接口：
+  - `add_temporal_attributes(entity, timestamp, valid_window)`
+  - `query_time_range(start_time, end_time, entity_type)`
+  - `get_temporal_chain(entity_id, direction='forward'|'backward', depth=N)`
+
+#### 2.2.2 LightRAG 集成模块 (`core/lightrag_engine.py`)
+- 封装 LightRAG 的初始化和查询接口
+- 实现混合检索模式（global 模式处理图谱关系 + local 模式处理精确匹配）
+- 实现时间预过滤：在 LightRAG 查询前，先通过时间范围筛掉不相关实体，再执行图遍历
+- 支持 Ollama 作为 LLM 后端（通过 OpenAI 兼容 API）
+
+#### 2.2.3 RAG-Anything 多模态模块 (`core/multimodal_engine.py`)
+- 处理设备手册中的图片（如设备结构图、频谱图）
+- 处理 PDF 中的表格（如技术参数表）
+- 将多模态提取结果作为额外上下文注入 Langgraph Agent
+
+#### 2.2.4 Langgraph Agent 编排 (`agents/graph_agent_a.py`)
+- 定义 Agent 状态结构（查询文本、检索结果、诊断结论、置信度）
+- Router 节点：根据查询类型路由到不同检索工具
+  - 简单事实 → Chroma 向量检索
+  - 时序推理 → LightRAG + Temporal Adapter
+  - 多模态 → RAG-Anything
+- 诊断推理节点：综合检索结果，调用 Ollama LLM 生成诊断结论
+- 评估节点：对结论进行置信度评分
+
+### 2.3 CLI 集成
+- 在 `pump_main.py` 中添加 `approach-a` 子命令：启动方案A的完整工作流
+- 支持模式：`build`（构建索引）、`query`（单次查询）、`eval`（批量评估）
+
+### 交付物
+- `core/temporal_adapter_v2.py`
+- `core/lightrag_engine.py`
+- `core/multimodal_engine.py`
+- `agents/__init__.py`, `agents/graph_agent_a.py`
+- `configs/approach_a.yaml` — 方案A 配置文件
+
+---
+
+## Phase 3: 实验轨 B — Graphiti + Langgraph + Ollama（预计 5-7 天）
+
+**目标**: 构建原生时序方案。以 Graphiti 为时序知识图谱引擎，Langgraph 编排，验证原生时序支持的优势和代价。
+
+### 3.1 架构设计
+```
+┌─────────────────────────────────────────────────────────┐
+│                   Langgraph Agent (Router)               │
+│  ┌──────────┐  ┌───────────┐  ┌────────────────────┐   │
+│  │ 简单事实  │  │ 时序推理   │  │ 故障传播分析        │   │
+│  │ → Vector  │  │ → Graphiti│  │ → Graphiti         │   │
+│  │   Search  │  │ Temporal  │  │ Graph Traversal    │   │
+│  └──────────┘  └───────────┘  └────────────────────┘   │
+├─────────────────────────────────────────────────────────┤
+│  存储层                                                 │
+│  ┌──────────┐  ┌───────────────────────────────────┐   │
+│  │ Chroma   │  │ Graphiti + Neo4j (时序知识图谱)     │   │
+│  │ (向量)   │  │ - 双时态: event_time + ingest_time │   │
+│  └──────────┘  │ - 增量更新 + 矛盾消解               │   │
+│                └───────────────────────────────────┘   │
+├─────────────────────────────────────────────────────────┤
+│  LLM: Ollama (本地 qwen2.5 / llama3)                    │
+└─────────────────────────────────────────────────────────┘
+```
+
+### 3.2 模块开发
+
+#### 3.2.1 Graphiti 集成模块 (`core/graphiti_engine.py`)
+- 从现有 Neo4j 中的离心泵图谱迁移数据到 Graphiti
+  - 转换实体为 Graphiti Entity（添加 event_time 时间戳）
+  - 转换关系为 Graphiti Relationship（添加 temporal 属性）
+- 实现 Graphiti 的初始化、实体插入、关系创建
+- 实现 Graphiti 时序查询接口：
+  - `temporal_between(start, end)` — 时间范围查询
+  - `get_entity_at_time(entity_id, timestamp)` — 获取某时间点的实体状态
+  - `trace_fault_propagation(fault_id)` — 故障传播路径追踪
+
+#### 3.2.2 混合检索模块 (`core/hybrid_search.py`)
+- 同时查询 Graphiti（时序图谱）+ Chroma（向量库）
+- 合并结果并去重排序（使用 RRF — Reciprocal Rank Fusion）
+- 作为 Langgraph Agent 的统一检索入口
+
+#### 3.2.3 Langgraph Agent 编排 (`agents/graph_agent_b.py`)
+- 与方案A 相同的 Agent 状态结构（保证对比公平性）
+- 同样包含 Router → Retrieval → Diagnosis → Evaluation 节点
+- 不同点：Router 会优先将时序查询路由到 Graphiti 的 `temporal_between` 接口
+
+### 3.3 CLI 集成
+- 在 `pump_main.py` 中添加 `approach-b` 子命令
+
+### 交付物
+- `core/graphiti_engine.py`
+- `core/hybrid_search.py`
+- `agents/graph_agent_b.py`
+- `configs/approach_b.yaml`
+- `scripts/migrate_to_graphiti.py` — Neo4j 数据迁移脚本
+
+---
+
+## Phase 4: 评估框架与对比实验（预计 3-4 天）
+
+**目标**: 在同一数据集、同一测试集上公平对比两套方案，出具对比报告。
+
+### 4.1 评估框架 (`evaluation/`)
+
+#### 4.1.1 测试数据集
+- 构建分层测试集（50+ 条查询），覆盖：
+  - **L1 — 简单事实查询** (15条): "离心泵 NK 80-250 的额定转速是多少？"
+  - **L2 — 多跳关联查询** (15条): "角度不对中可能导致哪些轴承故障？"
+  - **L3 — 时序推理查询** (15条): "过去24小时内 Ch1 通道的振动 RMS 趋势如何？是否接近报警阈值？"
+  - **L4 — 故障诊断推理** (5条): "根据最近3次测量记录，判断当前设备最可能的故障类型和原因"
+
+#### 4.1.2 评估指标
+| 指标 | 说明 | 目标值 |
+|------|------|--------|
+| Hit@1 | Top-1 检索结果的准确率 | >0.85 |
+| MRR | 平均倒数排名 | >0.90 |
+| 时序推理准确率 | 时序相关查询的正确率 | >0.80 |
+| 查询延迟 (P50/P95) | 毫秒级 | P50<500ms, P95<2s |
+| 索引构建时间 | 全量数据索引耗时 | <10min |
+| 内存占用峰值 | 运行时的内存使用 | <8GB |
+
+#### 4.1.3 评估脚本
+- `evaluation/run_eval.py` — 自动运行测试集，输出评估报告
+- `evaluation/report_generator.py` — 生成 Markdown/HTML 对比报告
+
+### 4.2 对比实验执行
+
+#### 步骤
+1. 部署方案A：构建索引 → 预热 → 运行全量测试集 → 记录指标
+2. 部署方案B：迁移数据 → 构建索引 → 预热 → 运行全量测试集 → 记录指标
+3. 对比 Baseline（现有纯文本 KG）的指标
+4. 生成对比报告
+
+### 交付物
+- `evaluation/test_queries.json` — 标准化测试集（50+ 条）
+- `evaluation/run_eval.py` — 自动化评估脚本
+- `evaluation/report_generator.py` — 报告生成器
+- `docs/comparison_report.md` — 最终对比报告
+
+---
+
+## Phase 5: 最终方案确认与全量开发（预计 5-7 天）
+
+**目标**: 根据 Phase 4 的对比结果，选择最优方案进行全量开发。
+
+### 5.1 决策标准
+- 若两方案在关键指标上差异 <15% → 选择部署成本更低的方案（通常为方案A）
+- 若方案B 在时序推理上领先 >20% 且延迟可接受 (<2s) → 选择方案B
+- 若两方案各有优劣 → 考虑混合架构（方案B的时序核心 + 方案A的轻量外围）
+
+### 5.2 全量开发内容（以选定方案为准）
+- 完善错误处理和边界情况
+- 实现全量传感器数据导入（TKG_Data 全部 CSV）
+- 优化检索性能（缓存、预计算、索引优化）
+- 实现增量更新机制（新数据到达时无需重索引）
+- 完善 Web UI（Streamlit → 支持实时查询、时序趋势图、故障传播图）
+
+### 交付物
+- 完整的生产级代码
+- 全量测试集结果
+- 部署文档
+
+---
+
+## Phase 6: 部署与文档（预计 2-3 天）
+
+### 6.1 Docker 容器化
+- `Dockerfile` — 应用镜像
+- `docker-compose.yml` — 包含 Neo4j + Chroma + Ollama + App 的完整编排
+- `.env.example` — 环境变量模板
+
+### 6.2 文档
+- `README.md` — 项目说明、快速开始
+- `docs/architecture.md` — 架构设计文档
+- `docs/api_reference.md` — API 参考（CLI + Python API）
+
+### 交付物
+- `Dockerfile`, `docker-compose.yml`
+- `docs/` 目录下的完整文档
+
+---
+
+## 项目目录结构（目标）
+
+```
+pump_tkg/
+├── pump_main.py                    # 主 CLI 入口 (方案A/B切换)
+├── requirements.txt
+├── requirements-dev.txt
+├── pyproject.toml
+├── Dockerfile
+├── docker-compose.yml
+├── .env.example
+├── README.md
+├── CLAUDE.md
+│
+├── core/                           # 核心引擎
+│   ├── __init__.py
+│   ├── pump_domain.py              # 领域本体 (已有)
+│   ├── kg_builder.py               # [NEW] 统一 KG 构建器
+│   ├── temporal_adapter.py         # 时序适配器 V1 (已有)
+│   ├── temporal_adapter_v2.py      # [NEW] 时序适配器 V2
+│   ├── lightrag_engine.py          # [NEW] LightRAG 集成
+│   ├── multimodal_engine.py        # [NEW] RAG-Anything 多模态
+│   ├── graphiti_engine.py          # [NEW] Graphiti 集成
+│   ├── hybrid_search.py            # [NEW] 混合检索 + RRF 融合
+│   └── vector_store.py             # [NEW] Chroma 向量库封装
+│
+├── agents/                         # [NEW] Langgraph Agent
+│   ├── __init__.py
+│   ├── graph_agent_a.py            # 方案A Agent
+│   ├── graph_agent_b.py            # 方案B Agent
+│   └── shared_state.py             # 共享 Agent 状态定义
+│
+├── scripts/                        # 构建和工具脚本
+│   ├── build_index.py              # KG 构建 (已有, 需重构)
+│   ├── build_full.py               # 一键构建 (已有)
+│   ├── ingest_sensors.py           # 传感器注入 (已有, 需完善真实CSV)
+│   └── migrate_to_graphiti.py      # [NEW] Neo4j→Graphiti 迁移
+│
+├── visualize/                      # 可视化 (已有)
+│   ├── echart_viz.py
+│   └── neo4j_import.py
+│
+├── web/                            # Web 界面
+│   └── app.py                      # Streamlit (已有, Phase 5 增强)
+│
+├── evaluation/                     # [NEW] 评估框架
+│   ├── __init__.py
+│   ├── test_queries.json           # 标准化测试集
+│   ├── run_eval.py                 # 自动化评估
+│   ├── metrics.py                  # 指标计算
+│   └── report_generator.py         # 报告生成
+│
+├── configs/                        # [NEW] 配置文件
+│   ├── approach_a.yaml
+│   ├── approach_b.yaml
+│   └── default.yaml
+│
+├── data/                           # 数据目录 (已有)
+│   ├── knowledge/
+│   ├── sensors/
+│   └── output/
+│
+└── docs/                           # [NEW] 文档
+    ├── architecture.md
+    ├── api_reference.md
+    ├── baseline_results.md
+    └── comparison_report.md
+```
+
+---
+
+## 关键技术决策记录
+
+| 决策点 | 选择 | 理由 |
+|--------|------|------|
+| 图谱引擎（时序） | Graphiti (方案B) vs 手动时序 (方案A) | 待对比实验决定 |
+| 向量数据库 | Chroma | 轻量、Python 原生、与 Ollama 生态兼容 |
+| LLM | Ollama (qwen2.5 或 llama3) | 本地部署、零成本、可离线运行 |
+| Agent 框架 | Langgraph | 状态机模型适合诊断工作流、支持工具调用和循环 |
+| 图数据库 | Neo4j (已部署) | Graphiti 原生依赖、社区版免费、Cypher 成熟 |
+| 多模态处理 | RAG-Anything (方案A) / 手动 (方案B) | 仅方案A 需要 |
+
+---
+
+## 风险与缓解
+
+| 风险 | 影响 | 缓解措施 |
+|------|------|----------|
+| Graphiti 社区不成熟，API 不稳定 | Phase 3 延期 | 提前在隔离环境验证 Graphiti 核心 API |
+| Ollama 模型推理速度不够 | 查询延迟超标 | 提前测试模型推理速度，必要时使用量化模型 |
+| 真实传感器数据量过大导致索引慢 | Phase 1 延期 | 先用 20% 数据验证流程，确认可行后再全量 |
+| 两方案差异不显著，无法决策 | Phase 5 无明确方向 | 预设决策标准，若差异 <15% 选轻量方案 |
+| Neo4j + Graphiti 内存占用过高 | 部署困难 | 限制图谱规模，高基数数据放入向量库 |
+
+---
+
+## 验证方法
+
+### Phase 1 验证
+- `python pump_main.py build --full` 成功完成，entities.json 无 Bug
+- `python pump_main.py ingest-sensors --from-file <real_csv>` 成功解析真实数据
+- `python -m pytest tests/` 通过基础测试
+
+### Phase 2/3 验证
+- 方案A & B 均能正确回答 L1-L4 全部测试查询
+- 查询延迟在目标范围内
+- Langgraph Agent 能正确路由不同类型的查询
+
+### Phase 4 验证
+- 自动化评估脚本输出完整对比报告
+- 至少一个方案在所有关键指标上显著优于 Baseline
+- 决策标准清晰，可选最终方案
+
+### Phase 5/6 验证
+- `docker-compose up` 一键启动全部服务
+- Web UI 可进行故障诊断对话
+- 时序图展示设备状态变化趋势
