@@ -1,0 +1,37 @@
+{
+  "doc-31c28e885176ac9700378d0d81a655da": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-31c28e885176ac9700378d0d81a655da"
+    ],
+    "content_summary": "离心泵轴承BPFO故障的特征频率为89.2Hz，常见于外圈损伤",
+    "content_length": 31,
+    "created_at": "2026-07-01T10:41:48.938797+00:00",
+    "updated_at": "2026-07-01T10:42:14.339591+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260701_184148_6e4381dc",
+    "metadata": {
+      "processing_start_time": 1782902508,
+      "processing_end_time": 1782902534
+    }
+  },
+  "doc-a6ea4a40448b56b0ae5969c3def82e09": {
+    "status": "failed",
+    "error_msg": "Event loop is closed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-a6ea4a40448b56b0ae5969c3def82e09"
+    ],
+    "content_summary": "角度不对中的主要特征是2倍转频（2X）振动分量突出",
+    "content_length": 25,
+    "created_at": "2026-07-01T10:42:14.363903+00:00",
+    "updated_at": "2026-07-01T10:42:14.370339+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260701_184214_4c8e7e88",
+    "metadata": {
+      "processing_start_time": 1782902534,
+      "processing_end_time": 1782902534
+    }
+  }
+}

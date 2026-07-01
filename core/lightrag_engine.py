@@ -4,16 +4,21 @@ LightRAG 集成模块
 封装 LightRAG 的初始化、文档插入和混合检索。
 支持 Ollama 本地 LLM 和 embedding 模型。
 
-LightRAG 提供双层检索:
-- global 模式: 处理全局/时序关系（社区摘要级）
-- local 模式: 处理具体实体匹配（邻居节点级）
-- hybrid 模式: 两者结合
+用法:
+    from core.lightrag_engine import LightRAGEngine
+    engine = LightRAGEngine()
+    engine.initialize()
+    engine.insert_sync("离心泵故障诊断知识...")
+    result = engine.query_sync("轴承故障的原因")
 
-Phase 3 Plan: 方案A 的核心检索后端
+配置:
+    默认使用 Ollama qwen3:14b (LLM) + nomic-embed-text (Embedding)
+    working_dir: data/output/lightrag_storage
 """
 
 import sys
 import asyncio
+import threading
 from pathlib import Path
 from typing import List, Dict, Optional, Callable
 
@@ -25,11 +30,9 @@ class LightRAGEngine:
     """
     LightRAG 引擎封装。
 
-    用法:
-        engine = LightRAGEngine(working_dir="data/output/lightrag_storage")
-        await engine.initialize()
-        await engine.insert("离心泵故障诊断知识...")
-        results = await engine.query("轴承故障的原因", mode="hybrid")
+    使用持久化 event loop 线程解决 sync/async 混合调用的问题。
+    LLM: Ollama qwen3:14b
+    Embedding: Ollama nomic-embed-text:latest
     """
 
     def __init__(
@@ -37,87 +40,56 @@ class LightRAGEngine:
         working_dir: str = "data/output/lightrag_storage",
         llm_model: str = "qwen3:14b",
         embedding_model: str = "nomic-embed-text:latest",
-        ollama_base_url: str = "http://localhost:11434",
     ):
         self._working_dir = Path(PROJECT_ROOT) / working_dir
         self._working_dir.mkdir(parents=True, exist_ok=True)
 
         self._llm_model = llm_model
         self._embedding_model = embedding_model
-        self._ollama_base_url = ollama_base_url
         self._rag = None
         self._initialized = False
+        self._loop = None
+        self._loop_thread = None
 
-    async def _ollama_llm(self, prompt: str, **kwargs) -> str:
-        """Ollama LLM 回调函数"""
+    # ── LLM / Embedding 回调 ──────────────────────────
+
+    async def _ollama_llm(self, prompt, **kwargs) -> str:
+        """Ollama LLM 回调 — 兼容 LightRAG 的调用格式"""
         import ollama
-        response = ollama.chat(
-            model=self._llm_model,
-            messages=[{"role": "user", "content": prompt}],
-        )
+
+        # LightRAG 传入 messages 列表或纯文本
+        if isinstance(prompt, list):
+            msgs = prompt
+        elif isinstance(prompt, str):
+            msgs = [{"role": "user", "content": prompt}]
+        else:
+            msgs = [{"role": "user", "content": str(prompt)}]
+
+        response = ollama.chat(model=self._llm_model, messages=msgs)
         return response["message"]["content"]
 
-    async def _ollama_embed(self, texts: List[str]) -> List[List[float]]:
-        """Ollama Embedding 回调函数 — 返回 numpy 数组"""
+    async def _ollama_embed(self, texts: List[str]):
+        """Ollama Embedding 回调 — 返回 numpy 数组"""
         import ollama
         import numpy as np
         embeddings = []
         for text in texts:
-            response = ollama.embeddings(
-                model=self._embedding_model,
-                prompt=text,
-            )
-            embeddings.append(response["embedding"])
+            resp = ollama.embeddings(model=self._embedding_model, prompt=text)
+            embeddings.append(resp["embedding"])
         return np.array(embeddings, dtype=np.float32)
 
-    def initialize(self, llm_func: Optional[Callable] = None,
-                   embedding_func: Optional[Callable] = None):
-        """
-        初始化 LightRAG 实例。
+    # ── 初始化 ────────────────────────────────────────
 
-        使用异步执行方式绕过 async/await 兼容性问题。
-        """
-        from lightrag import LightRAG
-        from lightrag.base import EmbeddingFunc
-
-        llm = llm_func or self._ollama_llm
-        embed = embedding_func or self._ollama_embed
-
-        # 包装同步调用
-        def sync_llm(prompt, **kwargs):
-            loop = asyncio.new_event_loop()
-            try:
-                return loop.run_until_complete(asyncio.ensure_future(
-                    llm(prompt, **kwargs) if asyncio.iscoroutinefunction(llm)
-                    else asyncio.get_event_loop().run_in_executor(None, lambda: llm(prompt, **kwargs))
-                ))
-            finally:
-                loop.close()
-
-        self._rag = LightRAG(
-            working_dir=str(self._working_dir),
-            llm_model_func=llm,
-            embedding_func=EmbeddingFunc(
-                embedding_dim=768,
-                max_token_size=8192,
-                func=embed,
-            ),
-            enable_llm_cache=True,
-        )
-        self._initialized = True
-
-    def initialize_sync(self):
-        """
-        同步初始化 (使用默认 Ollama 配置)。
-
-        这是最简单的初始化方式，适合 CLI 工具。
-        """
-        import asyncio
-        from lightrag import LightRAG
-        from lightrag.base import EmbeddingFunc
-        from lightrag.kg.shared_storage import initialize_pipeline_status
+    def _start_event_loop(self):
+        """在独立线程中启动持久 event loop"""
+        self._loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(self._loop)
 
         async def _init():
+            from lightrag import LightRAG
+            from lightrag.base import EmbeddingFunc
+            from lightrag.kg.shared_storage import initialize_pipeline_status
+
             self._rag = LightRAG(
                 working_dir=str(self._working_dir),
                 llm_model_func=self._ollama_llm,
@@ -130,81 +102,63 @@ class LightRAGEngine:
             )
             await self._rag.initialize_storages()
             await initialize_pipeline_status()
+            print(f"[LightRAG] 初始化完成: {self._working_dir}")
+            self._initialized = True
 
-        loop = asyncio.new_event_loop()
-        try:
-            loop.run_until_complete(_init())
-        finally:
-            loop.close()
-        self._initialized = True
+        self._loop.run_until_complete(_init())
+        self._loop.run_forever()
 
-    # ── 文档操作 ────────────────────────────────────
-
-    async def insert(self, text: str, ids: Optional[str] = None) -> str:
-        """插入文档（异步）"""
+    def initialize(self):
+        """启动 LightRAG (后台 event loop 线程)"""
+        if self._initialized:
+            return
+        self._loop_thread = threading.Thread(
+            target=self._start_event_loop, daemon=True
+        )
+        self._loop_thread.start()
+        # 等待初始化完成
+        import time
+        deadline = time.time() + 30
+        while not self._initialized and time.time() < deadline:
+            time.sleep(0.1)
         if not self._initialized:
-            raise RuntimeError("LightRAG not initialized. Call initialize() first.")
-        return await self._rag.ainsert(text, ids=ids)
+            raise RuntimeError("LightRAG 初始化超时 (30s)")
+
+    def _run_async(self, coro, timeout=120):
+        """在后台 loop 中执行异步操作"""
+        if not self._initialized:
+            self.initialize()
+        future = asyncio.run_coroutine_threadsafe(coro, self._loop)
+        return future.result(timeout=timeout)
+
+    # ── 文档操作 ──────────────────────────────────────
 
     def insert_sync(self, text: str) -> str:
-        """插入文档（同步封装）"""
-        import asyncio
-        if not self._initialized:
-            self.initialize_sync()
-        loop = asyncio.new_event_loop()
-        try:
-            return loop.run_until_complete(self._rag.ainsert(text))
-        finally:
-            loop.close()
+        """插入文档"""
+        return self._run_async(self._rag.ainsert(text))
 
-    async def insert_batch(self, texts: List[str]) -> List[str]:
-        """批量插入文档"""
-        results = []
+    def insert_batch_sync(self, texts: List[str]):
+        """批量插入"""
         for i, text in enumerate(texts):
-            result = await self.insert(text, ids=f"doc_{i}")
-            results.append(result)
-        return results
+            self.insert_sync(text)
+            if (i + 1) % 10 == 0:
+                print(f"  [LightRAG] {i+1}/{len(texts)} 个文档已索引")
 
-    def insert_batch_sync(self, texts: List[str]) -> List[str]:
-        """批量插入（同步封装）"""
-        import asyncio
-        if not self._initialized:
-            self.initialize_sync()
-        loop = asyncio.new_event_loop()
-        try:
-            return loop.run_until_complete(self.insert_batch(texts))
-        finally:
-            loop.close()
+    # ── 查询操作 ──────────────────────────────────────
 
-    # ── 查询操作 ────────────────────────────────────
-
-    async def query(
-        self, question: str, mode: str = "hybrid", top_k: int = 5
-    ) -> List[Dict]:
+    def query_sync(self, question: str, mode: str = "hybrid") -> str:
         """
-        查询 LightRAG。
+        同步查询。
 
         Args:
             question: 查询文本
-            mode: "local" (精确) | "global" (全局) | "hybrid" (混合)
-            top_k: 返回 Top-K
+            mode: local | global | hybrid | naive | mix
         """
-        if not self._initialized:
-            raise RuntimeError("LightRAG not initialized.")
-        result = await self._rag.aquery(question, mode=mode)
-        return result if isinstance(result, list) else [{"content": str(result)}]
+        return self._run_async(
+            self._rag.aquery(question, mode=mode)
+        )
 
-    def query_sync(self, question: str, mode: str = "hybrid") -> str:
-        """同步查询（返回文本）"""
-        if not self._initialized:
-            self.initialize_sync()
-        loop = asyncio.new_event_loop()
-        try:
-            return loop.run_until_complete(self._rag.aquery(question, mode=mode))
-        finally:
-            loop.close()
-
-    # ── 知识库操作 ──────────────────────────────────
+    # ── 知识库导入 ────────────────────────────────────
 
     def import_knowledge_base(self, knowledge_dir: str = "data/knowledge"):
         """从知识库目录导入所有文档"""
@@ -230,17 +184,27 @@ class LightRAGEngine:
         self.insert_batch_sync(texts)
         print(f"[LightRAG] 完成: {len(texts)} 个文档已索引")
 
+    # ── 状态 ──────────────────────────────────────────
+
     @property
     def is_initialized(self) -> bool:
         return self._initialized
 
     @property
     def rag(self):
-        """直接访问底层 LightRAG 实例"""
         if not self._initialized:
             raise RuntimeError("LightRAG not initialized")
         return self._rag
 
+    def shutdown(self):
+        """关闭后台 event loop"""
+        if self._loop and self._loop.is_running():
+            self._loop.call_soon_threadsafe(self._loop.stop)
+        if self._loop_thread:
+            self._loop_thread.join(timeout=5)
+
+
+# ── 工厂函数 ──────────────────────────────────────────
 
 def create_lightrag_engine(
     working_dir: str = "data/output/lightrag_storage",
@@ -248,18 +212,15 @@ def create_lightrag_engine(
     auto_import: bool = False,
 ) -> LightRAGEngine:
     """
-    工厂函数: 创建并初始化 LightRAG 引擎。
+    创建并初始化 LightRAG 引擎。
 
     Args:
         working_dir: 工作目录
         llm_model: Ollama 模型名
         auto_import: 是否自动导入知识库
     """
-    engine = LightRAGEngine(
-        working_dir=working_dir,
-        llm_model=llm_model,
-    )
-    engine.initialize_sync()
+    engine = LightRAGEngine(working_dir=working_dir, llm_model=llm_model)
+    engine.initialize()
 
     if auto_import:
         engine.import_knowledge_base()
