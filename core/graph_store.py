@@ -200,20 +200,27 @@ class KuzuGraphStore:
         result = self._conn.execute(
             f"""
             MATCH p = (a:Entity {{id: $id}})-[r:TEMPORAL*1..{max_depth}]->(b:Entity)
-            RETURN relationships(p)
+            RETURN relationships(p), nodes(p)
             LIMIT 10
             """,
             {"id": source_id},
         )
         while result.has_next():
-            rels = result.get_next()[0]
+            row = result.get_next()
+            rels_list = row[0]
+            nodes_list = row[1]
             steps = []
-            for r in rels:
+            # 按关系数配对节点：第 i 条关系的头节点是 nodes[i]，尾节点是 nodes[i+1]
+            for i, r in enumerate(rels_list):
+                src_node = nodes_list[i]
+                dst_node = nodes_list[i + 1]
                 steps.append({
-                    "source": str(r["_src"]) if "_src" in r else str(r.get("_src", "")),
-                    "target": str(r["_dst"]) if "_dst" in r else str(r.get("_dst", "")),
-                    "relation": str(r.get("relation_type", "")),
-                    "description": str(r.get("description", "")),
+                    "source": src_node.get("id", str(src_node.get("_id", ""))),
+                    "target": dst_node.get("id", str(dst_node.get("_id", ""))),
+                    "relation": r.get("relation_type", ""),
+                    "description": r.get("description", ""),
+                    "valid_from": r.get("valid_from", ""),
+                    "valid_to": r.get("valid_to", ""),
                 })
             if steps:
                 paths.append(steps)

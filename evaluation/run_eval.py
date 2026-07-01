@@ -106,16 +106,9 @@ class Evaluator:
     ) -> Dict:
         """
         评估单个方案。
-
-        Args:
-            agent: AgenticDiagnosisEngine 或 AgenticDiagnosisEngineB
-            test_queries: 测试查询列表
-            approach_name: 方案名称
-
-        Returns: 评估报告
         """
         metrics = {
-            "approach": approach_name,
+            "name": approach_name,
             "total_queries": len(test_queries),
             "hit_at_1": 0,
             "hit_at_3": 0,
@@ -229,7 +222,7 @@ class Evaluator:
 
         for r in results:
             report["approaches"].append({
-                "name": r["approach"],
+                "name": r["name"],
                 "hit_at_1": r["hit_at_1"],
                 "temporal_accuracy": r["temporal_accuracy_total"],
                 "query_time_p50_ms": r["query_time_p50"],
@@ -270,15 +263,15 @@ def print_report(report: Dict):
     print()
 
     for approach in report["approaches"]:
-        print(f"  [{approach['name']}]")
+        print(f"\n  [{approach['name']}]")
         print(f"    Hit@1:           {approach['hit_at_1']:.3f}")
-        print(f"    时序推理准确率:   {approach['temporal_accuracy']:.3f}")
-        print(f"    查询延迟 P50:     {approach['query_time_p50_ms']:.0f} ms")
-        print(f"    查询延迟 P95:     {approach['query_time_p95_ms']:.0f} ms")
+        print(f"    时序推理准确率:   {approach['temporal_accuracy_total']:.3f}")
+        print(f"    查询延迟 P50:     {approach['query_time_p50']:.0f} ms")
+        print(f"    查询延迟 P95:     {approach['query_time_p95']:.0f} ms")
         print()
 
-    print(f"  推荐方案: {report['recommendation']}")
-    print(f"  决策依据: {report['decision_applied']}")
+    print(f"  推荐方案: {report.get('recommendation', 'N/A')}")
+    print(f"  决策依据: {report.get('decision_applied', 'N/A')}")
     print("=" * 70)
 
 
