@@ -1,0 +1,54 @@
+# Docker 构建时忽略文件
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# 虚拟环境
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 数据集 (太大, 不打包进镜像)
+TKG_Data/
+Dataset/
+*.7z
+*.zip
+*.tar.gz
+
+# 输出文件 (运行时卷挂载)
+data/output/vector_store/
+data/output/kuzu_db/
+data/output/lightrag_storage/
+
+# Git
+.git/
+.gitignore
+
+# 临时文件
+*.tmp
+*.log
+*.pid
+.DS_Store
+
+# Edge download (本地开发工具, 不打包)
+Edge_download/
+edge_download/
+
+# 周报告 (开发文档, 不打包)
+周工作汇报/
+
+# Ollama 模型 (太大)
+.ollama/
+
+# 参考文档
+reference_file/

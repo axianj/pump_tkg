@@ -1,0 +1,90 @@
+# ============================================================================
+# 离心泵故障诊断时序知识图谱平台 — Docker Compose 部署
+# ============================================================================
+#
+# 部署方式:
+#   1. 本地 LLM 模式 (默认): docker compose up -d
+#      依赖: 宿主机 Ollama 服务 (http://host.docker.internal:11434)
+#
+#   2. 云 API 模式: 设置环境变量 OPENAI_API_KEY / DEEPSEEK_API_KEY
+#
+#   3. 无 LLM 模式: docker compose --profile minimal up -d
+#      仅 Web 界面 + 图谱，不需要 Ollama
+#
+# 注意: Neo4j 是可选的，默认使用 Kùzu 嵌入式图数据库 (零依赖)。
+# ============================================================================
+
+version: "3.8"
+
+services:
+  # ── Web 应用 ──────────────────────────────────────
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: pump_tkg:latest
+    container_name: pump_tkg_web
+    ports:
+      - "8501:8501"
+    volumes:
+      # 图谱数据持久化
+      - ./data/output:/app/data/output
+      # 知识库文档 — 可挂载外部目录
+      - ./data/knowledge:/app/data/knowledge:ro
+      # 宿主 Ollama API (Mac/Windows Docker Desktop 自动可用)
+      # Linux 需要 --add-host host.docker.internal:host-gateway
+    environment:
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+      - STREAMLIT_SERVER_PORT=8501
+      - OLLAMA_HOST=http://host.docker.internal:11434
+      - PUMP_TKG_DATA_DIR=/app/data
+    restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  # ── Ollama 本地 LLM (可选, 仅限有 GPU 的宿主机) ──
+  # 取消注释以下块以在容器内运行 Ollama:
+  #
+  # ollama:
+  #   image: ollama/ollama:latest
+  #   container_name: pump_tkg_ollama
+  #   ports:
+  #     - "11434:11434"
+  #   volumes:
+  #     - ollama_data:/root/.ollama
+  #   environment:
+  #     - OLLAMA_KEEP_ALIVE=24h
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             count: 1
+  #             capabilities: [gpu]
+  #   restart: unless-stopped
+  #   profiles: ["gpu"]
+
+  # ── Neo4j 图数据库 (可选, 默认使用 Kùzu 嵌入式) ──
+  neo4j:
+    image: neo4j:5-community
+    container_name: pump_tkg_neo4j
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/12345678
+      - NEO4J_server_memory_heap_initial__size=512m
+      - NEO4J_server_memory_heap_max__size=1g
+      - NEO4J_server_memory_pagecache_size=256m
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+      - neo4j_import:/import
+    restart: unless-stopped
+    profiles: ["full", "neo4j"]
+
+volumes:
+  neo4j_data:
+  neo4j_logs:
+  neo4j_import:
+  # ollama_data:
