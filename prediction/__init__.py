@@ -1,22 +1,20 @@
 """
-预测模块接口 — 传感器信号编码 + TKG图嵌入 + 融合预测
-
-Phase 6 定义完整的数据管道接口，不立即实现 DL 模型。
+预测模块 — 传感器信号编码 + TKG图嵌入 + 机器学习分类器
 
 Schema:
-    sensor_signal (ndarray) → SignalEncoder → feature_vector (10维)
-    temporal_graph (quadruples) → TKGEncoder → graph_embedding (64维)
-    [feature_vector + graph_embedding] → FusionPredictor → fault_predictions
+    sensor_features (10维) → RandomForest → fault_predictions (20类)
+    + temporal_graph → TKGEncoder → graph_embedding (64维) [可选融合]
 
 基线模型候选池:
-    翻译模型: TTansE, HyTE
-    GNN: EvolveGCN / RE-NET / TGN (GNN主模型待调研选定)
-    点过程: Know-Evolve
+    规则基线: _rule_based_predict (仅对 BPFO/BPFI/不平衡/不对中 有效)
+    ML 分类器: RandomForest + SMOTE 处理类别不平衡 (575样本 × 21类)
+    预留接口: TTansE, HyTE, EvolveGCN, RE-NET, TGN, Know-Evolve
 """
 
 import sys
 from pathlib import Path
 from typing import List, Dict, Optional, Tuple
+from collections import Counter
 
 import numpy as np
 
@@ -123,7 +121,6 @@ class TKGEncoder:
 
         Returns: 64 维 embedding（当前用统计聚合，后续替换为模型推理）
         """
-        # ── 统计特征（占位实现） ──
         n_entities = len(entities)
         n_edges = len(edges)
 
@@ -141,7 +138,6 @@ class TKGEncoder:
         deg_max = max(deg_values)
 
         # 关系类型分布
-        from collections import Counter
         rel_counter = Counter(r.get("relation", "unknown") for r in edges)
         n_rel_types = len(rel_counter)
 
@@ -149,7 +145,13 @@ class TKGEncoder:
         type_counter = Counter(e.get("type", "unknown") for e in entities)
         n_entity_types = len(type_counter)
 
-        # 组装 embedding
+        # 时序边密度 (有 valid_from / valid_to 的边)
+        temporal_edge_count = sum(
+            1 for r in edges
+            if r.get("valid_from") or r.get("from_time") or "后续测量" in r.get("relation", "")
+        )
+
+        # 组装 embedding (64维)
         embedding = np.zeros(self.EMBEDDING_DIM, dtype=np.float32)
         embedding[0] = float(np.log1p(n_entities))
         embedding[1] = float(np.log1p(n_edges))
@@ -157,22 +159,17 @@ class TKGEncoder:
         embedding[3] = float(deg_std) / (deg_max + 1)
         embedding[4] = float(n_rel_types) / 20.0
         embedding[5] = float(n_entity_types) / 10.0
+        embedding[6] = float(np.log1p(temporal_edge_count))
+        # 填充关系分布
+        for i, (rel, cnt) in enumerate(rel_counter.most_common(10)):
+            embedding[7 + i] = float(cnt) / max(n_edges, 1)
 
         # 归一化
         norm = np.linalg.norm(embedding) + 1e-10
         return embedding / norm
 
-    def encode_temporal_quads(
-        self,
-        quads: List,
-    ) -> np.ndarray:
-        """
-        从时序四元组列表编码。
-
-        当前用 TemporalQuadStore 做结构统计，
-        后续替换为 TTansE / EvolveGCN 的前向推理。
-        """
-        # 提取时序四元组的统计结构
+    def encode_temporal_quads(self, quads: List) -> np.ndarray:
+        """从时序四元组列表编码"""
         n_quads = len(quads)
         entities_in_quads = set()
         rel_types_in_quads = set()
@@ -190,105 +187,217 @@ class TKGEncoder:
         return embedding / norm
 
 
-# ── Fusion Predictor ────────────────────────────────
+# ── ML 分类器 ───────────────────────────────────────
 
-class FusionPredictor:
+class FaultClassifier:
     """
-    融合预测器 — 特征向量 + 图嵌入 → 故障预测
+    基于 RandomForest + SMOTE 的故障类型分类器。
 
-    当前为接口定义，具体模型将在 Phase 5+ 实现。
-    支持的模型接口:
-    - TTansE / HyTE: 时序翻译模型
-    - EvolveGCN / RE-NET / TGN: 图神经网络
-    - Know-Evolve: 点过程模型
+    输入: (n_samples, 10) 频域特征矩阵
+    输出: (n_samples,) 故障类型预测 + 概率分布
+
+    训练方式:
+        clf = FaultClassifier()
+        clf.fit(X_train, y_train)  # y_train 是故障代码列表
+        preds = clf.predict(X_test)   # 返回 Top-K 故障 + 概率
     """
 
-    # 故障类型 → 索引映射
+    # 支持的所有故障类型
     FAULT_CLASSES = [
+        "Healthy",
         "Angular_misalignment", "Parallel_misalignment", "Combined_misalignment",
         "Unbalance_motor", "Unbalance_pump",
         "Coupling_damage", "Cavitation_suction", "Cavitation_discharge",
         "Bent_shaft", "Impeller_fault",
-        "Bearing_BPFO", "Bearing_BPFI", "Bearing_contaminated",
-        "Bearing_BSF", "Soft_foot", "Loose_foot_motor", "Loose_foot_pump",
+        "Bearing_BPFO", "Bearing_BPFI", "Bearing_contaminated", "Bearing_BSF",
+        "Soft_foot", "Loose_foot_motor", "Loose_foot",
         "Broken_rotor_bar", "Stator_short", "Pump_bearing",
     ]
 
-    def __init__(self, model=None):
-        self._model = model
-        self._fault_to_idx = {f: i for i, f in enumerate(self.FAULT_CLASSES)}
-        self._idx_to_fault = {i: f for i, f in enumerate(self.FAULT_CLASSES)}
+    def __init__(self, use_smote: bool = True, random_state: int = 42):
+        self._use_smote = use_smote
+        self._random_state = random_state
+        self._model = None
+        self._scaler = None
+        self._label_encoder = None
+        self._fitted_classes = None
+        self._smote = None
 
-    @property
-    def n_classes(self) -> int:
-        return len(self.FAULT_CLASSES)
-
-    def predict(
-        self,
-        feature_vector: np.ndarray,
-        graph_embedding: np.ndarray,
-    ) -> Dict:
+    def fit(self, X: np.ndarray, y: List[str]):
         """
-        故障预测主接口。
+        训练分类器。
 
         Args:
-            feature_vector: (10,) 传感器频域特征
-            graph_embedding: (64,) 时序图谱嵌入
+            X: (n_samples, 10) 特征矩阵
+            y: (n_samples,) 故障代码列表
+        """
+        from sklearn.preprocessing import StandardScaler, LabelEncoder
+        from sklearn.ensemble import RandomForestClassifier
+
+        # 标签编码
+        self._label_encoder = LabelEncoder()
+        y_encoded = self._label_encoder.fit_transform(y)
+        self._fitted_classes = self._label_encoder.classes_
+
+        # 标准化
+        self._scaler = StandardScaler()
+        X_scaled = self._scaler.fit_transform(X)
+
+        # SMOTE 过采样 (处理类别不平衡)
+        if self._use_smote:
+            from imblearn.over_sampling import SMOTE
+            # 统计最少样本数
+            min_count = min(Counter(y).values())
+            # SMOTE 的 k_neighbors 必须 <= min_count - 1
+            k_neighbors = max(1, min(min_count - 1, 4))
+            self._smote = SMOTE(
+                k_neighbors=k_neighbors,
+                random_state=self._random_state,
+            )
+            X_scaled, y_encoded = self._smote.fit_resample(X_scaled, y_encoded)
+
+        # RandomForest
+        self._model = RandomForestClassifier(
+            n_estimators=200,
+            max_depth=15,
+            min_samples_split=4,
+            min_samples_leaf=2,
+            class_weight="balanced_subsample",
+            random_state=self._random_state,
+            n_jobs=-1,
+        )
+        self._model.fit(X_scaled, y_encoded)
+
+        return self
+
+    def predict(self, X: np.ndarray, top_k: int = 5) -> List[Dict]:
+        """
+        单样本/批量预测。
 
         Returns:
-            {
-                "top_faults": [(fault_name, probability), ...],
-                "severity_estimate": float,  # 估计严重度 1-6
+            [{
+                "top_faults": [(fault_code, probability), ...],
+                "top_3_faults": [(fault_code, probability)],
                 "confidence": float,
-                "temporal_trend": "steady" | "degrading" | "critical",
-            }
+                "severity_estimate": int,
+            }, ...]
         """
-        if self._model is not None:
-            # DL 模型推理 (Phase 5+ 实现)
-            combined = np.concatenate([feature_vector, graph_embedding])
-            # logits = self._model.predict(combined)
-            # probs = softmax(logits)
-            raise NotImplementedError("DL model inference not yet implemented")
+        if self._model is None:
+            raise RuntimeError("模型未训练，请先调用 fit()")
+
+        if X.ndim == 1:
+            X = X.reshape(1, -1)
+
+        X_scaled = self._scaler.transform(X)
+        proba = self._model.predict_proba(X_scaled)
+
+        results = []
+        for i in range(len(X)):
+            probs = proba[i]
+            # 取 Top-K
+            top_indices = np.argsort(probs)[::-1][:top_k]
+            top_faults = [
+                (self._label_encoder.inverse_transform([idx])[0], float(probs[idx]))
+                for idx in top_indices
+            ]
+
+            # 严重度估计 (基于 RMS 特征)
+            rms = X[i][0] if X.shape[1] > 0 else 0
+            severity = min(6, max(1, int(rms * 8)))
+
+            results.append({
+                "top_faults": top_faults,
+                "top_3_faults": top_faults[:3],
+                "confidence": float(np.max(probs)),
+                "severity_estimate": severity,
+                "all_probabilities": {
+                    self._label_encoder.inverse_transform([j])[0]: float(probs[j])
+                    for j in top_indices
+                },
+            })
+
+        return results
+
+    def evaluate(self, X: np.ndarray, y: List[str]) -> Dict:
+        """在测试集上评估，返回完整指标"""
+        from sklearn.metrics import (
+            classification_report, confusion_matrix,
+            accuracy_score, f1_score,
+        )
+        import json
+
+        y_pred_encoded = self._model.predict(self._scaler.transform(X))
+        y_pred = self._label_encoder.inverse_transform(y_pred_encoded)
+
+        return {
+            "accuracy": float(accuracy_score(y, y_pred)),
+            "macro_f1": float(f1_score(y, y_pred, average="macro", zero_division=0)),
+            "weighted_f1": float(f1_score(y, y_pred, average="weighted", zero_division=0)),
+            "classification_report": classification_report(
+                y, y_pred, output_dict=True, zero_division=0,
+            ),
+            "n_samples": len(X),
+            "n_classes": len(set(y)),
+        }
+
+
+# ── Fusion Predictor ────────────────────────────────
+
+class FusionPredictor:
+    """
+    融合预测器 — ML 分类器 + 规则回退
+
+    默认使用 FaultClassifier (RandomForest + SMOTE)。
+    Feature Vector (10维) → FaultClassifier → Top-K Fault Predictions
+    Graph Embedding (64维) 保留为可选特征融合输入。
+    """
+
+    def __init__(self):
+        self._classifier = None
+        self._trained = False
+
+    def train(self, X: np.ndarray, y: List[str]):
+        """训练 ML 分类器"""
+        self._classifier = FaultClassifier(use_smote=True)
+        self._classifier.fit(X, y)
+        self._trained = True
+        return self
+
+    def predict(self, feature_vector: np.ndarray, graph_embedding: Optional[np.ndarray] = None) -> Dict:
+        """统一预测接口"""
+        if self._trained:
+            result = self._classifier.predict(feature_vector)[0]
+            # 添加故障中文名
+            fault_names_zh = {}
+            for fault_code, _ in result["top_faults"]:
+                fault_names_zh[fault_code] = self._get_fault_name_zh(fault_code)
+            result["fault_names_zh"] = fault_names_zh
+            return result
         else:
-            # 规则基线（当前实现）
             return self._rule_based_predict(feature_vector)
 
     def _rule_based_predict(self, fv: np.ndarray) -> Dict:
-        """基于规则的基线预测（DL 模型未就绪时使用）"""
-        # 从特征向量判断主要故障方向
+        """基于规则的基线预测"""
         freq_1x = fv[4]
         freq_2x = fv[5]
         freq_bpfo = fv[7]
         freq_bpfi = fv[8]
+        rms_val = fv[0]
 
         probs = {}
 
-        # 2X增大 → 不对中
         if freq_2x > 0.3:
             probs["Angular_misalignment"] = min(0.9, freq_2x)
-
-        # 1X增大 → 不平衡
         if freq_1x > 0.3:
             probs["Unbalance_motor"] = min(0.9, freq_1x)
-            probs["Unbalance_pump"] = min(0.8, freq_1x * 0.8)
-
-        # BPFO增大 → 轴承外圈故障
         if freq_bpfo > 0.1:
             probs["Bearing_BPFO"] = min(0.9, freq_bpfo * 3)
-
-        # BPFI增大 → 轴承内圈故障
         if freq_bpfi > 0.1:
             probs["Bearing_BPFI"] = min(0.9, freq_bpfi * 3)
 
-        # 全频带高 → 气蚀
-        if np.mean(fv[4:]) > 0.2:
-            probs["Cavitation_suction"] = min(0.7, np.mean(fv[4:]) * 2)
-
-        # 排序
         sorted_faults = sorted(probs.items(), key=lambda x: x[1], reverse=True)[:5]
+        fault_names_zh = {f: self._get_fault_name_zh(f) for f, _ in sorted_faults}
 
-        # 趋势判断
-        rms_val = fv[0]
         if rms_val > 0.6:
             trend = "critical"
         elif rms_val > 0.4:
@@ -298,7 +407,7 @@ class FusionPredictor:
 
         return {
             "top_faults": [(f, round(p, 3)) for f, p in sorted_faults],
-            "fault_names_zh": {f: self._get_fault_name_zh(f) for f, _ in sorted_faults},
+            "fault_names_zh": fault_names_zh,
             "severity_estimate": min(6, max(1, int(rms_val * 8))),
             "confidence": float(np.mean([p for _, p in sorted_faults])) if sorted_faults else 0.3,
             "temporal_trend": trend,
@@ -311,13 +420,16 @@ class FusionPredictor:
     def predict_batch(
         self,
         feature_vectors: np.ndarray,
-        graph_embeddings: np.ndarray,
+        graph_embeddings: Optional[np.ndarray] = None,
     ) -> List[Dict]:
         """批量预测"""
-        return [
-            self.predict(fv, ge)
-            for fv, ge in zip(feature_vectors, graph_embeddings)
-        ]
+        return [self.predict(fv) for fv in feature_vectors]
+
+    def evaluate(self, X: np.ndarray, y: List[str]) -> Optional[Dict]:
+        """返回分类器评估指标 (仅 ML 模式)"""
+        if self._trained:
+            return self._classifier.evaluate(X, y)
+        return None
 
 
 # ── 便捷 API ────────────────────────────────────────
